@@ -247,6 +247,8 @@ class ProductService:
                 "material": product.get("material"),
                 "is_available": product.get("is_available", True),
                 "stock_quantity": product.get("stock_quantity", 10),
+                "origin": product.get("origin"),
+                "is_gi_certified": product.get("is_gi_certified", False),
                 "created_at": product.get("created_at"),
                 "thumbnail": product.get("thumbnail"),
                 "images": product.get("images", [])

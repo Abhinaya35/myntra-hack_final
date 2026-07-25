@@ -67,6 +67,12 @@ class NearbyStoreResponse(StoreCardResponse):
     distance_km: float = Field(
         description="Calculated distance in kilometers from the customer's queried coordinates to the store"
     )
+    latitude: float = Field(
+        description="Geographic latitude coordinate mapping"
+    )
+    longitude: float = Field(
+        description="Geographic longitude coordinate mapping"
+    )
 
     model_config = {
         "populate_by_name": True,
@@ -82,7 +88,9 @@ class NearbyStoreResponse(StoreCardResponse):
                 "specialties": ["Kanchipuram Silk", "Wedding Collection"],
                 "years_in_business": 18,
                 "is_verified": True,
-                "distance_km": 1.25
+                "distance_km": 1.25,
+                "latitude": 17.385044,
+                "longitude": 78.486671
             }
         }
     }

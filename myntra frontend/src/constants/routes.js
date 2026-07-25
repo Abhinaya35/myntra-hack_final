@@ -16,6 +16,8 @@ export const ROUTES = {
   THREADS_OF_BHARAT: '/threads-of-bharat',
   THREADS_OF_BHARAT_CATEGORY: '/threads-of-bharat/category/:categoryId',
   FASHION_PULSE_CATEGORY: '/threads-of-bharat/category/:categoryId',
+  PROFILE: '/profile',
+  ADDRESSES: '/addresses',
   NOT_FOUND: '*',
 };
 

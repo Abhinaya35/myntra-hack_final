@@ -83,7 +83,7 @@ export const HubDetailsPage = () => {
   return (
     <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-24 md:pb-28">
       <div className="space-y-12 sm:space-y-16">
-        
+
         {/* Breadcrumb Navigation */}
         <StateBreadcrumb stateName={`${hub.name}, ${hub.state}`} />
 
@@ -95,13 +95,17 @@ export const HubDetailsPage = () => {
           className="relative rounded-3xl bg-surface border border-border/80 overflow-hidden shadow-card"
         >
           {/* Cover Header Image */}
-          <div className="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden bg-slate-950">
+          <div className="relative h-[clamp(340px,42vw,520px)] w-full overflow-hidden bg-slate-950">
             <img
               src={coverImageUrl}
               alt={hub.name}
-              className="w-full h-full object-cover opacity-85"
+              className="w-full h-full object-cover"
+              style={{
+                objectFit: 'cover',
+                objectPosition: hub.banner_position || hub.bannerPosition || 'center center'
+              }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
 
             {/* Badges Overlay */}
             <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10 flex-wrap gap-2">

@@ -81,7 +81,7 @@ const DiscoveryStoreCard = ({ store, isHovered, onHoverStart, onHoverEnd }) => {
       onMouseEnter={() => onHoverStart(store.id)}
       onMouseLeave={() => onHoverEnd()}
       className={cn(
-        "group relative bg-surface border rounded-2xl p-4 transition-all duration-300 flex items-stretch gap-4 cursor-pointer overflow-hidden",
+        "group relative bg-surface border rounded-2xl p-4 transition-all duration-300 flex items-stretch gap-4 cursor-pointer overflow-hidden shrink-0",
         isHovered
           ? "border-primary/50 shadow-elevated bg-surface ring-1 ring-primary/20"
           : "border-border/80 shadow-subtle hover:shadow-card hover:border-border"
@@ -115,7 +115,7 @@ const DiscoveryStoreCard = ({ store, isHovered, onHoverStart, onHoverEnd }) => {
             {store.isVerified && (
               <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/20 text-[11px] font-semibold text-primary">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                <span>{store.badgeText}</span>
+                <span>Verified Regional</span>
               </span>
             )}
 
@@ -131,9 +131,9 @@ const DiscoveryStoreCard = ({ store, isHovered, onHoverStart, onHoverEnd }) => {
             {store.name}
           </h3>
 
-          {/* Shopping Hub */}
+          {/* City, State */}
           <p className="text-xs text-text-muted font-medium line-clamp-1">
-            {store.hubName}
+            {store.city}, {store.state}
           </p>
         </div>
 
@@ -180,16 +180,26 @@ export const StoreDiscoveryPanel = ({
       </div>
 
       {/* Scrollable Store Cards Container */}
-      <div className="flex-1 overflow-y-auto pr-1 space-y-3.5 custom-scrollbar">
-        {stores.map((store) => (
-          <DiscoveryStoreCard
-            key={store.id}
-            store={store}
-            isHovered={hoveredStoreId === store.id}
-            onHoverStart={(id) => onHoverStore && onHoverStore(id)}
-            onHoverEnd={() => onHoverStore && onHoverStore(null)}
-          />
-        ))}
+      <div className="flex-1 overflow-y-auto pr-1 space-y-3.5 custom-scrollbar flex flex-col">
+        {stores.length > 0 ? (
+          stores.map((store) => (
+            <DiscoveryStoreCard
+              key={store.id}
+              store={store}
+              isHovered={hoveredStoreId === store.id}
+              onHoverStart={(id) => onHoverStore && onHoverStore(id)}
+              onHoverEnd={() => onHoverStore && onHoverStore(null)}
+            />
+          ))
+        ) : (
+          <div className="flex flex-col items-center justify-center my-auto py-8 px-4 text-center">
+            <MapPin className="w-8 h-8 text-primary/40 mb-3" />
+            <p className="text-sm font-semibold text-text-primary mb-1">No Fashion Stores Found</p>
+            <p className="text-xs text-text-muted leading-relaxed">
+              We couldn't find any regional fashion stores within 250km of your location. Try changing your permissions or checking back later.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

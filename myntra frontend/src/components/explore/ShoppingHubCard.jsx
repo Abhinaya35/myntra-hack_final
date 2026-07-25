@@ -35,9 +35,10 @@ export const ShoppingHubCard = ({ hub, index = 0 }) => {
         <img
           src={imageUrl}
           alt={hub.name}
-          className="w-full h-full object-cover opacity-85 transition-transform duration-500 ease-out group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+          style={{ objectPosition: hub.banner_position || hub.bannerPosition || 'center center' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
 
         {/* Verified Store Count & Featured Overlay Badges */}
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-10">

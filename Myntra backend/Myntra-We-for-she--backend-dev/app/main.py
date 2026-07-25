@@ -3,7 +3,7 @@ from fastapi import FastAPI, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from database.database import connect_to_mongo, close_mongo_connection, db_instance
-from app.routers import stores, products, recommendations, orders, users, shopping_hubs, states, address
+from app.routers import stores, products, recommendations, orders, users, shopping_hubs, states, address, profile
 from app.auth import router as auth
 
 @asynccontextmanager
@@ -60,6 +60,7 @@ app.include_router(recommendations.router)
 app.include_router(orders.router)
 app.include_router(users.router)
 app.include_router(address.router)
+app.include_router(profile.router)
 
 @app.get("/")
 @app.get("/health", tags=["health"])

@@ -28,6 +28,20 @@ async def get_nearby_stores(latitude: float, longitude: float, radius: float):
     """
     return await StoreService.get_nearby_stores(latitude, longitude, radius)
 
+@router.get("/by-name", response_model=StoreDetailsResponse, status_code=status.HTTP_200_OK)
+async def get_store_by_name(name: str, city: Optional[str] = None):
+    """
+    Get a single trusted store by its name (and optionally city).
+    Used by the frontend when only a store name is available (e.g. from search results or URL slugs).
+    """
+    store = await StoreService.get_store_by_name(name, city)
+    if not store:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Store not found with name '{name}'" + (f" in city '{city}'" if city else "")
+        )
+    return store
+
 @router.get("/{id}", response_model=StoreDetailsResponse, status_code=status.HTTP_200_OK)
 async def get_store_by_id(id: str):
     """
@@ -40,6 +54,7 @@ async def get_store_by_id(id: str):
             detail=f"Store not found with id {id}"
         )
     return store
+
 
 @router.get("/{storeId}/products", response_model=List[ProductCardResponse], status_code=status.HTTP_200_OK)
 async def get_store_products(

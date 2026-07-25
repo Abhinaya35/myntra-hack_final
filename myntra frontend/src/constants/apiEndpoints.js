@@ -13,6 +13,7 @@ export const API_ENDPOINTS = {
   // Stores
   STORES: `${API_BASE_URL}/stores`,
   STORE_DETAILS: (id) => `${API_BASE_URL}/stores/${id}`,
+  STORE_BY_NAME: (name, city) => `${API_BASE_URL}/stores/by-name?name=${encodeURIComponent(name)}${city ? `&city=${encodeURIComponent(city)}` : ''}`,
   NEARBY_STORES: `${API_BASE_URL}/stores/nearby`,
   STORE_SEARCH: `${API_BASE_URL}/stores/search`,
   STORE_PRODUCTS: (id) => `${API_BASE_URL}/stores/${id}/products`,

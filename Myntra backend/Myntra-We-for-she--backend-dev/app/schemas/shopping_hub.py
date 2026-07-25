@@ -8,6 +8,7 @@ class ShoppingHubBase(BaseModel):
     description: str = Field(description="A descriptive narrative explaining regional significance")
     banner_image: Optional[str] = Field(default=None, description="URL pointing to banner graphic")
     cover_image: Optional[str] = Field(default=None, description="URL pointing to cover layout design")
+    banner_position: Optional[str] = Field(default="center center", description="CSS object-position string for optimal cropping")
     latitude: float = Field(description="Hub center coordinate latitude")
     longitude: float = Field(description="Hub center coordinate longitude")
     featured: bool = Field(default=False, description="Flag designating featured hub status")

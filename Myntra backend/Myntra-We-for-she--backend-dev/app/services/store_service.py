@@ -56,6 +56,20 @@ class StoreService:
             return None
         return await db.stores.find_one({"_id": ObjectId(store_id)})
 
+    @staticmethod
+    async def get_store_by_name(name: str, city: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        """
+        Look up a store by name (case-insensitive) and optional city filter.
+        Used by GET /stores/by-name when the frontend has a name but no ObjectId.
+        """
+        db = get_database()
+        query: Dict[str, Any] = {"name": {"$regex": f"^{name}$", "$options": "i"}}
+        if city:
+            query["city"] = {"$regex": f"^{city}$", "$options": "i"}
+        return await db.stores.find_one(query)
+
+
+
     # ==========================================
     # SEARCH DISCOVERY ENGINE HELPER METHODS
     # ==========================================

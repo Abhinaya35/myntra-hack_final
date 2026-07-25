@@ -19,6 +19,8 @@ import ProductDetailsPage from '../pages/Product/ProductDetailsPage';
 import ShortlistPage from '../pages/Shortlist/ShortlistPage';
 import FashionPulseCategoryPage from '../pages/FashionPulse/FashionPulseCategoryPage';
 import ThreadsOfBharatPage from '../pages/ThreadsOfBharat/ThreadsOfBharatPage';
+import ProfilePage from '../pages/Profile/ProfilePage';
+import AddressPage from '../pages/Address/AddressPage';
 import NotFoundPage from '../pages/NotFound/NotFoundPage';
 
 /**
@@ -45,6 +47,8 @@ export const AppRoutes = () => {
         <Route path={ROUTES.PRODUCT_DETAILS} element={<ProductDetailsPage />} />
         <Route path={ROUTES.SHORTLIST} element={<ShortlistPage />} />
         <Route path={ROUTES.FASHION_PULSE_CATEGORY} element={<FashionPulseCategoryPage />} />
+        <Route path={ROUTES.PROFILE} element={<ProfilePage />} />
+        <Route path={ROUTES.ADDRESSES} element={<AddressPage />} />
         <Route path={ROUTES.NOT_FOUND} element={<NotFoundPage />} />
       </Routes>
     </MainLayout>

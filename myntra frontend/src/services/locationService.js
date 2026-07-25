@@ -19,6 +19,18 @@ export const locationService = {
       longitude: parseFloat(longitude),
     });
   },
+
+  /**
+   * Geocode a raw address string to coordinates
+   * POST /address/geocode
+   * @param {string} addressText - The full raw address to resolve coordinates for
+   * @returns {Promise<Object>} AddressResponse containing resolved latitude, longitude and cached status
+   */
+  geocode: async (addressText) => {
+    return await apiClient.post(API_ENDPOINTS.ADDRESS_GEOCODE, {
+      address: addressText,
+    });
+  },
 };
 
 export default locationService;

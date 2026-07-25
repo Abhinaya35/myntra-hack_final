@@ -24,10 +24,10 @@ export const LocationContext = createContext({
   loading: false,
   error: null,
   permission: 'prompt', // 'prompt' | 'granted' | 'denied'
-  requestCurrentLocation: () => {},
-  selectCity: () => {},
-  changeLocation: () => {},
-  clearLocation: () => {},
+  requestCurrentLocation: () => { },
+  selectCity: () => { },
+  changeLocation: () => { },
+  clearLocation: () => { },
 });
 
 export const LocationProvider = ({ children }) => {
@@ -44,6 +44,60 @@ export const LocationProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [permission, setPermission] = useState('prompt');
+
+  /**
+   * Load nearby stores dynamically for the given latitude and longitude coordinates
+   */
+  const loadNearbyStores = async (lat, lng, onSuccess, onError) => {
+    setLoading(true);
+    setError(null);
+    try {
+      // Call FastAPI Reverse Geocoding API
+      const response = await locationService.reverseGeocode(lat, lng);
+
+      const resolvedLocation = {
+        city: response.city || 'Hyderabad',
+        state: response.state || 'Telangana',
+        pincode: response.pincode || '',
+        formattedAddress: response.formatted_address || response.display_name || `${lat.toFixed(4)}, ${lng.toFixed(4)}`,
+        latitude: response.latitude ?? lat,
+        longitude: response.longitude ?? lng,
+      };
+
+      setLocationState(resolvedLocation);
+      setSource('gps');
+      setPermission('granted');
+      setError(null);
+      setLoading(false);
+
+      if (onSuccess) onSuccess(resolvedLocation);
+    } catch (apiErr) {
+      console.warn('[LocationContext] Reverse geocode API call returned error:', apiErr.message);
+
+      // If unauthenticated or network error, fallback gracefully with GPS coordinates
+      const fallbackLocation = {
+        city: 'Hyderabad',
+        state: 'Telangana',
+        pincode: '',
+        formattedAddress: `Lat: ${lat.toFixed(4)}, Lng: ${lng.toFixed(4)}`,
+        latitude: lat,
+        longitude: lng,
+      };
+
+      setLocationState(fallbackLocation);
+      setSource('gps');
+      setPermission('granted');
+
+      // Log user-facing error message if required by unauthenticated state
+      const errDetail = apiErr.status === 401
+        ? 'Reverse geocoding requires login. Using coordinates.'
+        : (apiErr.message || 'Reverse geocoding lookup failed.');
+      setError(errDetail);
+      setLoading(false);
+
+      if (onSuccess) onSuccess(fallbackLocation);
+    }
+  };
 
   /**
    * Request browser geolocation and invoke FastAPI reverse-geocoding endpoint
@@ -64,53 +118,7 @@ export const LocationProvider = ({ children }) => {
       async (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
-
-        try {
-          // Call FastAPI Reverse Geocoding API
-          const response = await locationService.reverseGeocode(lat, lng);
-
-          const resolvedLocation = {
-            city: response.city || 'Hyderabad',
-            state: response.state || 'Telangana',
-            pincode: response.pincode || '',
-            formattedAddress: response.formatted_address || response.display_name || `${lat.toFixed(4)}, ${lng.toFixed(4)}`,
-            latitude: response.latitude ?? lat,
-            longitude: response.longitude ?? lng,
-          };
-
-          setLocationState(resolvedLocation);
-          setSource('gps');
-          setPermission('granted');
-          setError(null);
-          setLoading(false);
-
-          if (onSuccess) onSuccess(resolvedLocation);
-        } catch (apiErr) {
-          console.warn('[LocationContext] Reverse geocode API call returned error:', apiErr.message);
-
-          // If unauthenticated or network error, fallback gracefully with GPS coordinates
-          const fallbackLocation = {
-            city: location.city || 'Hyderabad',
-            state: location.state || 'Telangana',
-            pincode: '',
-            formattedAddress: `Lat: ${lat.toFixed(4)}, Lng: ${lng.toFixed(4)}`,
-            latitude: lat,
-            longitude: lng,
-          };
-
-          setLocationState(fallbackLocation);
-          setSource('gps');
-          setPermission('granted');
-          
-          // Log user-facing error message if required by unauthenticated state
-          const errDetail = apiErr.status === 401
-            ? 'Reverse geocoding requires login. Using coordinates.'
-            : (apiErr.message || 'Reverse geocoding lookup failed.');
-          setError(errDetail);
-          setLoading(false);
-
-          if (onSuccess) onSuccess(fallbackLocation);
-        }
+        await loadNearbyStores(lat, lng, onSuccess, onError);
       },
       (geoError) => {
         let errMsg = 'Unable to retrieve location.';
@@ -161,6 +169,10 @@ export const LocationProvider = ({ children }) => {
     if (onSuccess) onSuccess(selectedLocation);
   };
 
+  const setLocation = (locationData) => {
+    setLocationState(locationData);
+  };
+
   const changeLocation = () => {
     setPermission('prompt');
     setError(null);
@@ -196,7 +208,9 @@ export const LocationProvider = ({ children }) => {
         error,
         permission,
         requestCurrentLocation,
+        loadNearbyStores,
         selectCity,
+        setLocation,
         changeLocation,
         clearLocation,
       }}

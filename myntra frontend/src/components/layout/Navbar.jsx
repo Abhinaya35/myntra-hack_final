@@ -1,19 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Compass, MapPin, Bookmark, Menu, X, Sparkles, User, LogOut, Flame } from 'lucide-react';
 import { ROUTES } from '../../constants/routes';
 import { useShortlist } from '../../hooks/useShortlist';
-import { useLocation as useGeoLocation } from '../../hooks/useLocation';
 import { useAuth } from '../../hooks/useAuth';
 import { cn } from '../../utils/cn';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
   const { totalSavedCount } = useShortlist();
-  const { location: userLoc, detectUserLocation, isDetecting } = useGeoLocation();
-  const { user, isAuthenticated, logout } = useAuth();
+
+  const { user, profile, isAuthenticated, logout } = useAuth();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setProfileDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const navLinks = [
     { label: 'Overview', path: ROUTES.HOME },
@@ -37,7 +48,7 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 glass-nav transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo & Brand Title */}
           <Link to={ROUTES.HOME} className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary via-secondary to-accent p-0.5 shadow-sm group-hover:shadow transition-shadow">
@@ -78,21 +89,8 @@ export const Navbar = () => {
             })}
           </nav>
 
-          {/* Actions: Location Selector, Shortlist & Auth */}
+          {/* Actions: Shortlist & Auth */}
           <div className="hidden md:flex items-center gap-3">
-            {/* Location Pill */}
-            <button
-              onClick={detectUserLocation}
-              disabled={isDetecting}
-              className="flex items-center gap-2 px-3.5 py-2 text-xs font-medium bg-surface hover:bg-background border border-border rounded-xl shadow-subtle transition-colors text-text-primary"
-              title="Detect or change location"
-            >
-              <MapPin className="w-3.5 h-3.5 text-primary" />
-              <span>{userLoc?.city || 'Detecting...'}</span>
-              {isDetecting && (
-                <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
-              )}
-            </button>
 
             {/* Shortlist Counter */}
             <Link
@@ -111,27 +109,85 @@ export const Navbar = () => {
               )}
             </Link>
 
-            {/* Auth Actions (User Profile vs Sign In) */}
+            {/* Auth Actions (User Profile dropdown vs Sign In) */}
             {isAuthenticated ? (
-              <div className="flex items-center gap-2">
-                <div className="flex items-center gap-2 px-3.5 py-1.5 bg-surface border border-border/80 rounded-xl shadow-subtle">
-                  <div className="w-6 h-6 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs flex items-center justify-center">
-                    {user?.name ? user.name.charAt(0).toUpperCase() : 'U'}
-                  </div>
-                  <span className="text-xs font-semibold text-text-primary max-w-[100px] truncate">
-                    {user?.name || 'User'}
-                  </span>
-                </div>
-
+              <div className="relative" ref={dropdownRef}>
                 <button
                   type="button"
-                  onClick={handleLogout}
-                  className="p-2 rounded-xl border border-border/80 bg-surface text-text-muted hover:text-red-500 hover:border-red-500/30 hover:bg-red-500/5 transition-all shadow-subtle cursor-pointer"
-                  title="Sign out"
-                  aria-label="Logout"
+                  onClick={() => setProfileDropdownOpen(!profileDropdownOpen)}
+                  className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-surface hover:bg-background border border-border rounded-xl shadow-subtle transition-all text-text-primary cursor-pointer animate-fade-in"
+                  aria-label="Profile Menu"
                 >
-                  <LogOut className="w-4 h-4" />
+                  <User className="w-4 h-4 text-primary" />
+                  <span>Profile</span>
                 </button>
+
+                {profileDropdownOpen && (
+                  <div className="absolute right-0 mt-3 w-64 bg-surface border border-border rounded-2xl shadow-xl py-4 px-5 z-[100] animate-scale-in">
+                    <div className="flex flex-col mb-3">
+                      <span className="text-xs font-bold text-text-primary">Hello {profile?.full_name || user?.name || 'User'}</span>
+                      <span className="text-[10px] text-text-muted mt-0.5">{user?.phone || user?.email || 'No phone linked'}</span>
+                    </div>
+                    <hr className="border-border/60 my-2.5" />
+                    <div className="flex flex-col gap-2">
+                      <Link
+                        to={ROUTES.PROFILE}
+                        onClick={() => setProfileDropdownOpen(false)}
+                        className="text-xs font-semibold text-text-muted hover:text-primary transition-colors text-left"
+                      >
+                        My Profile
+                      </Link>
+                      <button
+                        onClick={() => {
+                          setProfileDropdownOpen(false);
+                          alert("My Orders functionality is coming soon!");
+                        }}
+                        className="text-left text-xs font-semibold text-text-muted hover:text-primary transition-colors cursor-pointer"
+                      >
+                        My Orders
+                      </button>
+                      <Link
+                        to={ROUTES.SHORTLIST}
+                        onClick={() => setProfileDropdownOpen(false)}
+                        className="text-xs font-semibold text-text-muted hover:text-primary transition-colors text-left"
+                      >
+                        Wishlist
+                      </Link>
+                      <button
+                        onClick={() => {
+                          setProfileDropdownOpen(false);
+                          alert("Coupons module is coming soon!");
+                        }}
+                        className="text-left text-xs font-semibold text-text-muted hover:text-primary transition-colors cursor-pointer"
+                      >
+                        Coupons
+                      </button>
+                      <Link
+                        to={ROUTES.ADDRESSES}
+                        onClick={() => setProfileDropdownOpen(false)}
+                        className="text-xs font-semibold text-text-muted hover:text-primary transition-colors text-left"
+                      >
+                        Addresses
+                      </Link>
+                      <button
+                        onClick={() => {
+                          setProfileDropdownOpen(false);
+                          alert("Contact support at support@threadsofbharat.com");
+                        }}
+                        className="text-left text-xs font-semibold text-text-muted hover:text-primary transition-colors cursor-pointer"
+                      >
+                        Contact Us
+                      </button>
+                    </div>
+                    <hr className="border-border/60 my-3" />
+                    <button
+                      onClick={handleLogout}
+                      className="w-full text-center py-2 px-3 text-xs font-bold rounded-xl bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white transition-colors cursor-pointer"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <Link
@@ -198,26 +254,43 @@ export const Navbar = () => {
 
           <div className="pt-3 border-t border-border flex flex-col gap-2">
             {isAuthenticated ? (
-              <div className="flex items-center justify-between px-2 py-1">
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">
-                    {user?.name ? user.name.charAt(0).toUpperCase() : 'U'}
+              <>
+                <div className="flex items-center gap-3 px-2 py-1.5">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs flex items-center justify-center">
+                    {(profile?.full_name || user?.name || 'U').charAt(0).toUpperCase()}
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs font-semibold text-text-primary">{user?.name}</span>
-                    <span className="text-[10px] text-text-muted">{user?.email}</span>
+                    <span className="text-xs font-bold text-text-primary">Hello {profile?.full_name || user?.name || 'User'}</span>
+                    <span className="text-[10px] text-text-muted mt-0.5">{user?.phone || user?.email || 'No phone linked'}</span>
                   </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2 py-2">
+                  <Link
+                    to={ROUTES.PROFILE}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-center py-2 px-3 text-xs font-semibold border border-border rounded-xl bg-surface hover:bg-background text-text-primary text-center"
+                  >
+                    My Profile
+                  </Link>
+                  <Link
+                    to="/addresses"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-center py-2 px-3 text-xs font-semibold border border-border rounded-xl bg-surface hover:bg-background text-text-primary text-center"
+                  >
+                    Addresses
+                  </Link>
                 </div>
 
                 <button
                   type="button"
                   onClick={handleLogout}
-                  className="flex items-center gap-1 text-xs font-semibold text-red-500 px-3 py-1.5 rounded-lg bg-red-500/10"
+                  className="flex items-center justify-center gap-1.5 text-xs font-semibold text-red-500 py-2.5 rounded-xl bg-red-500/10 hover:bg-red-500 hover:text-white transition-colors"
                 >
-                  <LogOut className="w-3.5 h-3.5" />
+                  <LogOut className="w-4 h-4" />
                   <span>Logout</span>
                 </button>
-              </div>
+              </>
             ) : (
               <Link
                 to={ROUTES.AUTH}
@@ -228,16 +301,7 @@ export const Navbar = () => {
               </Link>
             )}
 
-            <button
-              onClick={() => {
-                detectUserLocation();
-                setMobileMenuOpen(false);
-              }}
-              className="flex items-center gap-2 px-3 py-2 text-xs font-medium text-text-muted bg-background rounded-lg mt-1"
-            >
-              <MapPin className="w-4 h-4 text-primary" />
-              <span>Location: {userLoc?.city || 'Detect'}</span>
-            </button>
+
           </div>
         </div>
       )}

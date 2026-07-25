@@ -27,6 +27,8 @@ class ProductDB(BaseModel):
     images: List[str] = Field(default=[], description="List of URL images for product carousel")
     is_available: bool = Field(default=True, description="Flag representing whether product is active for purchase")
     is_featured: bool = Field(default=False, description="Flag representing featured promotion badge placement")
+    origin: Optional[str] = Field(default=None, description="Craft or textile origin")
+    is_gi_certified: bool = Field(default=False, description="Flag representing Geographical Indication certification status")
     created_at: datetime = Field(default_factory=datetime.utcnow, description="Creation timestamp")
 
     model_config = {

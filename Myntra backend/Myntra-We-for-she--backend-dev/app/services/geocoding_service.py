@@ -52,8 +52,9 @@ class GeocodingService:
     @classmethod
     async def geocode(
         cls, 
-        house_number: str = "", 
+        houseNumber: str = "", 
         street: str = "", 
+        landmark: str = "",
         city: str = "", 
         state: str = "", 
         pincode: str = "", 
@@ -65,21 +66,17 @@ class GeocodingService:
         """
         attempts = []
 
-        # Attempt 1: street + city + state + pincode + country
-        attempt1 = [street, city, state, pincode, country]
-        attempts.append(("Attempt 1 (Street + City + State + Pincode + Country)", attempt1))
+        # Attempt 1: houseNumber + street + landmark + city + state + pincode + country
+        attempt1 = [houseNumber, street, landmark, city, state, pincode, country]
+        attempts.append(("Attempt 1", attempt1))
 
-        # Attempt 2: city + state + pincode + country
-        attempt2 = [city, state, pincode, country]
-        attempts.append(("Attempt 2 (City + State + Pincode + Country)", attempt2))
+        # Attempt 2: street + landmark + city + state + pincode + country
+        attempt2 = [street, landmark, city, state, pincode, country]
+        attempts.append(("Attempt 2", attempt2))
 
-        # Attempt 3: city + state + country
-        attempt3 = [city, state, country]
-        attempts.append(("Attempt 3 (City + State + Country)", attempt3))
-
-        # Attempt 4: pincode + state + country
-        attempt4 = [pincode, state, country]
-        attempts.append(("Attempt 4 (Pincode + State + Country)", attempt4))
+        # Attempt 3: city + state + pincode + country
+        attempt3 = [city, state, pincode, country]
+        attempts.append(("Attempt 3", attempt3))
 
         last_error = None
         executed_queries = set()
@@ -94,15 +91,27 @@ class GeocodingService:
                 continue
 
             executed_queries.add(query_str)
-            logger.info(f"Geocoding {name}: '{query_str}'")
+            print("--------------------------------")
+            print(f"{name}")
+            print("Query:")
+            print(query_str)
 
             try:
                 result = await cls._execute_request(query_str)
+                print("Result:")
+                print("SUCCESS")
+                print("--------------------------------")
                 return result
             except AddressNotFoundError as e:
+                print("Result:")
+                print("FAILED")
+                print("--------------------------------")
                 logger.warning(f"Address not found during {name}: {str(e)}")
                 last_error = e
-            except GeocodingError as e:
+            except Exception as e:
+                print("Result:")
+                print("FAILED")
+                print("--------------------------------")
                 logger.error(f"Geocoding service error during {name}: {str(e)}")
                 last_error = e
 

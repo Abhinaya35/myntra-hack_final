@@ -518,6 +518,137 @@ def generate_products():
             # Dynamic fields
             p["store_name"] = store["name"]
             p["store_city"] = store["city"]
+
+            # Predefined GI craft & origin mapping
+            text = f"{p['name']} {p['category']} {p.get('sub_category', '')}".lower()
+            gi_mapping = {
+                "dharmavaram": "Dharmavaram",
+                "kanchipuram": "Kanchipuram",
+                "kanjivaram": "Kanchipuram",
+                "banarasi": "Banarasi",
+                "banaras": "Banarasi",
+                "chanderi": "Chanderi",
+                "pochampally": "Pochampally",
+                "mangalagiri": "Mangalagiri",
+                "venkatagiri": "Venkatagiri",
+                "kota doria": "Kota Doria",
+                "maheshwari": "Maheshwari",
+                "paithani": "Paithani"
+            }
+            other_origins = {
+                "lucknow": "Lucknow",
+                "chikankari": "Lucknow",
+                "jaipuri": "Jaipur",
+                "jaipur": "Jaipur",
+                "jamdani": "Uppada",
+                "uppada": "Uppada",
+                "gadwal": "Gadwal",
+                "patola": "Patan",
+                "kasavu": "Kerala",
+                "kerala": "Kerala"
+            }
+
+            origin_val = None
+            is_gi = False
+            for key, val in gi_mapping.items():
+                if key in text:
+                    origin_val = val
+                    is_gi = True
+                    break
+            if not origin_val:
+                for key, val in other_origins.items():
+                    if key in text:
+                        origin_val = val
+                        break
+            if not origin_val:
+                origin_val = store.get("city", "India")
+
+            p["origin"] = origin_val
+            p["is_gi_certified"] = is_gi
+
+            # Convert sizes list of strings to list of dicts
+            formatted_sizes = []
+            for sz in p.get("sizes", []):
+                if isinstance(sz, str):
+                    formatted_sizes.append({"size": sz, "in_stock": True})
+                else:
+                    formatted_sizes.append(sz)
+            p["sizes"] = formatted_sizes
+
+            # Convert colors list of strings to list of dicts
+            formatted_colors = []
+            color_hex_map = {
+                "Vermilion Red": "#E34234",
+                "Peacock Blue": "#008080",
+                "Peacock Blue - v1": "#008080",
+                "Fuschia Pink": "#FF007F",
+                "Royal Violet": "#7851A9",
+                "Mint Green": "#98FF98",
+                "Sun Yellow": "#FFD700",
+                "Crimson Maroon": "#800000",
+                "Wine Plum": "#5C246E",
+                "Peach Cream": "#FFDAB9",
+                "Lavender Frost": "#E6E6FA",
+                "Teal Blue": "#008080",
+                "Rust Orange": "#C95A49",
+                "Indigo Blue": "#4B0082",
+                "Charcoal Black": "#36454F",
+                "Mustard Yellow": "#FFDB58",
+                "Emerald Green": "#50C878",
+                "Ruby Red": "#E0115F",
+                "Deep Turquoise": "#00CED1",
+                "Classic White": "#FFFFFF",
+                "Sky Blue": "#87CEEB",
+                "Olive Green": "#808000",
+                "Pink Pearl": "#E7ACCF",
+                "Corporate Blue": "#4E73DF",
+                "Navy Blue": "#000080",
+                "Crimson Red": "#DC143C",
+                "Jet Black": "#0A0A0A",
+                "Acid Wash Grey": "#808080",
+                "Off White": "#FAF9F6",
+                "Dark Indigo": "#0F2027",
+                "Light Blue Wash": "#ADD8E6",
+                "Raw Indigo Black": "#1A252C",
+                "Cream Ivory": "#FFFDD0",
+                "Royal Beige": "#F5F5DC",
+                "Deep Royal Blue": "#0020C2",
+                "Crimson Burgundy": "#800020",
+                "Marigold Yellow": "#EAA221",
+                "Coral Pink": "#F88379",
+                "Golden Fawn": "#E5A93B",
+                "Turquoise Aqua": "#00F5FF",
+                "Bright Maroon": "#C32148",
+                "Peacock Green": "#00A86B",
+                "Tan Brown": "#D2B48C",
+                "Chestnut Black": "#4A3B32",
+                "Champagne Gold": "#F7E7CE",
+                "Metallic Pink": "#FDA4AF",
+                "Sandy Tan": "#F4A460",
+                "Classic Charcoal": "#36454F",
+                "Caramel Brown": "#AFD275",
+                "Classic Ebony Black": "#101010",
+                "Royal Scarlet Red": "#FF2400",
+                "Indigo Blue Print": "#4B0082",
+                "Fierce Pink Print": "#FF69B4",
+                "Mint Aqua": "#A7F3D0",
+                "Baby Pink": "#FBCFE8",
+                "Golden Champagne": "#FDE68A",
+                "Deep Wine Rose": "#BE185D",
+                "Cream Gold White": "#FFFDF0"
+            }
+
+            for col in p.get("colors", []):
+                if isinstance(col, str):
+                    h = color_hex_map.get(col, "#7F7F7F")
+                    formatted_colors.append({
+                        "name": col,
+                        "hex": h,
+                        "thumbnail": p.get("thumbnail") or "https://example.com/images/default.png"
+                    })
+                else:
+                    formatted_colors.append(col)
+            p["colors"] = formatted_colors
             
             # Calculate discount
             pct = 0.0

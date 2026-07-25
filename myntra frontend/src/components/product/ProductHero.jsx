@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Sparkles, Award, Bookmark, ShoppingBag, ArrowRight, Star, Check } from 'lucide-react';
+import { ShieldCheck, Sparkles, Award, Heart, ShoppingBag, ArrowRight, ArrowLeft, Star, Check } from 'lucide-react';
 import { useShortlist } from '../../hooks/useShortlist';
 import { getStoreDetailsPath } from '../../constants/routes';
 import { cn } from '../../utils/cn';
@@ -31,12 +31,21 @@ export const ProductHero = ({
     setTimeout(() => setAddedToBag(false), 2000);
   };
 
+  const goPrev = () => {
+    setActiveImageIndex((i) => (i - 1 + images.length) % images.length);
+  };
+
+  const goNext = () => {
+    setActiveImageIndex((i) => (i + 1) % images.length);
+  };
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-      
+
       {/* LEFT COLUMN (60%): Immersive Image Showcase & Gallery */}
       <div className="lg:col-span-7 space-y-4">
         <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[620px] rounded-3xl overflow-hidden bg-slate-950 border border-border/80 shadow-card group">
+          {/* Main Image */}
           <motion.img
             key={activeImageIndex}
             src={images[activeImageIndex] || product.image}
@@ -47,55 +56,48 @@ export const ProductHero = ({
             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
 
-          {/* Regional Badge Overlay */}
-          {product.trustBadges?.[0] && (
-            <div className="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold text-primary shadow-subtle flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-              <span>{product.trustBadges[0].label}</span>
-            </div>
+          {/* Navigation Arrows */}
+          {images.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={goPrev}
+                className="absolute inset-y-0 left-0 flex items-center justify-center w-12 text-white hover:bg-black/30 transition"
+                aria-label="Previous image"
+              >
+                <ArrowLeft className="w-6 h-6" />
+              </button>
+              <button
+                type="button"
+                onClick={goNext}
+                className="absolute inset-y-0 right-0 flex items-center justify-center w-12 text-white hover:bg-black/30 transition"
+                aria-label="Next image"
+              >
+                <ArrowRight className="w-6 h-6" />
+              </button>
+            </>
           )}
 
           {/* Wishlist Button Overlay */}
           <button
             type="button"
             onClick={() => toggleSaveProduct(product)}
-            className={cn(
-              "absolute top-4 right-4 p-3 rounded-full backdrop-blur-md transition-all shadow-subtle z-10 cursor-pointer",
-              saved
-                ? "bg-primary text-white"
-                : "bg-surface/80 text-text-primary hover:bg-surface border border-border/60"
-            )}
-            aria-label="Bookmark item"
+            className="absolute top-4 right-4 p-3 rounded-full bg-white/95 backdrop-blur-sm border border-border/40 hover:bg-white transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-subtle z-10 cursor-pointer text-text-primary"
+            aria-label="Wishlist"
           >
-            <Bookmark className={cn("w-5 h-5", saved && "fill-current")} />
+            <Heart
+              className={cn(
+                "w-5 h-5 transition-all duration-300 active:scale-125",
+                saved ? "fill-primary text-primary" : "text-text-muted hover:text-primary"
+              )}
+            />
           </button>
         </div>
-
-        {/* Thumbnail Switcher (Product Gallery) */}
-        {images.length > 1 && (
-          <div className="flex items-center gap-3 pt-1 overflow-x-auto custom-scrollbar no-scrollbar">
-            {images.map((img, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => setActiveImageIndex(idx)}
-                className={cn(
-                  "relative w-20 h-24 rounded-xl overflow-hidden border-2 transition-all shrink-0 cursor-pointer",
-                  activeImageIndex === idx
-                    ? "border-primary ring-2 ring-primary/20 scale-102"
-                    : "border-border/80 opacity-70 hover:opacity-100"
-                )}
-              >
-                <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* RIGHT COLUMN (40%): Purchase, Ratings & Variants Panel */}
       <div className="lg:col-span-5 space-y-6 bg-surface/80 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-border/80 shadow-card">
-        
+
         {/* Store Header & Category Tag */}
         <div className="space-y-2 pb-4 border-b border-border/60">
           <div className="flex items-center justify-between">
@@ -103,13 +105,9 @@ export const ProductHero = ({
               to={getStoreDetailsPath(store.id || 'dest-1')}
               className="text-xs font-bold text-primary hover:underline underline-offset-4 flex items-center gap-1"
             >
-              <span>{store.name || 'Regional Retailer'}</span>
+              <span>{store.name || ''}</span>
               <span className="text-text-muted font-normal">• {store.hubName || store.city}</span>
             </Link>
-
-            <span className="px-2.5 py-0.5 rounded-full bg-accent/15 border border-accent/30 text-[10px] font-semibold text-amber-800">
-              {product.category || 'Regional Wear'}
-            </span>
           </div>
 
           {/* Product Title */}
@@ -147,7 +145,7 @@ export const ProductHero = ({
 
           <p className="text-xs font-medium text-emerald-700 flex items-center gap-1.5 pt-1">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>{product.availability || 'In Stock • Handcrafted & Ready to Ship'}</span>
+            <span>{product.availability || ''}</span>
           </p>
         </div>
 
@@ -219,17 +217,21 @@ export const ProductHero = ({
           </div>
         )}
 
-        {/* Small Trust Badges */}
-        <div className="flex flex-wrap items-center gap-2 pt-1">
-          <span className="px-3 py-1 rounded-full bg-background border border-border/80 text-xs font-medium text-text-primary flex items-center gap-1.5">
-            <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-            <span>GI Certified Craft</span>
-          </span>
-          <span className="px-3 py-1 rounded-full bg-background border border-border/80 text-xs font-medium text-text-primary flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-primary" />
-            <span>100% Handwoven</span>
-          </span>
-        </div>
+        {/* Authenticity Trust Row */}
+        {(product.giCertified || product.origin) && (
+          <div className="flex flex-wrap items-center gap-2.5 pt-2 pb-1">
+            {product.giCertified && (
+              <span className="inline-flex items-center h-8 px-4 rounded-full bg-slate-50 border border-border/80 text-xs font-medium text-text-primary gap-1">
+                <span className="text-emerald-600 font-bold">✓</span> GI Certified Craft
+              </span>
+            )}
+            {product.origin && (
+              <span className="inline-flex items-center h-8 px-4 rounded-full bg-slate-50 border border-border/80 text-xs font-medium text-text-primary">
+                {product.origin}
+              </span>
+            )}
+          </div>
+        )}
 
         {/* Action CTAs */}
         <div className="space-y-3 pt-2">
@@ -252,7 +254,6 @@ export const ProductHero = ({
         </div>
 
       </div>
-
     </div>
   );
 };

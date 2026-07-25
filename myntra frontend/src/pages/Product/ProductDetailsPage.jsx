@@ -7,14 +7,13 @@ import PageContainer from '../../components/layout/PageContainer';
 import ProductBreadcrumb from '../../components/product/ProductBreadcrumb';
 import ProductHero from '../../components/product/ProductHero';
 import ProductDescriptionSection from '../../components/product/ProductDescriptionSection';
-import ProductStory from '../../components/product/ProductStory';
 import MeetTheStore from '../../components/product/MeetTheStore';
 import Specifications from '../../components/product/Specifications';
 import RatingDistribution from '../../components/product/RatingDistribution';
-import HeritagePromise from '../../components/product/HeritagePromise';
-import StickyPurchaseBar from '../../components/product/StickyPurchaseBar';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ErrorState from '../../components/common/ErrorState';
+import ProductCard from '../../components/cards/ProductCard';
+import { useSimilarProducts } from '../../hooks/useSimilarProducts';
 
 // Service & Fallback Imports
 import productService from '../../services/productService';
@@ -34,6 +33,8 @@ export const ProductDetailsPage = () => {
 
   const [selectedColor, setSelectedColor] = useState('Default');
   const [selectedSize, setSelectedSize] = useState('FS');
+  // Fetch similar products
+  const { data: similarProducts, loading: similarLoading, error: similarError } = useSimilarProducts(productId);
 
   // Scroll to top on product change
   useEffect(() => {
@@ -84,12 +85,12 @@ export const ProductDetailsPage = () => {
         isAvailable: prod.is_available ?? true,
         availability: prod.is_available ? 'In Stock • Handcrafted & Ready to Ship' : 'Out of Stock',
         stockQuantity: prod.stock_quantity,
-        
+
         // Pricing
         price: `₹${mainPrice.toLocaleString('en-IN')}`,
         originalPrice: origPrice ? `₹${origPrice.toLocaleString('en-IN')}` : null,
         discount: discPct,
-        
+
         // Visual Assets (Gallery)
         image: prod.thumbnail || prod.image || 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1200',
         images: prod.images && prod.images.length > 0 ? prod.images : [prod.thumbnail || 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1200'],
@@ -102,11 +103,11 @@ export const ProductDetailsPage = () => {
         // Store Information
         store: {
           id: store.id || prod.store_id,
-          name: store.name || 'Regional Boutique Store',
-          city: store.city || 'Hyderabad',
-          state: store.state || 'Telangana',
-          hubName: store.shopping_hub || store.city || 'Hyderabad',
-          badgeText: store.is_verified ? 'Verified Regional Icon' : 'Regional Retailer',
+          name: store.name || '',
+          city: store.city || '',
+          state: store.state || '',
+          hubName: store.shopping_hub || store.city || '',
+          badgeText: store.is_verified ? 'Verified Regional Store' : 'Regional Retailer',
           trustedSince: store.years_in_business ? `${new Date().getFullYear() - store.years_in_business}` : '1968',
           logo: store.logo_image || 'https://dummyimage.com/150x150/000/fff&text=Store',
           address: store.address || `${store.city}, ${store.state}`,
@@ -124,10 +125,8 @@ export const ProductDetailsPage = () => {
           title: `Artisanal Creation of ${prod.name}`,
           content: prod.description || `Exquisite master-woven drape representing timeless craftsmanship.`,
         },
-        trustBadges: [
-          { label: 'GI Certified Craft' },
-          { label: 'Verified Authentic Silk' },
-        ],
+        giCertified: !!prod.is_gi_certified,
+        origin: prod.origin || null,
       };
 
       setProductData(formattedProduct);
@@ -173,7 +172,7 @@ export const ProductDetailsPage = () => {
   return (
     <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-24 md:pb-28">
       <div className="space-y-16 sm:space-y-20 md:space-y-24">
-        
+
         {/* 1. Breadcrumb & 2. Product Hero (Gallery, Pricing, Colors, Sizes, Ratings Summary) */}
         <div className="space-y-6">
           <ProductBreadcrumb product={productData} />
@@ -244,35 +243,37 @@ export const ProductDetailsPage = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
             <MeetTheStore store={productData.store} />
+            {/* Similar Products Section */}
+            {productData && similarProducts?.length > 0 && (
+              <div className="mt-12">
+                <div className="flex flex-col pb-2 border-b border-border/40 mb-6">
+                  <h3 className="font-editorial text-2xl font-bold text-text-primary">
+                    Similar Regional Picks
+                  </h3>
+                  <p className="mt-2 text-sm text-text-muted max-w-2xl">
+                    Handpicked alternatives from verified regional retailers.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                  {similarLoading && Array.from({ length: 4 }).map((_, i) => (
+                    <div key={i} className="animate-pulse bg-white border border-gray-200 rounded-[10px] overflow-hidden p-3 flex flex-col space-y-3">
+                      <div className="aspect-[3/4] w-full bg-slate-100 rounded" />
+                      <div className="h-3 bg-slate-100 rounded w-1/3" />
+                      <div className="h-4 bg-slate-100 rounded w-3/4" />
+                      <div className="h-4 bg-slate-100 rounded w-1/2" />
+                    </div>
+                  ))}
+                  {!similarLoading && similarProducts.map(p => (
+                    <ProductCard key={p.id || p._id} product={p} />
+                  ))}
+                </div>
+              </div>
+            )}
           </motion.section>
         )}
-
-        {/* 7. Product Story */}
-        {productData.story && (
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
-            <ProductStory story={productData.story} />
-          </motion.section>
-        )}
-
-        {/* 8. Heritage Promise */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <HeritagePromise />
-        </motion.section>
 
       </div>
 
-      {/* Sticky Purchase Bar */}
-      <StickyPurchaseBar product={productData} selectedSize={selectedSize} />
     </PageContainer>
   );
 };

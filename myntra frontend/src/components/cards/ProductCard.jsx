@@ -1,135 +1,128 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Bookmark, Sparkles, ShoppingBag, MapPin } from 'lucide-react';
-import Badge from '../common/Badge';
-import { getProductDetailsPath, getStoreDetailsPath } from '../../constants/routes';
-import { formatCurrency } from '../../utils/formatters';
-import { useShortlist } from '../../hooks/useShortlist';
+import { Heart } from 'lucide-react';
+import { getProductDetailsPath } from '../../constants/routes';
 import { cn } from '../../utils/cn';
+import { useShortlist } from '../../hooks/useShortlist';
 
 /**
- * Reusable ProductCard component for authentic regional collections
+ * Reusable ProductCard component for authentic regional collections.
+ * Standardizes styling across "Signature Products" and "You May Also Like" layouts.
  */
 export const ProductCard = ({
   product = {},
   className = '',
 }) => {
   const { isProductSaved, toggleSaveProduct } = useShortlist();
-  const saved = isProductSaved(product.id);
 
-  const {
-    id,
-    title = 'Authentic Craft Product',
-    craftName = 'Bandhani / Chanderi',
-    region = 'Rajasthan',
-    price = 4500,
-    storeId,
-    storeName = 'Heritage Textiles',
-    image,
-    availableOffline = true,
-    availableOnline = true,
-  } = product;
+  // Extract with support for both snake_case and camelCase keys
+  const productId = product.id || product._id;
+  const productTitle = product.name || product.title || 'Authentic Craft Product';
+  const displayStoreName = product.store_name || product.brand || product.storeName || '';
+  const displayPriceValue = product.discount_price ?? product.price ?? 0;
+  const displayOriginalPrice = product.original_price ?? product.originalPrice ?? (product.discount_price ? product.price : null);
+  const displayDiscountPct = product.discount_percentage ?? product.discountPercentage ?? null;
+  const displayRating = product.rating || 4.5;
+  const displayReviewCount = product.review_count ?? product.reviewCount ?? 120;
+  const displayImage = product.thumbnail || product.image || '';
+
+  const saved = isProductSaved(productId);
+
+  const toggleWishlist = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleSaveProduct({
+      id: productId,
+      title: productTitle,
+      price: displayPriceValue,
+      image: displayImage,
+      storeName: displayStoreName,
+    });
+  };
+
+  const formatPrice = (val) => {
+    if (val === null || val === undefined) return '';
+    if (typeof val === 'number') {
+      return `₹${val.toLocaleString('en-IN')}`;
+    }
+    const str = String(val);
+    return str.startsWith('₹') ? str : `₹${str}`;
+  };
 
   return (
-    <div
+    <Link
+      to={getProductDetailsPath(productId)}
       className={cn(
-        "group relative bg-surface border border-border/80 rounded-3xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300 flex flex-col",
+        "group relative bg-white border border-gray-200 rounded-[10px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full",
         className
       )}
     >
-      {/* Product Image */}
-      <div className="relative h-64 w-full bg-slate-100 overflow-hidden">
-        {image ? (
+      {/* Image Container */}
+      <div className="relative aspect-[3/4] w-full overflow-hidden bg-slate-50">
+        {displayImage ? (
           <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src={displayImage}
+            alt={productTitle}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
+            loading="lazy"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-rose-50/40 via-amber-50/40 to-slate-100 flex items-center justify-center">
-            <span className="font-editorial text-xl italic text-text-muted/60">
+            <span className="font-editorial text-sm italic text-text-muted/60">
               Regional Craft
             </span>
           </div>
         )}
 
-        {/* Top Badges */}
-        <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-          <Badge variant="regional" icon={Sparkles} className="shadow-sm">
-            {craftName}
-          </Badge>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              toggleSaveProduct(product);
-            }}
+        {/* Wishlist Heart Icon */}
+        <button
+          type="button"
+          onClick={toggleWishlist}
+          className="absolute top-2.5 right-2.5 p-1.5 rounded-full bg-white/95 backdrop-blur-sm border border-border/40 hover:bg-white transition-all duration-300 transform hover:scale-110 active:scale-90 shadow-sm cursor-pointer z-10"
+          aria-label="Wishlist"
+        >
+          <Heart
             className={cn(
-              "pointer-events-auto p-2 rounded-xl backdrop-blur-md transition-colors shadow-sm",
-              saved
-                ? "bg-primary text-white"
-                : "bg-surface/80 text-text-primary hover:bg-surface"
+              "w-4 h-4 transition-all duration-300 active:scale-125",
+              saved ? "fill-primary text-primary" : "text-text-muted hover:text-primary"
             )}
-            aria-label="Save Item"
-          >
-            <Bookmark className="w-4 h-4" />
-          </button>
-        </div>
+          />
+        </button>
 
-        {/* Availability tags */}
-        <div className="absolute bottom-3 left-3 flex items-center gap-1.5">
-          {availableOffline && (
-            <span className="bg-surface/90 backdrop-blur-md px-2.5 py-0.5 rounded-full text-[10px] font-semibold text-text-primary flex items-center gap-1 shadow-sm">
-              <MapPin className="w-3 h-3 text-primary" />
-              In-Store Visit
-            </span>
-          )}
-          {availableOnline && (
-            <span className="bg-surface/90 backdrop-blur-md px-2.5 py-0.5 rounded-full text-[10px] font-semibold text-text-primary flex items-center gap-1 shadow-sm">
-              <ShoppingBag className="w-3 h-3 text-secondary" />
-              Buy Online
-            </span>
-          )}
+        {/* Rating Badge Overlay */}
+        <div className="absolute bottom-2 left-2 bg-white/90 text-[10px] sm:text-xs font-semibold text-black rounded px-2 py-0.5 flex items-center space-x-1 shadow-sm">
+          <span>{displayRating} | {displayReviewCount}</span>
         </div>
       </div>
 
-      {/* Content */}
-      <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
-        <div>
-          {/* Store & Region */}
-          <div className="flex items-center justify-between text-xs text-text-muted mb-1">
-            <Link
-              to={getStoreDetailsPath(storeId || '1')}
-              className="hover:text-primary transition-colors truncate font-medium"
-            >
-              {storeName}
-            </Link>
-            <span className="shrink-0">{region}</span>
-          </div>
-
-          {/* Product Title */}
-          <Link to={getProductDetailsPath(id)}>
-            <h3 className="font-editorial text-lg font-bold text-text-primary group-hover:text-primary transition-colors line-clamp-1">
-              {title}
-            </h3>
-          </Link>
-        </div>
-
-        {/* Price & Action */}
-        <div className="pt-2 border-t border-border/60 flex items-center justify-between">
-          <span className="text-base font-bold text-text-primary">
-            {formatCurrency(price)}
+      {/* Details */}
+      <div className="p-3 flex flex-col space-y-1">
+        {/* Store Name */}
+        {displayStoreName && (
+          <p className="text-xs text-text-muted font-bold tracking-tight">{displayStoreName}</p>
+        )}
+        {/* Product Title */}
+        <h4 className="text-xs sm:text-sm font-medium text-text-primary line-clamp-1 leading-snug">
+          {productTitle}
+        </h4>
+        {/* Price Section */}
+        <div className="flex items-baseline gap-2">
+          <span className="text-sm font-bold text-text-primary">
+            {formatPrice(displayPriceValue)}
           </span>
-          <Link
-            to={getProductDetailsPath(id)}
-            className="text-xs font-semibold text-primary hover:underline"
-          >
-            View Details →
-          </Link>
+          {displayOriginalPrice && (
+            <span className="text-xs text-text-muted line-through font-normal">
+              {formatPrice(displayOriginalPrice)}
+            </span>
+          )}
+          {displayDiscountPct && (
+            <span className="text-[10px] sm:text-xs text-primary font-semibold">
+              {Math.round(displayDiscountPct)}% OFF
+            </span>
+          )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

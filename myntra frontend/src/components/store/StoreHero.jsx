@@ -1,18 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ShieldCheck, MapPin, Bookmark, Navigation, Calendar, Sparkles, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Sparkles, Bookmark } from 'lucide-react';
 import { useShortlist } from '../../hooks/useShortlist';
-import { getHubDetailsPath } from '../../constants/routes';
 import { cn } from '../../utils/cn';
 
 /**
- * Section 1: StoreHero Component (Polished)
- * Hero with interactive Shopping Hub card, store badges, and smooth action triggers.
+ * StoreHero - Branded regional storefront Hero banner.
+ * All brand story indicators (badge, save bookmark, name, description,
+ * specialties chips) are positioned left-aligned on the banner overlay.
  */
 export const StoreHero = ({ store }) => {
   const { isStoreSaved, toggleSaveStore } = useShortlist();
   const saved = isStoreSaved(store.id);
+
+  // Calculate serving legacy year using 2026 as standard reference
+  const estYear = store.yearsInBusiness ? 2026 - store.yearsInBusiness : 1994;
 
   const scrollToCollections = () => {
     const section = document.getElementById('featured-collections');
@@ -21,124 +22,79 @@ export const StoreHero = ({ store }) => {
     }
   };
 
-  const hubPath = getHubDetailsPath(store.hubId || 'hub-1');
-
   return (
-    <div className="relative w-full rounded-3xl overflow-hidden shadow-elevated border border-border/80 bg-surface">
-      {/* 1. Immersive Hero Banner */}
-      <div className="relative h-72 sm:h-96 md:h-[440px] w-full overflow-hidden bg-slate-950 group">
-        <img
-          src={store.heroBanner}
-          alt={store.name}
-          className="w-full h-full object-cover opacity-85 scale-100 group-hover:scale-105 transition-transform duration-1000 ease-out"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+    <div className="relative h-[500px] sm:h-[540px] md:h-[600px] w-full overflow-hidden rounded-3xl bg-slate-950 shadow-elevated border border-border/80">
+      {/* Background Banner Image — only rendered when a URL is available */}
+      {store.heroBanner ? (
+        <img src={store.heroBanner} alt={store.name} className="w-full h-full object-cover opacity-75" />
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+      )}
+      {/* Black-to-transparent gradient overlay on the lower portion */}
+      <div className="absolute inset-x-0 bottom-0 h-[65%] bg-gradient-to-t from-black/95 via-black/50 to-transparent" />
 
-        {/* Top Floating Badges */}
-        <div className="absolute top-4 left-4 right-4 sm:top-6 sm:left-6 sm:right-6 flex items-center justify-between pointer-events-none">
-          <div className="flex items-center gap-2 pointer-events-auto">
-            {store.isVerified && (
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface/90 backdrop-blur-md border border-border/80 text-xs font-semibold text-primary shadow-subtle animate-pulse">
-                <ShieldCheck className="w-4 h-4 text-primary" />
-                <span>{store.badgeText || 'Verified Regional Icon'}</span>
-              </span>
-            )}
-          </div>
 
-          <button
-            type="button"
-            onClick={() => toggleSaveStore(store)}
-            className={cn(
-              "pointer-events-auto px-4 py-2 rounded-full backdrop-blur-md transition-all shadow-subtle flex items-center gap-2 text-xs font-semibold cursor-pointer",
-              saved
-                ? "bg-primary text-white"
-                : "bg-surface/90 text-text-primary hover:bg-surface border border-border/80"
-            )}
-            aria-label="Save Store"
-          >
-            <Bookmark className={cn("w-4 h-4", saved && "fill-current")} />
-            <span className="hidden sm:inline">{saved ? 'Saved' : 'Save Store'}</span>
-          </button>
+      {/* Top Banner Row: Left Badge, Right Save Button */}
+      {store.isVerified && (
+        <div className="absolute top-6 left-6">
+          <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-black/45 backdrop-blur-md border border-white/10 text-xs font-semibold text-white tracking-wide shadow-md">
+            <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            <span>✓ Verified Regional Store</span>
+          </span>
         </div>
+      )}
+
+      {/* Save Bookmark Button */}
+      <div className="absolute top-6 right-6">
+        <button
+          type="button"
+          onClick={() => toggleSaveStore(store)}
+          className={cn(
+            "px-4 py-2.5 rounded-full backdrop-blur-md transition-all shadow-subtle flex items-center gap-2 text-xs font-semibold cursor-pointer border",
+            saved ? "bg-primary text-white border-primary" : "bg-black/45 text-white border-white/10 hover:bg-black/60"
+          )}
+          aria-label="Save Store"
+        >
+          <Bookmark className={cn('w-4 h-4', saved && 'fill-current')} />
+          <span>{saved ? 'Saved' : 'Save Store'}</span>
+        </button>
       </div>
 
-      {/* 2. Hero Details Block */}
-      <div className="relative p-6 sm:p-8 md:p-10 -mt-20 sm:-mt-24 z-10">
-        <div className="bg-surface/95 backdrop-blur-xl border border-border/80 rounded-3xl p-6 sm:p-8 md:p-10 shadow-card space-y-6">
-          
-          {/* 1. Clickable Premium Shopping Hub Experience */}
-          <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-border/60">
-            <Link
-              to={hubPath}
-              className="group/hub inline-flex items-center gap-3 p-2.5 px-4 rounded-2xl bg-background border border-border/80 hover:border-primary/40 hover:bg-surface transition-all duration-300 shadow-subtle hover:shadow-card cursor-pointer"
-            >
-              <div className="p-2 rounded-xl bg-primary/10 text-primary group-hover/hub:bg-primary group-hover/hub:text-white transition-colors">
-                <MapPin className="w-4 h-4" />
-              </div>
+      {/* Hero Content overlay */}
+      <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-10 md:p-12 text-white flex flex-col items-start text-left space-y-4">
+        {/* Location & Serving Since */}
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs sm:text-sm font-semibold tracking-wide text-white/90">
+          <span>📍 {store.city} • {store.state}</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-white/30" />
+          <span>Serving Since {estYear}</span>
+        </div>
 
-              <div className="text-left">
-                <p className="text-[11px] font-semibold text-text-muted uppercase tracking-wider">
-                  Shopping Hub
-                </p>
-                <p className="text-sm font-bold text-text-primary group-hover/hub:text-primary transition-colors flex items-center gap-1.5">
-                  <span>📍 {store.hubName}</span>
-                  <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover/hub:opacity-100 group-hover/hub:translate-x-1 transition-all" />
-                </p>
-              </div>
-            </Link>
+        {/* Store Name */}
+        <h1 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight max-w-4xl drop-shadow-md">
+          {store.name}
+        </h1>
 
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/15 border border-accent/30 text-xs font-semibold text-amber-800">
-              <Calendar className="w-3.5 h-3.5 text-accent" />
-              <span>Trusted Since {store.trustedSince || '1968'}</span>
+        {/* Famous For (Specialties) */}
+        {store.specialties && store.specialties.length > 0 && (
+          <div className="space-y-1.5 w-full pt-1">
+            <p className="text-xs font-bold text-white/70 uppercase tracking-widest">Famous For</p>
+            <div className="flex flex-wrap gap-2 text-xs">
+              {store.specialties.map((specialty, idx) => (
+                <span
+                  key={idx}
+                  className="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white font-semibold border border-white/10 shadow-sm transition-transform hover:-translate-y-0.5"
+                >
+                  {specialty}
+                </span>
+              ))}
             </div>
           </div>
+        )}
 
-          {/* Store Name & Tagline */}
-          <div className="space-y-3">
-            <h1 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary tracking-tight leading-tight">
-              {store.name}
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg text-text-muted max-w-3xl font-normal leading-relaxed">
-              {store.tagline}
-            </p>
-          </div>
-
-          {/* Action CTAs Row */}
-          <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
-            <Link
-              to={`/collections/${store.id}`}
-              className="px-6 py-3.5 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-hover shadow-subtle hover:shadow-elevated transition-all duration-200 flex items-center gap-2 group cursor-pointer"
-            >
-              <Sparkles className="w-4 h-4" />
-              <span>Explore Collections</span>
-            </Link>
-
-            <button
-              type="button"
-              onClick={() => toggleSaveStore(store)}
-              className={cn(
-                "px-5 py-3.5 rounded-xl border text-sm font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer",
-                saved
-                  ? "bg-primary/10 border-primary/30 text-primary"
-                  : "bg-surface border-border/80 text-text-primary hover:bg-background"
-              )}
-            >
-              <Bookmark className={cn("w-4 h-4", saved && "fill-current text-primary")} />
-              <span>{saved ? 'Saved in Shortlist' : 'Save Store'}</span>
-            </button>
-
-            <a
-              href={`https://maps.google.com/?q=${encodeURIComponent(store.name + ' ' + (store.location?.address || store.city))}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-3.5 rounded-xl bg-background border border-border/60 text-text-muted hover:text-text-primary text-xs sm:text-sm font-medium transition-colors flex items-center gap-1.5 ml-auto"
-            >
-              <Navigation className="w-4 h-4 text-primary" />
-              <span>Get Directions</span>
-            </a>
-          </div>
-
-        </div>
+        {/* Description */}
+        <p className="text-sm sm:text-base text-white/80 max-w-2xl font-light leading-relaxed line-clamp-2">
+          {store.description || store.tagline}
+        </p>
       </div>
     </div>
   );

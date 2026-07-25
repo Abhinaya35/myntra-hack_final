@@ -31,6 +31,17 @@ export const storeService = {
   },
 
   /**
+   * Fetch single store profile by name (and optional city).
+   * GET /stores/by-name?name=...&city=...
+   * Used when the frontend has a store name but no ObjectId.
+   * @param {string} name - Store name (exact, case-insensitive on the backend)
+   * @param {string} [city] - Optional city to narrow results
+   */
+  getStoreByName: async (name, city) => {
+    return await apiClient.get(API_ENDPOINTS.STORE_BY_NAME(name, city));
+  },
+
+  /**
    * Search stores by query string
    * GET /stores/search?query=...
    */

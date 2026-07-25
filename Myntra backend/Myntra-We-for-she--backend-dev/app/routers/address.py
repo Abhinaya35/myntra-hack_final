@@ -2,7 +2,7 @@ from datetime import datetime
 import logging
 import re
 from typing import List, Dict, Any, Optional
-from fastapi import APIRouter, HTTPException, status, Depends
+from fastapi import APIRouter, HTTPException, status, Depends, Request
 from pymongo.errors import DuplicateKeyError
 from bson import ObjectId
 
@@ -45,7 +45,7 @@ def generate_normalized_key(
     return "|".join(cleaned)
 
 def construct_formatted_address(
-    house_number: str, 
+    houseNumber: str, 
     street: str, 
     landmark: str, 
     city: str, 
@@ -57,7 +57,7 @@ def construct_formatted_address(
     Constructs a clean mailing/delivery address output.
     Filters out empty values and joins with a comma.
     """
-    parts = [house_number, street, landmark, city, state, pincode, country]
+    parts = [houseNumber, street, landmark, city, state, pincode, country]
     filtered = [p.strip() for p in parts if p and p.strip()]
     return ", ".join(filtered)
 
@@ -78,6 +78,8 @@ def get_user_id_query_filter(userId: Any) -> Dict[str, Any]:
             pass
     return {"userId": {"$in": filters}}
 
+from typing import Union
+
 @router.post(
     "/geocode", 
     response_model=AddressResponse, 
@@ -86,199 +88,64 @@ def get_user_id_query_filter(userId: Any) -> Dict[str, Any]:
     description="Resolves address details to coordinates and saves it to MongoDB. (JWT Token Required)"
 )
 async def geocode_address(
-    payload: AddressRequest, 
+    payload: Union[AddressRequest, Dict[str, Any]], 
+    request: Request,
     current_user: dict = Depends(get_current_user)
 ):
     """
-    Geocodes structured delivery addresses.
+    Geocodes structured delivery addresses or raw address string.
     Reuses cached coordinates if a matching normalized location key exists in MongoDB.
     """
-    logger.info("[Address] Saving Address")
+    logger.info("[Address] Geocoding/Saving Address")
     db = get_database()
     user_id_obj = current_user["_id"]
+
+    # Determine if raw string or structured request
+    is_raw = isinstance(payload, dict) and "address" in payload and len(payload) == 1
     
-    # 1. Address key normalization (EXCLUDING house_number to represent locality)
-    normalized_key = generate_normalized_key(
-        street=payload.street,
-        landmark=payload.landmark,
-        city=payload.city,
-        state=payload.state,
-        pincode=payload.pincode,
-        country=payload.country
-    )
-    
-    latitude = None
-    longitude = None
-    display_name = ""
-    cached = False
-    
-    # 2. Caching check: Query by normalizedKey
-    try:
-        cached_record = await db["addresses"].find_one({"normalizedKey": normalized_key})
-        if cached_record:
-            logger.info("[Geocoding] Cache Hit")
-            latitude = cached_record["latitude"]
-            longitude = cached_record["longitude"]
-            display_name = cached_record["display_name"]
-            cached = True
-        else:
-            logger.info("[Geocoding] Cache Miss")
-    except Exception as e:
-        logger.error(f"[Cache] MongoDB cache lookup failed: {str(e)}")
-
-    # 3. Call Geocoding service on Cache Miss
-    if latitude is None or longitude is None:
-        try:
-            resolved = await GeocodingService.geocode(
-                house_number=payload.house_number,
-                street=payload.street,
-                city=payload.city,
-                state=payload.state,
-                pincode=payload.pincode,
-                country=payload.country
-            )
-            latitude = resolved["latitude"]
-            longitude = resolved["longitude"]
-            display_name = resolved["display_name"]
-            cached = False
-        except AddressNotFoundError as e:
-            logger.warning(f"Address not found: {str(e)}")
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=str(e)
-            )
-        except GeocodingRateLimitError as e:
-            logger.error(f"Rate limited: {str(e)}")
-            raise HTTPException(
-                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
-                detail=str(e)
-            )
-        except GeocodingAPIError as e:
-            logger.error(f"API Error during lookup: {str(e)}")
-            error_msg = str(e).lower()
-            if "timeout" in error_msg or "failed to connect" in error_msg:
-                raise HTTPException(
-                    status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-                    detail=str(e)
-                )
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail=str(e)
-            )
-        except Exception as e:
-            logger.error(f"Unexpected error: {str(e)}")
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail=f"Unexpected error: {str(e)}"
-            )
-
-    # 4. Reconstruct clean formatted address
-    formatted = construct_formatted_address(
-        house_number=payload.house_number,
-        street=payload.street,
-        landmark=payload.landmark,
-        city=payload.city,
-        state=payload.state,
-        pincode=payload.pincode,
-        country=payload.country
-    )
-
-    # 5. Handle Default Address uniqueness check (unset other defaults if this is default)
-    if payload.isDefault:
-        user_query = get_user_id_query_filter(user_id_obj)
-        user_query["isDefault"] = True
-        await db["addresses"].update_many(
-            user_query,
-            {"$set": {"isDefault": False, "updatedAt": datetime.utcnow()}}
-        )
-
-    # 6. Save or Persist the address record
-    address_db = AddressDB(
-        user_id=user_id_obj,
-        house_number=payload.house_number,
-        street=payload.street,
-        landmark=payload.landmark,
-        city=payload.city,
-        state=payload.state,
-        pincode=payload.pincode,
-        country=payload.country,
-        formatted_address=formatted,
-        normalized_key=normalized_key,
-        latitude=latitude,
-        longitude=longitude,
-        display_name=display_name,
-        label=payload.label or "Home",
-        is_default=payload.isDefault or False,
-        created_at=datetime.utcnow(),
-        updated_at=datetime.utcnow()
-    )
-
-    doc = address_db.model_dump(by_alias=True, exclude_none=False)
-    if "_id" in doc and doc["_id"] is None:
-        del doc["_id"]
-
-    try:
-        res = await db["addresses"].insert_one(doc)
-        logger.info("[Address] Saved Successfully")
+    if is_raw:
+        raw_address = payload["address"]
+        normalized_key = raw_address.strip().lower()
         
-        saved_id = str(res.inserted_id)
-        return AddressResponse(
-            id=saved_id,
-            userId=str(user_id_obj),
-            label=payload.label or "Home",
-            isDefault=payload.isDefault or False,
-            house_number=payload.house_number,
-            street=payload.street,
-            landmark=payload.landmark,
-            city=payload.city,
-            state=payload.state,
-            pincode=payload.pincode,
-            country=payload.country,
-            formatted_address=formatted,
-            latitude=latitude,
-            longitude=longitude,
-            display_name=display_name,
-            cached=cached,
-            createdAt=address_db.created_at,
-            updatedAt=address_db.updated_at
-        )
-    except DuplicateKeyError:
-        logger.warning("[Database] Address document collision. Retrieving and returning existing record.")
-        try:
-            cached_record = await db["addresses"].find_one({"normalizedKey": normalized_key})
-            if cached_record:
-                return AddressResponse(
-                    id=str(cached_record["_id"]),
-                    userId=str(user_id_obj),
-                    label=payload.label or "Home",
-                    isDefault=payload.isDefault or False,
-                    house_number=payload.house_number,
-                    street=payload.street,
-                    landmark=payload.landmark,
-                    city=payload.city,
-                    state=payload.state,
-                    pincode=payload.pincode,
-                    country=payload.country,
-                    formatted_address=formatted,
-                    latitude=cached_record["latitude"],
-                    longitude=cached_record["longitude"],
-                    display_name=cached_record["display_name"],
-                    cached=True,
-                    createdAt=cached_record.get("createdAt") or datetime.utcnow(),
-                    updatedAt=cached_record.get("updatedAt") or datetime.utcnow()
-                )
-        except Exception as cache_err:
-            logger.error(f"Failed to fetch record after unique write constraint hit: {str(cache_err)}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Database write collision occurred."
-        )
-    except Exception as e:
-        logger.error(f"[Database] Save failed: {str(e)}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Database insertion failed: {str(e)}"
-        )
+        cached_record = await db["geocoding_cache"].find_one({"normalizedKey": normalized_key})
+        if cached_record:
+            logger.info(f"[Geocoding] Cache Hit for raw address: {normalized_key}")
+            latitude, longitude, display_name = cached_record["latitude"], cached_record["longitude"], cached_record["display_name"]
+        else:
+            logger.info(f"[Geocoding] Cache Miss for raw address: {normalized_key}")
+            resolved = await GeocodingService.geocode(street=raw_address)
+            latitude, longitude, display_name = resolved["latitude"], resolved["longitude"], resolved["display_name"]
+            await db["geocoding_cache"].update_one(
+                {"normalizedKey": normalized_key},
+                {"$set": {"latitude": latitude, "longitude": longitude, "display_name": display_name, "updatedAt": datetime.utcnow()}},
+                upsert=True
+            )
+        
+        return AddressResponse(id="", userId=str(user_id_obj), fullName="", phoneNumber="", label="Home", isDefault=False, houseNumber="", street="", landmark="", city="", state="", pincode="", country="", formatted_address=raw_address, display_name=display_name, latitude=latitude, longitude=longitude, cached=True if cached_record else False, createdAt=datetime.utcnow(), updatedAt=datetime.utcnow())
+
+    # Structured Flow
+    addr_req = AddressRequest(**payload) if isinstance(payload, dict) else payload
+    normalized_key = generate_normalized_key(addr_req.street, addr_req.landmark, addr_req.city, addr_req.state, addr_req.pincode, addr_req.country)
+    
+    cached_record = await db["geocoding_cache"].find_one({"normalizedKey": normalized_key})
+    if cached_record:
+        logger.info("[Geocoding] Cache Hit for structured address")
+        latitude, longitude, display_name = cached_record["latitude"], cached_record["longitude"], cached_record["display_name"]
+    else:
+        logger.info("[Geocoding] Cache Miss for structured address")
+        resolved = await GeocodingService.geocode(houseNumber=addr_req.houseNumber, street=addr_req.street, landmark=addr_req.landmark, city=addr_req.city, state=addr_req.state, pincode=addr_req.pincode, country=addr_req.country)
+        latitude, longitude, display_name = resolved["latitude"], resolved["longitude"], resolved["display_name"]
+        await db["geocoding_cache"].update_one({"normalizedKey": normalized_key}, {"$set": {"latitude": latitude, "longitude": longitude, "display_name": display_name, "updatedAt": datetime.utcnow()}}, upsert=True)
+
+    formatted = construct_formatted_address(addr_req.houseNumber, addr_req.street, addr_req.landmark, addr_req.city, addr_req.state, addr_req.pincode, addr_req.country)
+    doc = addr_req.model_dump()
+    doc.update({"userId": str(user_id_obj), "user_id": user_id_obj, "latitude": latitude, "longitude": longitude, "display_name": display_name, "formatted_address": formatted, "normalizedKey": normalized_key, "createdAt": datetime.utcnow(), "updatedAt": datetime.utcnow()})
+    
+    if doc.get("isDefault"):
+        await db["addresses"].update_many({"userId": str(user_id_obj), "isDefault": True}, {"$set": {"isDefault": False}})
+    
+    res = await db["addresses"].insert_one(doc)
+    return AddressResponse(id=str(res.inserted_id), **doc)
 
 @router.post(
     "/reverse-geocode", 
@@ -305,31 +172,7 @@ async def reverse_geocode_address(
         longitude=payload.longitude
     )
     
-    # 2. Caching check: Query by coordinateCacheKey
-    try:
-        cached_record = await db["addresses"].find_one({"coordinateCacheKey": coordinate_cache_key})
-        if cached_record:
-            logger.info("[Reverse Geocoding] Cache Hit")
-            return ReverseGeocodeResponse(
-                house_number=cached_record.get("house_number", ""),
-                street=cached_record.get("street", ""),
-                landmark=cached_record.get("landmark", ""),
-                city=cached_record.get("city", ""),
-                state=cached_record.get("state", ""),
-                pincode=cached_record.get("pincode", ""),
-                country=cached_record.get("country", "India"),
-                formatted_address=cached_record.get("formatted_address", ""),
-                display_name=cached_record.get("display_name", ""),
-                latitude=cached_record.get("latitude"),
-                longitude=cached_record.get("longitude"),
-                cached=True
-            )
-        else:
-            logger.info("[Reverse Geocoding] Cache Miss")
-    except Exception as e:
-        logger.error(f"[Cache] MongoDB cache lookup failed: {str(e)}")
-        
-    # 3. Call Reverse Geocoding service
+    # 2. Call Reverse Geocoding service
     try:
         resolved = await ReverseGeocodingService.reverse_geocode(
             latitude=payload.latitude,
@@ -366,9 +209,9 @@ async def reverse_geocode_address(
             detail=f"Unexpected error: {str(e)}"
         )
 
-    # 4. Reconstruct clean formatted address
+    # 3. Reconstruct clean formatted address
     formatted = construct_formatted_address(
-        house_number=resolved["house_number"],
+        houseNumber=resolved["houseNumber"],
         street=resolved["street"],
         landmark=resolved["landmark"],
         city=resolved["city"],
@@ -377,40 +220,9 @@ async def reverse_geocode_address(
         country=resolved["country"]
     )
 
-    # 5. Persist mapping record (handles DuplicateKeyError race condition)
-    address_db = AddressDB(
-        user_id=user_id_obj,
-        house_number=resolved["house_number"],
-        street=resolved["street"],
-        landmark=resolved["landmark"],
-        city=resolved["city"],
-        state=resolved["state"],
-        pincode=resolved["pincode"],
-        country=resolved["country"],
-        formatted_address=formatted,
-        coordinate_cache_key=coordinate_cache_key,
-        latitude=payload.latitude,
-        longitude=payload.longitude,
-        display_name=resolved["display_name"],
-        created_at=datetime.utcnow(),
-        updated_at=datetime.utcnow()
-    )
-
-    doc = address_db.model_dump(by_alias=True, exclude_none=False)
-    if "_id" in doc and doc["_id"] is None:
-        del doc["_id"]
-
-    try:
-        await db["addresses"].insert_one(doc)
-        logger.info(f"[Database] Reverse Geocode Cached: '{formatted}'")
-    except DuplicateKeyError:
-        logger.warning("[Database] Concurrent reverse geocode. Fetching check...")
-    except Exception as e:
-        logger.error(f"[Database] Database insertion failed: {str(e)}")
-
-    # 6. Return response
+    # 4. Return response without database persistence
     return ReverseGeocodeResponse(
-        house_number=resolved["house_number"],
+        houseNumber=resolved["houseNumber"],
         street=resolved["street"],
         landmark=resolved["landmark"],
         city=resolved["city"],
@@ -423,7 +235,7 @@ async def reverse_geocode_address(
         longitude=payload.longitude,
         cached=False
     )
-
+ 
 @router.get(
     "", 
     response_model=List[AddressResponse], 
@@ -436,6 +248,10 @@ async def get_user_addresses(current_user: dict = Depends(get_current_user)):
     logger.info(f"[Address] Retrieving user addresses for '{user_id_obj}'")
     
     query = get_user_id_query_filter(user_id_obj)
+    query["$or"] = [
+        {"coordinateCacheKey": {"$exists": False}},
+        {"coordinateCacheKey": None}
+    ]
     cursor = db["addresses"].find(query).sort([("isDefault", -1), ("updatedAt", -1)])
     results = await cursor.to_list(length=100)
     
@@ -444,15 +260,17 @@ async def get_user_addresses(current_user: dict = Depends(get_current_user)):
         output.append(AddressResponse(
             id=str(r["_id"]),
             userId=str(r["userId"]) if r.get("userId") else str(user_id_obj),
+            fullName=r.get("fullName") or r.get("fullName", ""),
+            phoneNumber=r.get("phoneNumber") or r.get("phoneNumber", ""),
             label=r.get("label", "Home"),
             isDefault=r.get("isDefault", False),
-            house_number=r.get("house_number", ""),
-            street=r.get("street", ""),
-            landmark=r.get("landmark", ""),
-            city=r.get("city", ""),
-            state=r.get("state", ""),
-            pincode=r.get("pincode", ""),
-            country=r.get("country", "India"),
+            houseNumber=r.get("houseNumber", ""),
+            street=r.get("street") or r.get("street", ""),
+            landmark=r.get("landmark") or r.get("landmark", ""),
+            city=r.get("city") or r.get("city", ""),
+            state=r.get("state") or r.get("state", ""),
+            pincode=r.get("pincode") or r.get("pincode", ""),
+            country=r.get("country") or r.get("country", "India"),
             formatted_address=r.get("formatted_address", ""),
             latitude=r.get("latitude"),
             longitude=r.get("longitude"),
@@ -503,12 +321,13 @@ async def update_address(
         )
         
     # 2. Check if geocoding critical fields changed
-    critical_fields = ["street", "landmark", "city", "state", "pincode", "country"]
+    critical_fields = ["houseNumber", "street", "landmark", "city", "state", "pincode", "country"]
     is_loc_changed = False
     
     for f in critical_fields:
         payload_val = getattr(payload, f)
-        if payload_val is not None and payload_val != addr.get(f, ""):
+        db_val = addr.get(f)
+        if payload_val is not None and payload_val != db_val:
             is_loc_changed = True
             break
             
@@ -518,7 +337,9 @@ async def update_address(
     normalized_key = addr.get("normalizedKey")
     cached = True
     
-    p_house_number = payload.house_number if payload.house_number is not None else addr.get("house_number", "")
+    p_fullName = payload.fullName if payload.fullName is not None else addr.get("fullName", "")
+    p_phoneNumber = payload.phoneNumber if payload.phoneNumber is not None else addr.get("phoneNumber", "")
+    p_houseNumber = payload.houseNumber if payload.houseNumber is not None else addr.get("houseNumber", "")
     p_street = payload.street if payload.street is not None else addr.get("street", "")
     p_landmark = payload.landmark if payload.landmark is not None else addr.get("landmark", "")
     p_city = payload.city if payload.city is not None else addr.get("city", "")
@@ -550,7 +371,7 @@ async def update_address(
                 logger.info("[Geocoding] Cache Miss")
                 # Request geocoding
                 resolved = await GeocodingService.geocode(
-                    house_number=p_house_number,
+                    houseNumber=p_houseNumber,
                     street=p_street,
                     city=p_city,
                     state=p_state,
@@ -568,7 +389,7 @@ async def update_address(
             
     # 4. Generate new formatted address layout
     formatted = construct_formatted_address(
-        house_number=p_house_number,
+        houseNumber=p_houseNumber,
         street=p_street,
         landmark=p_landmark,
         city=p_city,
@@ -590,7 +411,9 @@ async def update_address(
         
     # 5. Apply updates
     updates = {
-        "house_number": p_house_number,
+        "fullName": p_fullName,
+        "phoneNumber": p_phoneNumber,
+        "houseNumber": p_houseNumber,
         "street": p_street,
         "landmark": p_landmark,
         "city": p_city,
@@ -616,9 +439,11 @@ async def update_address(
     return AddressResponse(
         id=addressId,
         userId=str(user_id_obj),
+        fullName=p_fullName,
+        phoneNumber=p_phoneNumber,
         label=updates.get("label", addr.get("label", "Home")),
         isDefault=updates.get("isDefault", addr.get("isDefault", False)),
-        house_number=p_house_number,
+        houseNumber=p_houseNumber,
         street=p_street,
         landmark=p_landmark,
         city=p_city,
@@ -744,15 +569,17 @@ async def set_default_address(
     return AddressResponse(
         id=str(updated_addr["_id"]),
         userId=str(updated_addr["userId"]) if updated_addr.get("userId") else str(user_id_obj),
+        fullName=updated_addr.get("fullName") or updated_addr.get("fullName", ""),
+        phoneNumber=updated_addr.get("phoneNumber") or updated_addr.get("phoneNumber", ""),
         label=updated_addr.get("label", "Home"),
         isDefault=True,
-        house_number=updated_addr.get("house_number", ""),
-        street=updated_addr.get("street", ""),
-        landmark=updated_addr.get("landmark", ""),
-        city=updated_addr.get("city", ""),
-        state=updated_addr.get("state", ""),
-        pincode=updated_addr.get("pincode", ""),
-        country=updated_addr.get("country", "India"),
+        houseNumber=updated_addr.get("houseNumber", ""),
+        street=updated_addr.get("street") or updated_addr.get("street", ""),
+        landmark=updated_addr.get("landmark") or updated_addr.get("landmark", ""),
+        city=updated_addr.get("city") or updated_addr.get("city", ""),
+        state=updated_addr.get("state") or updated_addr.get("state", ""),
+        pincode=updated_addr.get("pincode") or updated_addr.get("pincode", ""),
+        country=updated_addr.get("country") or updated_addr.get("country", "India"),
         formatted_address=updated_addr.get("formatted_address", ""),
         latitude=updated_addr.get("latitude"),
         longitude=updated_addr.get("longitude"),

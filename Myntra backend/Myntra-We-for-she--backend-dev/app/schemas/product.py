@@ -125,6 +125,8 @@ class ProductDetailsInfo(BaseModel):
     material: Optional[str] = Field(default=None, description="Tex textile fabric")
     is_available: bool = Field(default=True, description="Availability flag")
     stock_quantity: int = Field(default=10, description="Available stock quantity count")
+    origin: Optional[str] = Field(default=None, description="Craft or textile origin")
+    is_gi_certified: bool = Field(default=False, description="GI certification status")
     created_at: datetime = Field(description="Timestamp of garment entry")
     thumbnail: str = Field(description="Main photo thumbnail URL")
     images: List[str] = Field(default_factory=list, description="Mock gallery photo URLs list")

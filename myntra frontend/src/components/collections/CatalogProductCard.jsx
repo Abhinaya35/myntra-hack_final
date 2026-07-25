@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Bookmark, Eye, Tag, ArrowRight } from 'lucide-react';
+import { Heart, Eye, Tag, ArrowRight } from 'lucide-react';
 import { useShortlist } from '../../hooks/useShortlist';
 import { getProductDetailsPath } from '../../constants/routes';
 import { cn } from '../../utils/cn';
@@ -39,7 +39,7 @@ export const CatalogProductCard = ({ product, onQuickView }) => {
           </div>
         )}
 
-        {/* Quick Wishlist Bookmark Button */}
+        {/* Quick Wishlist Heart Button */}
         <button
           type="button"
           onClick={(e) => {
@@ -47,15 +47,15 @@ export const CatalogProductCard = ({ product, onQuickView }) => {
             e.stopPropagation();
             toggleSaveProduct(product);
           }}
-          className={cn(
-            "absolute top-3 right-3 p-2 rounded-full backdrop-blur-md transition-all shadow-subtle z-10 cursor-pointer",
-            saved
-              ? "bg-primary text-white"
-              : "bg-surface/80 text-text-primary hover:bg-surface border border-border/60"
-          )}
+          className="absolute top-3 right-3 p-2 rounded-full backdrop-blur-md transition-all duration-300 transform hover:scale-110 active:scale-90 shadow-subtle border border-border/60 bg-white/95 text-text-primary z-10 cursor-pointer"
           aria-label="Save to Wishlist"
         >
-          <Bookmark className={cn("w-4 h-4", saved && "fill-current")} />
+          <Heart
+            className={cn(
+              "w-4 h-4 transition-all duration-300 active:scale-125",
+              saved ? "fill-primary text-primary" : "text-text-muted hover:text-primary"
+            )}
+          />
         </button>
 
         {/* Quick View Button Hover Overlay */}

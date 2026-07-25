@@ -8,6 +8,8 @@ class UserDB(BaseModel):
     name: str
     email: str
     phone: Optional[str] = None
+    gender: Optional[str] = None
+    date_of_birth: Optional[str] = Field(default=None, alias="dateOfBirth")
     role: str = "customer"  # customer, retailer, admin
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)

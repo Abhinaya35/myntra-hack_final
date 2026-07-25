@@ -91,33 +91,28 @@ const createDestinationIcon = (name, isHighlighted = false, isSelected = false) 
   return L.divIcon({
     className: `custom-destination-marker ${activeState ? 'is-active' : ''}`,
     html: `
-      <div class="relative flex items-center group transition-all duration-300 pointer-events-auto select-none ${
-        isSelected ? 'z-[200]' : isHighlighted ? 'z-[100]' : 'z-10'
+      <div class="relative flex items-center group transition-all duration-300 pointer-events-auto select-none ${isSelected ? 'z-[200]' : isHighlighted ? 'z-[100]' : 'z-10'
       }">
         <!-- 1. Circular Pin Marker -->
-        <div class="relative flex items-center justify-center shrink-0 transition-all duration-300 ${
-          activeState ? 'scale-125' : 'scale-100'
-        }">
-          ${
-            activeState
-              ? `<div class="absolute ${isSelected ? 'w-10 h-10 bg-[#C2185B]/40' : 'w-8 h-8 bg-[#C2185B]/25'} rounded-full animate-ping" style="animation-duration: 2s;"></div>`
-              : ''
-          }
-          <div class="w-6 h-6 rounded-full ${
-            activeState
-              ? 'bg-[#C2185B] border-2 border-white shadow-elevated'
-              : 'bg-white border-2 border-[#C2185B] shadow-subtle'
-          } flex items-center justify-center transition-all duration-300">
+        <div class="relative flex items-center justify-center shrink-0 transition-all duration-300 ${activeState ? 'scale-125' : 'scale-100'
+      }">
+          ${activeState
+        ? `<div class="absolute ${isSelected ? 'w-10 h-10 bg-[#C2185B]/40' : 'w-8 h-8 bg-[#C2185B]/25'} rounded-full animate-ping" style="animation-duration: 2s;"></div>`
+        : ''
+      }
+          <div class="w-6 h-6 rounded-full ${activeState
+        ? 'bg-[#C2185B] border-2 border-white shadow-elevated'
+        : 'bg-white border-2 border-[#C2185B] shadow-subtle'
+      } flex items-center justify-center transition-all duration-300">
             <div class="w-2 h-2 rounded-full ${activeState ? 'bg-white' : 'bg-[#C2185B]'}"></div>
           </div>
         </div>
 
         <!-- 2. Native Floating Store Pill Label -->
-        <div class="ml-2 px-3 py-1.5 rounded-full whitespace-nowrap flex items-center gap-1.5 transition-all duration-300 border ${
-          activeState
-            ? 'bg-slate-900 text-white border-slate-700 shadow-elevated scale-105 -translate-y-0.5'
-            : 'bg-white/95 backdrop-blur-sm text-slate-800 border-slate-200/90 shadow-card hover:border-slate-300'
-        }">
+        <div class="ml-2 px-3 py-1.5 rounded-full whitespace-nowrap flex items-center gap-1.5 transition-all duration-300 border ${activeState
+        ? 'bg-slate-900 text-white border-slate-700 shadow-elevated scale-105 -translate-y-0.5'
+        : 'bg-white/95 backdrop-blur-sm text-slate-800 border-slate-200/90 shadow-card hover:border-slate-300'
+      }">
           <span class="text-xs ${activeState ? 'text-[#F6C453]' : 'text-[#C2185B]'}">📍</span>
           <span class="text-xs font-semibold tracking-tight ${activeState ? 'text-white' : 'text-slate-800'}">${name}</span>
         </div>
@@ -255,10 +250,11 @@ export const NearbyMap = ({
   zoom = 11,
   activeStoreId = null,
   className = '',
+  stores = DESTINATION_STORES,
 }) => {
   const [selectedStoreId, setSelectedStoreId] = useState(null);
 
-  const selectedStore = DESTINATION_STORES.find((s) => s.id === selectedStoreId);
+  const selectedStore = stores.find((s) => s.id === selectedStoreId);
   const activeTargetId = selectedStoreId || activeStoreId;
 
   return (
@@ -282,7 +278,7 @@ export const NearbyMap = ({
         <MapEventsHandler onMapClick={() => setSelectedStoreId(null)} />
 
         {/* Smooth Map Pan Controller on Hover/Click */}
-        <MapPanController targetStoreId={activeTargetId} markers={DESTINATION_STORES} />
+        <MapPanController targetStoreId={activeTargetId} markers={stores} />
 
         {/* CartoDB Light Tile Layer - Minimal editorial map theme */}
         <TileLayer
@@ -299,7 +295,7 @@ export const NearbyMap = ({
         />
 
         {/* 2. Custom Store Destination Markers with Native Floating Labels */}
-        {DESTINATION_STORES.map((dest) => {
+        {stores.map((dest) => {
           const isHighlighted = activeStoreId === dest.id;
           const isSelected = selectedStoreId === dest.id;
 
@@ -333,7 +329,7 @@ export const NearbyMap = ({
 
       {/* Map Attribution Badge Overlay */}
       <div className="absolute bottom-3 left-3 z-20 px-3 py-1 bg-surface/90 backdrop-blur-md rounded-full border border-border/60 shadow-subtle text-[11px] font-semibold text-text-muted">
-        📍 5 Destinations Discovered Nearby
+        📍 {stores.length} Destinations Discovered Nearby
       </div>
     </motion.div>
   );

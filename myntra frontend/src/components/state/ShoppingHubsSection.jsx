@@ -36,15 +36,16 @@ export const ShoppingHubsSection = ({ hubs = [], stateName = 'Telangana' }) => {
               <img
                 src={hub.heroImage}
                 alt={hub.name}
-                className="w-full h-full object-cover opacity-85 transition-transform duration-700 ease-out group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                style={{ objectPosition: hub.banner_position || hub.bannerPosition || 'center center' }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent pointer-events-none" />
 
               {/* Verified Icon Count Badge */}
               <div className="absolute top-4 left-4 z-10">
                 <span className="px-3.5 py-1.5 rounded-full bg-surface/90 backdrop-blur-md text-xs font-semibold text-primary shadow-subtle flex items-center gap-1.5">
                   <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-                  <span>{hub.verifiedStoresCount} Verified Regional Icons</span>
+                  <span>{hub.verifiedStoresCount} Verified Regional Store</span>
                 </span>
               </div>
             </div>

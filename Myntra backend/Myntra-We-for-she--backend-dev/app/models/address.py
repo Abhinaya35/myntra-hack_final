@@ -7,8 +7,11 @@ class AddressDB(BaseModel):
     id: Optional[PyObjectId] = Field(default=None, alias="_id")
     user_id: Optional[PyObjectId] = Field(default=None, alias="userId")
     
+    fullName: str = Field(default="")
+    phoneNumber: str = Field(default="")
+    
     # Structured delivery address fields
-    house_number: str = Field(default="")
+    houseNumber: str = Field(default="")
     street: str = Field(default="")
     landmark: str = Field(default="")
     city: str
@@ -38,7 +41,9 @@ class AddressDB(BaseModel):
             "example": {
                 "_id": "60c72b2f9b1d8e1f5c6b4568",
                 "userId": "60c72b2f9b1d8e1f5c6b4569",
-                "house_number": "3-5-68/3",
+                "fullName": "Abhinaya",
+                "phoneNumber": "9346562486",
+                "houseNumber": "3-5-68/3",
                 "street": "XYZ Colony",
                 "landmark": "Near Bus Stand",
                 "city": "Sangareddy",

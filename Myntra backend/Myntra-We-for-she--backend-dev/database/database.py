@@ -22,24 +22,23 @@ async def connect_to_mongo():
         await db_instance.client.admin.command('ping')
         logger.info("MongoDB Connection Successful.")
         
-        # Drop previous simple unique index to avoid IndexOptionsConflict when changing definition
+        # Drop previous unique indexes on addresses to avoid options conflicts
         try:
             await db_instance.db["addresses"].drop_index("normalizedKey_1")
         except Exception:
             pass
+        try:
+            await db_instance.db["addresses"].drop_index("coordinateCacheKey_1")
+        except Exception:
+            pass
 
-        # Create unique partial indexes on addresses collection
-        await db_instance.db["addresses"].create_index(
-            "normalizedKey", 
-            unique=True,
-            partialFilterExpression={"normalizedKey": {"$type": "string"}}
-        )
-        await db_instance.db["addresses"].create_index(
-            "coordinateCacheKey", 
-            unique=True,
-            partialFilterExpression={"coordinateCacheKey": {"$type": "string"}}
-        )
-        logger.info("Unique partial indexes for 'normalizedKey' and 'coordinateCacheKey' initialized successfully.")
+        # Create non-unique indexes on addresses collection
+        await db_instance.db["addresses"].create_index("normalizedKey")
+        await db_instance.db["addresses"].create_index("coordinateCacheKey")
+
+        # Create unique index on geocoding_cache collection
+        await db_instance.db["geocoding_cache"].create_index("normalizedKey", unique=True)
+        logger.info("Non-unique indexes for addresses and unique cache indexes for geocoding_cache initialized successfully.")
 
         # Create address management indexes
         await db_instance.db["addresses"].create_index("userId")

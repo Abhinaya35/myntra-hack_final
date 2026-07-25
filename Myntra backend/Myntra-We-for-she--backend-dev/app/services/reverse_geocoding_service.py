@@ -78,7 +78,7 @@ class ReverseGeocodingService:
                     logger.info("[Reverse Geocoding] Address Parsed")
                     
                     return {
-                        "house_number": house_number,
+                        "houseNumber": house_number,
                         "street": street,
                         "landmark": landmark,
                         "city": city,

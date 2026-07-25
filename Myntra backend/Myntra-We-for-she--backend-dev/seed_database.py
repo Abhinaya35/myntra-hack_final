@@ -29,15 +29,25 @@ async def seed():
     print(f"Loaded {len(hubs)} shopping hubs.")
     
     hubs_inserted = 0
-    hubs_skipped = 0
+    hubs_updated = 0
     
+    # Delete any hubs that are no longer present in the JSON seed file
+    json_ids = {hub["_id"] for hub in hubs}
+    delete_result = await db.shopping_hubs.delete_many({"_id": {"$nin": list(json_ids)}})
+    print(f"Deleted {delete_result.deleted_count} stale shopping hub documents.")
+
+    # Continue with insert/update logic
     for hub in hubs:
         existing = await db.shopping_hubs.find_one({"_id": hub["_id"]})
         if existing:
-            hubs_skipped += 1
+            hub["created_at"] = existing.get("created_at") or datetime.utcnow()
+            hub["updated_at"] = datetime.utcnow()
+            await db.shopping_hubs.replace_one({"_id": hub["_id"]}, hub)
+            hubs_updated += 1
             continue
             
         hub["created_at"] = datetime.utcnow()
+        hub["updated_at"] = datetime.utcnow()
         await db.shopping_hubs.insert_one(hub)
         hubs_inserted += 1
         
@@ -47,33 +57,43 @@ async def seed():
         print(f"Error: stores seed file '{stores_path}' not found.")
         client.close()
         return
-        
-    # Clear existing stores collection to renew specialties & logo images
-    await db.stores.delete_many({})
-    print("Cleared existing stores collection.")
 
     with open(stores_path, "r", encoding="utf-8") as f:
         stores = json.load(f)
-        
+
     print(f"Loaded {len(stores)} stores to seed.")
-    
+
     stores_inserted = 0
-    stores_skipped = 0
-    
+    stores_updated = 0
+
+    # Delete stale stores not present in seed file (matched by name+city pair)
+    seed_name_city_pairs = [{"name": s["name"], "city": s["city"]} for s in stores]
+    delete_result = await db.stores.delete_many({
+        "$nor": seed_name_city_pairs
+    })
+    print(f"Deleted {delete_result.deleted_count} stale store documents.")
+
     for store in stores:
         existing = await db.stores.find_one({"name": store["name"], "city": store["city"]})
-        if existing:
-            stores_skipped += 1
-            continue
-            
-        store["created_at"] = datetime.utcnow()
+
+        # Preserve created_at timestamp; always write the latest data from stores.json
+        store["created_at"] = existing.get("created_at") if existing else datetime.utcnow()
         store["updated_at"] = datetime.utcnow()
         store["delivery_available"] = store.get("delivery_available", True)
         store["delivery_radius_km"] = store.get("delivery_radius_km", 15.0)
         store["supported_states"] = store.get("supported_states", [])
         store["supported_cities"] = store.get("supported_cities", [])
-        await db.stores.insert_one(store)
-        stores_inserted += 1
+
+        if existing:
+            # Upsert: replace the full document so every field from stores.json is written
+            await db.stores.replace_one(
+                {"name": store["name"], "city": store["city"]},
+                store
+            )
+            stores_updated += 1
+        else:
+            await db.stores.insert_one(store)
+            stores_inserted += 1
         
     # 3. Seed Products
     products_path = os.path.join("seed", "products.json")
@@ -125,8 +145,8 @@ async def seed():
         print("Warning: products.json seed file not found.")
 
     print("=================== Seeding Summary ===================")
-    print(f"Shopping Hubs - Handled: {len(hubs)} | Inserted: {hubs_inserted} | Skipped: {hubs_skipped}")
-    print(f"Stores        - Handled: {len(stores)} | Inserted: {stores_inserted} | Skipped: {stores_skipped}")
+    print(f"Shopping Hubs - Handled: {len(hubs)} | Inserted: {hubs_inserted} | Updated: {hubs_updated}")
+    print(f"Stores        - Handled: {len(stores)} | Inserted: {stores_inserted} | Updated: {stores_updated}")
     print(f"Products      - Handled: {products_loaded} | Inserted: {products_inserted} | Skipped: {products_skipped}")
     print("=======================================================")
     

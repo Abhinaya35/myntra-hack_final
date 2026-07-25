@@ -1,23 +1,42 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import authService from '../services/authService';
+import profileService from '../services/profileService';
 
 export const AuthContext = createContext({
   user: null,
+  profile: null,
   accessToken: null,
   loading: true,
   isAuthenticated: false,
   authError: null,
-  login: async () => {},
-  register: async () => {},
-  logout: () => {},
-  restoreSession: async () => {},
+  login: async () => { },
+  register: async () => { },
+  logout: () => { },
+  restoreSession: async () => { },
+  refreshProfile: async () => { },
 });
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [profile, setProfile] = useState(null);
   const [accessToken, setAccessToken] = useState(() => localStorage.getItem('rfi_auth_token'));
   const [loading, setLoading] = useState(true);
   const [authError, setAuthError] = useState(null);
+
+  /**
+   * Fetch user profile from GET /profile
+   */
+  const refreshProfile = useCallback(async () => {
+    try {
+      const data = await profileService.getProfile();
+      setProfile(data);
+      return data;
+    } catch (err) {
+      console.error('Failed to fetch profile:', err);
+      setProfile(null);
+      throw err;
+    }
+  }, []);
 
   /**
    * Restore user session from localStorage rfi_auth_token via GET /auth/me
@@ -27,6 +46,7 @@ export const AuthProvider = ({ children }) => {
 
     if (!token) {
       setUser(null);
+      setProfile(null);
       setAccessToken(null);
       setLoading(false);
       return;
@@ -36,12 +56,22 @@ export const AuthProvider = ({ children }) => {
       setLoading(true);
       const userProfile = await authService.getCurrentUser();
       setUser(userProfile);
+
+      // Fetch backend profile details
+      try {
+        const profData = await profileService.getProfile();
+        setProfile(profData);
+      } catch (profErr) {
+        console.error('Profile fetch failed during session restore:', profErr);
+      }
+
       setAccessToken(token);
       setAuthError(null);
     } catch (err) {
       console.warn('Session restoration failed:', err.message || err);
       authService.logout();
       setUser(null);
+      setProfile(null);
       setAccessToken(null);
       setAuthError(err.message || 'Session expired. Please log in again.');
     } finally {
@@ -72,6 +102,14 @@ export const AuthProvider = ({ children }) => {
       setAccessToken(access_token);
       setUser(userProfile);
 
+      // Fetch backend profile details immediately
+      try {
+        const profData = await profileService.getProfile();
+        setProfile(profData);
+      } catch (profErr) {
+        console.error('Profile fetch failed during login:', profErr);
+      }
+
       return response;
     } catch (err) {
       const errorMsg = err.message || 'Login failed. Please check your credentials.';
@@ -88,7 +126,7 @@ export const AuthProvider = ({ children }) => {
     setAuthError(null);
     try {
       const registerResponse = await authService.register({ name, email, password });
-      
+
       // Seamless auto-login following successful registration
       const loginResponse = await login(email, password);
 
@@ -106,6 +144,7 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     authService.logout();
     setUser(null);
+    setProfile(null);
     setAccessToken(null);
     setAuthError(null);
   };
@@ -114,6 +153,8 @@ export const AuthProvider = ({ children }) => {
     <AuthContext.Provider
       value={{
         user,
+        profile,
+        setProfile,
         accessToken,
         loading,
         isAuthenticated: !!user && !!accessToken,
@@ -122,6 +163,7 @@ export const AuthProvider = ({ children }) => {
         register,
         logout,
         restoreSession,
+        refreshProfile,
       }}
     >
       {children}

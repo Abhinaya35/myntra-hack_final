@@ -26,7 +26,7 @@ const resolveStateName = (stateId) => {
   if (!stateId) return 'Telangana';
   const mockData = getStateData(stateId);
   if (mockData && mockData.name) return mockData.name;
-  
+
   // Format slug 'andhra-pradesh' -> 'Andhra Pradesh'
   return stateId
     .split('-')
@@ -57,7 +57,7 @@ export const StateDetailsPage = () => {
     try {
       setLoading(true);
       setError(null);
-      
+
       // Call GET /shopping-hubs?state=Telangana
       const data = await exploreService.getShoppingHubsByState(stateName);
 
@@ -70,6 +70,8 @@ export const StateDetailsPage = () => {
         heroImage: hub.cover_image || hub.banner_image || 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=1000',
         bannerImage: hub.banner_image,
         coverImage: hub.cover_image,
+        banner_position: hub.banner_position || hub.bannerPosition,
+        bannerPosition: hub.banner_position || hub.bannerPosition,
         verifiedStoresCount: hub.store_count || 0,
         popularCategories: hub.categories || [],
         latitude: hub.latitude,
@@ -96,7 +98,7 @@ export const StateDetailsPage = () => {
   return (
     <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-24 md:pb-28">
       <div className="space-y-16 sm:space-y-20 md:space-y-24">
-        
+
         {/* 1. Breadcrumb & 2. State Hero */}
         <div className="space-y-6">
           <StateBreadcrumb stateName={stateName} />
