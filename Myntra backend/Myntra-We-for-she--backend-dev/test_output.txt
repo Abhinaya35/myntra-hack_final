@@ -1,0 +1,116 @@
+﻿Testing Endpoint: http://localhost:8000/states ...
+  SUCCESS!
+  [OK] Returned matches: 9
+  [OK] Validated keys present: ['id', 'name', 'image', 'shopping_hub_count']
+  [OK] Validated keys absent: ['_id']
+  Available states: ['Andhra Pradesh', 'Bihar', 'Karnataka', 'Kerala', 'Maharashtra', 'Rajasthan', 'Tamil Nadu', 'Telangana', 'Uttar Pradesh']
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs ...
+  SUCCESS!
+  [OK] Returned matches: 14
+  [OK] Validated keys present: ['id', 'name', 'state', 'description', 'banner_image', 'categories', 'store_count', 'featured']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?state=Telangana ...
+  SUCCESS!
+  [OK] Returned matches: 3
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?featured=true ...
+  SUCCESS!
+  [OK] Returned matches: 9
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/hyd ...
+  SUCCESS!
+  [OK] Validated keys present: ['id', 'name', 'cover_image', 'latitude', 'longitude', 'created_at']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/hyd/stores ...
+  SUCCESS!
+  [OK] Returned matches: 5
+  [OK] Validated keys present: ['_id', 'name', 'shopping_hub_id']
+  [OK] Validated keys absent: ['trust_score', 'google_rating', 'review_count']
+  --------------------------------------
+
+[INFO] Running Product Module Tests with Store: 'Chandana Brothers' (ID: 6a5bc92f1d4a83f98666ac27)
+
+Testing Endpoint: http://localhost:8000/products ...
+  SUCCESS!
+  [Paginated List] total count metadata: 132
+  [OK] Validated keys present: ['products', 'total']
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products ...
+  SUCCESS!
+  [Paginated List] total count metadata: 132
+  [OK] Validated keys present: ['id', 'name', 'thumbnail', 'price', 'discount_price', 'discount_percentage', 'rating', 'category', 'brand', 'is_available']
+  [OK] Validated keys absent: ['description', 'sizes', 'images', 'stock_quantity', '_id']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/6a5bc92f1d4a83f98666ac27/products ...
+  SUCCESS!
+  [OK] Returned matches: 3
+  [OK] Validated keys present: ['id', 'name', 'price', 'category', 'brand', 'is_available']
+  [OK] Validated keys absent: ['description', 'sizes', 'images', '_id']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?store_ids=6a5bc92f1d4a83f98666ac27 ...
+  SUCCESS!
+  [Paginated List] total count metadata: 3
+  [OK] Returned matches: 3
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=silk ...
+  SUCCESS!
+  [Paginated List] total count metadata: 38
+  [OK] Validated keys present: ['products', 'total']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=sare ...
+  SUCCESS!
+  [Paginated List] total count metadata: 25
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=bridal ...
+  SUCCESS!
+  [Paginated List] total count metadata: 126
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?category=saree ...
+  SUCCESS!
+  [Paginated List] total count metadata: 22
+  [OK] Returned matches: 22
+  Matched categories for expansion: {'Wedding Sarees', 'Traditional Sarees', 'Cotton Sarees', 'Pure Silk Sarees', 'Pattu Sarees', 'Bridal Sarees', 'Gadwal Sarees', 'Designer Sarees', 'Sarees', 'Liril Sarees', 'Silk Sarees'}
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?occasion=Wedding ...
+  SUCCESS!
+  [Paginated List] total count metadata: 123
+  [OK] Returned matches: 123
+  Matched count for occasion=Wedding: 123
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?sort=price_low_to_high ...
+  SUCCESS!
+  [Paginated List] total count metadata: 132
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=RS%20Brothers ...
+  SUCCESS!
+  [Paginated List] total count metadata: 14
+  [OK] Custom assertion passed.
+  --------------------------------------
+
+[INFO] Selected Valid Product ID: 'p_0091' for Details Page Verification.
+
+Testing Endpoint: http://localhost:8000/products/p_0091 ...
+  SUCCESS!
+  [OK] verified store details: 'Prasiddhi Silks' from 'Mysuru' hub is present and showcases trust indicators
+  [OK] specialties: ['Mysuru Silk', 'Printed Crepe', 'Art Silk', 'Office Wear Sarees']
+  [OK] logo_image: https://dummyimage.com/150x150/000/fff&text=Prasiddhi%20Silks
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/invalid_id (expecting 400)...
+  SUCCESS! Got exception code 400 Bad Request.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/60c72b2f9b1d8e1f5c6b4569 (expecting 404)...
+  SUCCESS! Got exception code 404 Not Found.
+  --------------------------------------
+
+ALL REFACTORED SEARCH ENGINE, EXPANSION, AND PRODUCT DETAILS VERIFICATIONS PASSED SUCCESSFULLY!

@@ -1,0 +1,174 @@
+﻿Testing Endpoint: http://localhost:8000/states ...
+  SUCCESS!
+  [OK] Returned matches: 9
+  [OK] Validated keys present: ['id', 'name', 'image', 'shopping_hub_count']
+  [OK] Validated keys absent: ['_id']
+  Available states: ['Andhra Pradesh', 'Bihar', 'Karnataka', 'Kerala', 'Maharashtra', 'Rajasthan', 'Tamil Nadu', 'Telangana', 'Uttar Pradesh']
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs ...
+  SUCCESS!
+  [OK] Returned matches: 14
+  [OK] Validated keys present: ['id', 'name', 'state', 'description', 'banner_image', 'categories', 'store_count', 'featured']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?state=Telangana ...
+  SUCCESS!
+  [OK] Returned matches: 3
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?featured=true ...
+  SUCCESS!
+  [OK] Returned matches: 9
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/hyd ...
+  SUCCESS!
+  [OK] Validated keys present: ['id', 'name', 'cover_image', 'latitude', 'longitude', 'created_at']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/hyd/stores ...
+  SUCCESS!
+  [OK] Returned matches: 5
+  [OK] Validated keys present: ['_id', 'name', 'trust_score', 'logo_image', 'specialties']
+  [OK] Validated keys absent: ['shopping_hub_id', 'google_rating', 'review_count']
+  --------------------------------------
+
+[INFO] Running Product Module Tests with Store: 'Chandana Brothers' (ID: 6a5dd96e3883dba01804246f)
+
+Testing Endpoint: http://localhost:8000/products ...
+  SUCCESS!
+  [Paginated List] total count metadata: 132
+  [OK] Validated keys present: ['products', 'total']
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products ...
+  SUCCESS!
+  [Paginated List] total count metadata: 132
+  [OK] Validated keys present: ['id', 'name', 'thumbnail', 'price', 'discount_price', 'discount_percentage', 'rating', 'category', 'brand', 'is_available']
+  [OK] Validated keys absent: ['description', 'sizes', 'images', 'stock_quantity', '_id']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/6a5dd96e3883dba01804246f/products ...
+  SUCCESS!
+  [OK] Returned matches: 3
+  [OK] Validated keys present: ['id', 'name', 'price', 'category', 'brand', 'is_available']
+  [OK] Validated keys absent: ['description', 'sizes', 'images', '_id']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?store_ids=6a5dd96e3883dba01804246f ...
+  SUCCESS!
+  [Paginated List] total count metadata: 3
+  [OK] Returned matches: 3
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=silk ...
+  SUCCESS!
+  [Paginated List] total count metadata: 38
+  [OK] Validated keys present: ['products', 'total']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=sare ...
+  SUCCESS!
+  [Paginated List] total count metadata: 25
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=bridal ...
+  SUCCESS!
+  [Paginated List] total count metadata: 109
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?category=saree ...
+  SUCCESS!
+  [Paginated List] total count metadata: 22
+  [OK] Returned matches: 22
+  Matched categories for expansion: {'Traditional Sarees', 'Wedding Sarees', 'Pure Silk Sarees', 'Silk Sarees', 'Designer Sarees', 'Sarees', 'Liril Sarees', 'Gadwal Sarees', 'Bridal Sarees', 'Cotton Sarees', 'Pattu Sarees'}
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?occasion=Wedding ...
+  SUCCESS!
+  [Paginated List] total count metadata: 83
+  [OK] Returned matches: 83
+  Matched count for occasion=Wedding: 83
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?sort=price_low_to_high ...
+  SUCCESS!
+  [Paginated List] total count metadata: 132
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products?search=RS%20Brothers ...
+  SUCCESS!
+  [Paginated List] total count metadata: 14
+  [OK] Custom assertion passed.
+  --------------------------------------
+
+[INFO] Selected Valid Product ID: 'p_0091' for Details Page Verification.
+
+Testing Endpoint: http://localhost:8000/products/p_0091 ...
+  SUCCESS!
+  [OK] verified store details: 'Prasiddhi Silks' from 'Mysuru' hub is present and showcases trust indicators
+  [OK] specialties: ['Mysuru Silk', 'Printed Crepe', 'Art Silk', 'Office Wear Sarees']
+  [OK] logo_image: https://dummyimage.com/150x150/000/fff&text=Prasiddhi%20Silks
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/invalid_id (expecting 400)...
+  SUCCESS! Got exception code 400 Bad Request.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/60c72b2f9b1d8e1f5c6b4569 (expecting 404)...
+  SUCCESS! Got exception code 404 Not Found.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/p_0091/recommendations/similar ...
+  SUCCESS!
+  [OK] verified similar matches count: 10
+  [OK] first similar product recommendation reason: 'Same Sub-Category ò Same Occasion'
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/p_0091/recommendations/store ...
+  SUCCESS!
+  [OK] verified store matches count: 2
+  [OK] section title context: 'More Traditional Sarees from Prasiddhi Silks'
+  [OK] first store product recommendation reason: 'Popular in this store'
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/invalid_id/recommendations/similar (expecting 400)...
+  SUCCESS! Got exception code 400 Bad Request.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/60c72b2f9b1d8e1f5c6b4569/recommendations/store (expecting 404)...
+  SUCCESS! Got exception code 404 Not Found.
+Testing Endpoint: http://localhost:8000/stores/6a5dd96e3883dba01804246f/collections ...
+  SUCCESS!
+  [OK] verified collections count: 3
+  [OK] first collection: name='Casual', count=2
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/60c72b2f9b1d8e1f5c6b4569/collections (expecting 404)...
+  SUCCESS! Got exception code 404 Not Found.
+Testing Endpoint: http://localhost:8000/stores/6a5dd96e3883dba01804246f/check-delivery (matching delivery area)...
+  SUCCESS! Store is deliverable to user coordinates.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/6a5dd96e3883dba01804246f/check-delivery (exceeding radius)...
+  SUCCESS! Deliverable is false. Reason: 'Currently unavailable for your location.'
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/60c72b2f9b1d8e1f5c6b4569/check-delivery (expecting 404)...
+  SUCCESS! Got exception code 404 Not Found.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores ...
+  SUCCESS!
+  [OK] Returned matches: 44
+  SUCCESS! StoreCardResponse contains all expected fields and removes restricted ones.
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/search?query=Chandana%20Brothers ...
+  SUCCESS!
+  [OK] Returned matches: 4
+  SUCCESS! StoreCardResponse contains all expected fields and removes restricted ones.
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/nearby?latitude=17.385&longitude=78.486&radius=50 ...
+  SUCCESS!
+  [OK] Returned matches: 5
+  SUCCESS! NearbyStoreResponse verified correctly.
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/stores/6a5dd96e3883dba01804246f ...
+  SUCCESS!
+  SUCCESS! StoreDetailsResponse verified successfully.
+  [OK] Custom assertion passed.
+  --------------------------------------
+
+ALL REFACTORED SEARCH ENGINE, EXPANSION, AND PRODUCT DETAILS VERIFICATIONS PASSED SUCCESSFULLY!

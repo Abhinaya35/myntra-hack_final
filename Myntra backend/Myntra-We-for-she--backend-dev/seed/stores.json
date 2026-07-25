@@ -1,0 +1,1205 @@
+[
+    {
+        "name": "South India Shopping Mall",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "latitude": 17.385044,
+        "longitude": 78.486671,
+        "address": "Kothapet Cross Roads, Hyderabad, Telangana 500035",
+        "google_rating": 4.2,
+        "review_count": 8900,
+        "trust_score": 9.5,
+        "years_in_business": 18,
+        "categories": [
+            "Sarees",
+            "Lehengas",
+            "Ethnic Wear",
+            "Sherwanis"
+        ],
+        "banner_image": "https://example.com/banners/sism-hyd.png",
+        "description": "Premium shopping destination in Hyderabad for silk sarees, designer ethnic garments, and family wedding selections.",
+        "is_verified": true,
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=South%20India%20Shopping%20Mall",
+        "specialties": [
+            "Kanchipuram Silk",
+            "Wedding Collection",
+            "Handloom Sarees",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "RS Brothers",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "latitude": 17.484987,
+        "longitude": 78.388123,
+        "address": "Kukatpally Main Road, Hyderabad, Telangana 500072",
+        "google_rating": 4.1,
+        "review_count": 5200,
+        "trust_score": 9.1,
+        "years_in_business": 30,
+        "categories": [
+            "Cotton Sarees",
+            "Kids Wear",
+            "Menswear",
+            "Ethnic Wear"
+        ],
+        "banner_image": "https://example.com/banners/rs-hyd.png",
+        "description": "Known as the household store of Hyderabad, RS Brothers offers extensive collections of silks and family fashion.",
+        "is_verified": true,
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=RS%20Brothers",
+        "specialties": [
+            "Gadwal Sarees",
+            "Traditional Wear",
+            "Kids Festive",
+            "Mens Silk Dhoti"
+        ]
+    },
+    {
+        "name": "Chandana Brothers",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "latitude": 17.443567,
+        "longitude": 78.489765,
+        "address": "Patny Circle, Secunderabad, Hyderabad, Telangana 500003",
+        "google_rating": 4.0,
+        "review_count": 2800,
+        "trust_score": 8.9,
+        "years_in_business": 45,
+        "categories": [
+            "Traditional Sarees",
+            "Dhotis",
+            "Salwars"
+        ],
+        "banner_image": "https://example.com/banners/chandana-hyd.png",
+        "description": "Decades of trust at Secunderabad, offering highly affordable handloom varieties and traditional festive wears.",
+        "is_verified": true,
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Chandana%20Brothers",
+        "specialties": [
+            "Chikankari Suit Sets",
+            "Dharmavaram Silk",
+            "Daily Wear Cotton",
+            "Festive Collections"
+        ]
+    },
+    {
+        "name": "KLM Fashion Mall",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "latitude": 17.443121,
+        "longitude": 78.490123,
+        "address": "Opposite Patny Center, Secunderabad, Telangana 500003",
+        "google_rating": 3.9,
+        "review_count": 4800,
+        "trust_score": 8.7,
+        "years_in_business": 10,
+        "categories": [
+            "Contemporary Wear",
+            "Lehengas",
+            "Mens Suitings"
+        ],
+        "banner_image": "https://example.com/banners/klm-hyd.png",
+        "description": "Secunderabad's trendiest option for budget weddings, matching regional values with designer clothes.",
+        "is_verified": true,
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KLM%20Fashion%20Mall",
+        "specialties": [
+            "Organza Lehengas",
+            "Partywear Suits",
+            "Traditional Handlooms",
+            "Contemporary Wear"
+        ]
+    },
+    {
+        "name": "Kalanjali",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "latitude": 17.404221,
+        "longitude": 78.480112,
+        "address": "Nampally, Hyderabad, Telangana 500001",
+        "google_rating": 4.5,
+        "review_count": 1300,
+        "trust_score": 9.6,
+        "years_in_business": 32,
+        "categories": [
+            "Kanchipuram Silk",
+            "Dharmavaram",
+            "Handicrafts"
+        ],
+        "banner_image": "https://example.com/banners/kalanjali-hyd.png",
+        "description": "Part of the Margadarsi Group, Kalanjali showcases classical Indian arts, luxury handwoven sarees, and artifacts.",
+        "is_verified": true,
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Kalanjali",
+        "specialties": [
+            "Fine Handicrafts",
+            "Wedding Lehengas",
+            "Pure Silk Sarees",
+            "Handwoven Heritage"
+        ]
+    },
+    {
+        "name": "CMR Heritage",
+        "city": "Warangal",
+        "state": "Telangana",
+        "latitude": 17.9689,
+        "longitude": 79.594055,
+        "address": "Hanamkonda Main Road, Warangal, Telangana 506001",
+        "google_rating": 4.0,
+        "review_count": 3100,
+        "trust_score": 9.2,
+        "years_in_business": 15,
+        "categories": [
+            "Sarees",
+            "Ethnic Wear",
+            "Grooms Wear"
+        ],
+        "banner_image": "https://example.com/banners/cmr-war.png",
+        "description": "Legacy of trust brought to Warangal, providing a grand shopping destination for festivals and weddings.",
+        "is_verified": true,
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=CMR%20Heritage",
+        "specialties": [
+            "Handloom Silk",
+            "Traditional Uppada",
+            "Grooms Wear",
+            "Banarasi Sarees"
+        ]
+    },
+    {
+        "name": "Kalanikethan",
+        "city": "Warangal",
+        "state": "Telangana",
+        "latitude": 17.9785,
+        "longitude": 79.6012,
+        "address": "Subedari Chowrasta, Hanamkonda, Warangal, Telangana 506001",
+        "google_rating": 4.1,
+        "review_count": 920,
+        "trust_score": 8.8,
+        "years_in_business": 42,
+        "categories": [
+            "Gadwal Sarees",
+            "Pattu Sarees",
+            "Ready-made Salwars"
+        ],
+        "banner_image": "https://example.com/banners/kala-war.png",
+        "description": "Established handloom weavers offering classical printed cottons and wedding silks in Warangal.",
+        "is_verified": true,
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Kalanikethan",
+        "specialties": [
+            "Pattu Sarees",
+            "Designer Salwars",
+            "Gadwal Silks",
+            "Exclusive Bridal"
+        ]
+    },
+    {
+        "name": "Sri Vasavi Silks",
+        "city": "Warangal",
+        "state": "Telangana",
+        "latitude": 17.9712,
+        "longitude": 79.5987,
+        "address": "Main Road, Hanamkonda, Warangal, Telangana 506001",
+        "google_rating": 4.2,
+        "review_count": 480,
+        "trust_score": 8.6,
+        "years_in_business": 14,
+        "categories": [
+            "Dharmavaram Silks",
+            "Wedding Sarees",
+            "Kids Ethnic"
+        ],
+        "banner_image": "https://example.com/banners/vasavi-war.png",
+        "description": "Warangal's popular silks store, best known for unique patterns directly sourced from weavers.",
+        "is_verified": true,
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Vasavi%20Silks",
+        "specialties": [
+            "Pure Dharmavaram",
+            "Kanchi Pattu",
+            "Silk Brocades",
+            "Pujar Essentials"
+        ]
+    },
+    {
+        "name": "Padmavathi Shopping Mall",
+        "city": "Warangal",
+        "state": "Telangana",
+        "latitude": 17.9654,
+        "longitude": 79.5912,
+        "address": "Beside Hanamkonda Bus Stand, Warangal, Telangana 506001",
+        "google_rating": 3.9,
+        "review_count": 730,
+        "trust_score": 8.4,
+        "years_in_business": 12,
+        "categories": [
+            "Family Clothing",
+            "Daily Wear Cottons",
+            "Sherwanis"
+        ],
+        "banner_image": "https://example.com/banners/padma-war.png",
+        "description": "A family fashion hub located right next to the bus station for convenient travel-shoppers.",
+        "is_verified": true,
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Padmavathi%20Shopping%20Mall",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Sri Lakshmi Silks",
+        "city": "Karimnagar",
+        "state": "Telangana",
+        "latitude": 18.4385,
+        "longitude": 79.1287,
+        "address": "Tower Circle, Karimnagar, Telangana 505001",
+        "google_rating": 4.1,
+        "review_count": 850,
+        "trust_score": 9.0,
+        "years_in_business": 22,
+        "categories": [
+            "Traditional Pattu",
+            "Handlooms",
+            "Salwar Suits"
+        ],
+        "banner_image": "https://example.com/banners/lakshmi-karim.png",
+        "description": "Highly trusted handloom dealer at Karimnagar's Tower Circle, catering to native weaving traditions.",
+        "is_verified": true,
+        "shopping_hub_id": "karimnagar",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Lakshmi%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Vastra Trends",
+        "city": "Karimnagar",
+        "state": "Telangana",
+        "latitude": 18.4412,
+        "longitude": 79.1312,
+        "address": "Collectorate Road, Karimnagar, Telangana 505001",
+        "google_rating": 4.0,
+        "review_count": 320,
+        "trust_score": 8.5,
+        "years_in_business": 7,
+        "categories": [
+            "Kurtis",
+            "Western Outfits",
+            "Designer Sarees"
+        ],
+        "banner_image": "https://example.com/banners/vastra-karim.png",
+        "description": "Brings contemporary trends and modern fabrics together for Karimnagar's younger demography.",
+        "is_verified": true,
+        "shopping_hub_id": "karimnagar",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Vastra%20Trends",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Venkateswara Textiles",
+        "city": "Karimnagar",
+        "state": "Telangana",
+        "latitude": 18.4354,
+        "longitude": 79.1212,
+        "address": "Kaman Road, Karimnagar, Telangana 505001",
+        "google_rating": 3.8,
+        "review_count": 490,
+        "trust_score": 8.3,
+        "years_in_business": 25,
+        "categories": [
+            "Dhotis",
+            "Unstitched Fabric",
+            "Daily Cottons"
+        ],
+        "banner_image": "https://example.com/banners/venkat-karim.png",
+        "description": "Specialists in pure cotton dhotis, matching unstitched matching materials, and uniform sets.",
+        "is_verified": true,
+        "shopping_hub_id": "karimnagar",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Venkateswara%20Textiles",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "CMR Shopping Mall",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "latitude": 16.5072,
+        "longitude": 80.6441,
+        "address": "Beside Hotel Kay, MG Road, Vijayawada, Andhra Pradesh 520010",
+        "google_rating": 4.2,
+        "review_count": 5100,
+        "trust_score": 9.3,
+        "years_in_business": 20,
+        "categories": [
+            "Silk Sarees",
+            "Menswear",
+            "Wedding Special"
+        ],
+        "banner_image": "https://example.com/banners/cmr-vij.png",
+        "description": "One of Andhra's premier shopping networks, housing classical handwoven silk ranges.",
+        "is_verified": true,
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=CMR%20Shopping%20Mall",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "KLM Fashion Mall",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "latitude": 16.5085,
+        "longitude": 80.6412,
+        "address": "MG Road, Vijayawada, Andhra Pradesh 520010",
+        "google_rating": 4.1,
+        "review_count": 6800,
+        "trust_score": 9.4,
+        "years_in_business": 12,
+        "categories": [
+            "Mens Suitings",
+            "Sarees",
+            "Kids Ethnic"
+        ],
+        "banner_image": "https://example.com/banners/klm-vij.png",
+        "description": "Vijayawada's trendiest collection store for budget and design conscious shoppers.",
+        "is_verified": true,
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KLM%20Fashion%20Mall",
+        "specialties": [
+            "Organza Lehengas",
+            "Partywear Suits",
+            "Traditional Handlooms",
+            "Contemporary Wear"
+        ]
+    },
+    {
+        "name": "Chandana Brothers",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "latitude": 16.5123,
+        "longitude": 80.6305,
+        "address": "Eluru Road, Vijayawada, Andhra Pradesh 520002",
+        "google_rating": 3.9,
+        "review_count": 1400,
+        "trust_score": 8.7,
+        "years_in_business": 38,
+        "categories": [
+            "Traditional Sarees",
+            "Family Clothes",
+            "Accessories"
+        ],
+        "banner_image": "https://example.com/banners/chandana-vij.png",
+        "description": "Deeply trusted retail destination on Eluru Road, catering to rich regional silks and casual checks.",
+        "is_verified": true,
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Chandana%20Brothers",
+        "specialties": [
+            "Chikankari Suit Sets",
+            "Dharmavaram Silk",
+            "Daily Wear Cotton",
+            "Festive Collections"
+        ]
+    },
+    {
+        "name": "Sri Krishna Silks",
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh",
+        "latitude": 16.5054,
+        "longitude": 80.6491,
+        "address": "Opposite P&T Colony, MG Road, Vijayawada, Andhra Pradesh 520010",
+        "google_rating": 4.3,
+        "review_count": 920,
+        "trust_score": 9.1,
+        "years_in_business": 25,
+        "categories": [
+            "Mysore Silk",
+            "Pure Silk Sarees",
+            "Crepe Silks"
+        ],
+        "banner_image": "https://example.com/banners/krishna-vij.png",
+        "description": "Known for pure silk fabrics from Karnataka and authentic South Indian temple borders.",
+        "is_verified": true,
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Krishna%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "CMR Central",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "latitude": 17.7234,
+        "longitude": 83.3012,
+        "address": "Maddilapalem, Visakhapatnam, Andhra Pradesh 530013",
+        "google_rating": 4.3,
+        "review_count": 13500,
+        "trust_score": 9.4,
+        "years_in_business": 22,
+        "categories": [
+            "Lehengas",
+            "Sarees",
+            "Western Wear",
+            "Brand Outlet"
+        ],
+        "banner_image": "https://example.com/banners/cmr-vizag.png",
+        "description": "Visakhapatnam's flagship landmark, linking classical handlooms with global fashion under one roof.",
+        "is_verified": true,
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=CMR%20Central",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "KLM Fashion Mall",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "latitude": 17.7121,
+        "longitude": 83.2945,
+        "address": "Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016",
+        "google_rating": 4.0,
+        "review_count": 3900,
+        "trust_score": 8.9,
+        "years_in_business": 9,
+        "categories": [
+            "Silk Sarees",
+            "Anarkalis",
+            "Kids Wear"
+        ],
+        "banner_image": "https://example.com/banners/klm-vizag.png",
+        "description": "Vizag's highly popular budget wedding venue, housing spectacular ready-mades.",
+        "is_verified": true,
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KLM%20Fashion%20Mall",
+        "specialties": [
+            "Organza Lehengas",
+            "Partywear Suits",
+            "Traditional Handlooms",
+            "Contemporary Wear"
+        ]
+    },
+    {
+        "name": "Varma Textiles",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "latitude": 17.7054,
+        "longitude": 83.2891,
+        "address": "Gajuwaka Junction, Visakhapatnam, Andhra Pradesh 530026",
+        "google_rating": 3.8,
+        "review_count": 620,
+        "trust_score": 8.4,
+        "years_in_business": 18,
+        "categories": [
+            "Daily Cottons",
+            "Linen Shirts",
+            "Sarees"
+        ],
+        "banner_image": "https://example.com/banners/varma-vizag.png",
+        "description": "Gajuwaka's favorite wholesale textile shop, highly trusted for daily cot and matching linens.",
+        "is_verified": true,
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Varma%20Textiles",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Chandana Brothers",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "latitude": 17.7198,
+        "longitude": 83.2999,
+        "address": "Jagadamba Junction, Visakhapatnam, Andhra Pradesh 530002",
+        "google_rating": 4.1,
+        "review_count": 8100,
+        "trust_score": 9.2,
+        "years_in_business": 40,
+        "categories": [
+            "Pattu Sarees",
+            "Dhotis",
+            "Grooms Wear"
+        ],
+        "banner_image": "https://example.com/banners/chandana-vizag.png",
+        "description": "Vizag's iconic shopping spot at Jagadamba center, famous for wedding packages and silks.",
+        "is_verified": true,
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Chandana%20Brothers",
+        "specialties": [
+            "Chikankari Suit Sets",
+            "Dharmavaram Silk",
+            "Daily Wear Cotton",
+            "Festive Collections"
+        ]
+    },
+    {
+        "name": "The Chennai Silks",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "latitude": 11.016844,
+        "longitude": 76.955832,
+        "address": "Oppanakara Street, Coimbatore, Tamil Nadu 641001",
+        "google_rating": 4.4,
+        "review_count": 18500,
+        "trust_score": 9.7,
+        "years_in_business": 62,
+        "categories": [
+            "Wedding Silks",
+            "Organic Cotton",
+            "Mens Wear"
+        ],
+        "banner_image": "https://example.com/banners/chennai-coim.png",
+        "description": "The absolute benchmark in South Indian silk weaving, carrying authentic Coimbatore and Kanchi silks.",
+        "is_verified": true,
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=The%20Chennai%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Pothys",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "latitude": 11.0185,
+        "longitude": 76.9592,
+        "address": "Cross Cut Road, Ram Nagar, Coimbatore, Tamil Nadu 641009",
+        "google_rating": 4.3,
+        "review_count": 14200,
+        "trust_score": 9.5,
+        "years_in_business": 80,
+        "categories": [
+            "Samudrika Pattu",
+            "Parampara Silks",
+            "Designer Sarees"
+        ],
+        "banner_image": "https://example.com/banners/pothys-coim.png",
+        "description": "Renowned for its collection of Samudrika Pattu handloom wonders and traditional family shopping.",
+        "is_verified": true,
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Pothys",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "RMKV",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "latitude": 11.0212,
+        "longitude": 76.9634,
+        "address": "Brookefields Mall, Krishnaswamy Road, Coimbatore, Tamil Nadu 641001",
+        "google_rating": 4.2,
+        "review_count": 5200,
+        "trust_score": 9.2,
+        "years_in_business": 98,
+        "categories": [
+            "Liril Sarees",
+            "Themes Collection",
+            "Kids Cottons"
+        ],
+        "banner_image": "https://example.com/banners/rmkv-coim.png",
+        "description": "Pioneers in innovative silk patterns, including reversible and multi-themed handloom garments.",
+        "is_verified": true,
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=RMKV",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Sri Kumaran Fashion",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "latitude": 11.0123,
+        "longitude": 76.9512,
+        "address": "Gandhipuram, Coimbatore, Tamil Nadu 641012",
+        "google_rating": 4.0,
+        "review_count": 1100,
+        "trust_score": 8.8,
+        "years_in_business": 18,
+        "categories": [
+            "Casual Cottons",
+            "Kurtis",
+            "Salwars"
+        ],
+        "banner_image": "https://example.com/banners/kumaran-coim.png",
+        "description": "Gandhipuram's popular showroom for casual clothing, cotton textiles, and daily matching fabrics.",
+        "is_verified": true,
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Kumaran%20Fashion",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Seematti",
+        "city": "Kochi",
+        "state": "Kerala",
+        "latitude": 9.9792,
+        "longitude": 76.2801,
+        "address": "MG Road, Ernakulam, Kochi, Kerala 682035",
+        "google_rating": 4.4,
+        "review_count": 21500,
+        "trust_score": 9.6,
+        "years_in_business": 110,
+        "categories": [
+            "Bridal Sarees",
+            "Silk Brocades",
+            "Kerala Kasavu"
+        ],
+        "banner_image": "https://example.com/banners/seematti-kochi.png",
+        "description": "Led by Beena Kannan, Seematti has set Kochi's fashion design trends for past a century.",
+        "is_verified": true,
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Seematti",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Jayalakshmi Silks",
+        "city": "Kochi",
+        "state": "Kerala",
+        "latitude": 9.9765,
+        "longitude": 76.2792,
+        "address": "MG Road, Shenoys Junction, Kochi, Kerala 682035",
+        "google_rating": 4.5,
+        "review_count": 23400,
+        "trust_score": 9.8,
+        "years_in_business": 76,
+        "categories": [
+            "Designer Lehengas",
+            "Kerala Mundu",
+            "Wedding Gowns"
+        ],
+        "banner_image": "https://example.com/banners/jayalakshmi-kochi.png",
+        "description": "An unmatched name in Kerala's bridal couture, offering gorgeous fabrics and ethnic selections.",
+        "is_verified": true,
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Jayalakshmi%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Pothys",
+        "city": "Kochi",
+        "state": "Kerala",
+        "latitude": 9.9921,
+        "longitude": 76.3011,
+        "address": "Palarivattom Bypass, Kochi, Kerala 682025",
+        "google_rating": 4.1,
+        "review_count": 8900,
+        "trust_score": 9.1,
+        "years_in_business": 15,
+        "categories": [
+            "Traditional Silk",
+            "Kids Frocks",
+            "Ready-made Garments"
+        ],
+        "banner_image": "https://example.com/banners/pothys-kochi.png",
+        "description": "Pothys brings their grand traditional showroom collections to Palarivattom's shoppers.",
+        "is_verified": true,
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Pothys",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Milan Design",
+        "city": "Kochi",
+        "state": "Kerala",
+        "latitude": 9.9812,
+        "longitude": 76.2854,
+        "address": "Geethanjali Junction, Kochi, Kerala 682019",
+        "google_rating": 4.6,
+        "review_count": 1900,
+        "trust_score": 9.5,
+        "years_in_business": 12,
+        "categories": [
+            "Bridal Couture",
+            "Anarkalis",
+            "Custom Gowns"
+        ],
+        "banner_image": "https://example.com/banners/milan-kochi.png",
+        "description": "High-end bespoke boutique catering to modern Keralite brides with customised, upscale embroidery.",
+        "is_verified": true,
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Milan%20Design",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Mysore Saree Udyog",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "latitude": 12.3021,
+        "longitude": 76.6512,
+        "address": "Urs Road, Mysuru, Karnataka 570001",
+        "google_rating": 4.5,
+        "review_count": 3100,
+        "trust_score": 9.6,
+        "years_in_business": 42,
+        "categories": [
+            "Mysore Silk",
+            "Pure Zari Crepe",
+            "Printed Silk"
+        ],
+        "banner_image": "https://example.com/banners/msu-mys.png",
+        "description": "Karnataka's landmark silk store, carrying pure crepe and printed handloom silks.",
+        "is_verified": true,
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Mysore%20Saree%20Udyog",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "KSIC Silk Showroom",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "latitude": 12.29581,
+        "longitude": 76.63938,
+        "address": "Visvesvaraya Circle, Mysuru, Karnataka 570001",
+        "google_rating": 4.4,
+        "review_count": 8900,
+        "trust_score": 9.7,
+        "years_in_business": 110,
+        "categories": [
+            "Mysore Silk",
+            "Government stamped silks"
+        ],
+        "banner_image": "https://example.com/banners/ksic-mys.png",
+        "description": "Government owned official KSIC Mysore Silk outlet, ensuring authentic pure gold thread zari validation.",
+        "is_verified": true,
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KSIC%20Silk%20Showroom",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Prasiddhi Silks",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "latitude": 12.3098,
+        "longitude": 76.6434,
+        "address": "Dewan's Road, Mysuru, Karnataka 570001",
+        "google_rating": 4.1,
+        "review_count": 820,
+        "trust_score": 8.9,
+        "years_in_business": 25,
+        "categories": [
+            "Sarees",
+            "Kurtas",
+            "Dhotis"
+        ],
+        "banner_image": "https://example.com/banners/prasiddhi-mys.png",
+        "description": "Quality silks showroom packing classical handlooms and daily wear dress materials.",
+        "is_verified": true,
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Prasiddhi%20Silks",
+        "specialties": [
+            "Mysuru Silk",
+            "Printed Crepe",
+            "Art Silk",
+            "Office Wear Sarees"
+        ]
+    },
+    {
+        "name": "Kayes Fashion",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "latitude": 12.2912,
+        "longitude": 76.6489,
+        "address": "Mysore Mall, Mysuru, Karnataka 570010",
+        "google_rating": 3.9,
+        "review_count": 450,
+        "trust_score": 8.4,
+        "years_in_business": 8,
+        "categories": [
+            "Casuals",
+            "Jeans",
+            "Westerns"
+        ],
+        "banner_image": "https://example.com/banners/kayes-mys.png",
+        "description": "Trendy lifestyle selections for students and family crowds visiting Mysore city.",
+        "is_verified": true,
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Kayes%20Fashion",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Dhantoli Fashion House",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "latitude": 21.1394,
+        "longitude": 79.0762,
+        "address": "Dhantoli Ward, Nagpur, Maharashtra 440012",
+        "google_rating": 4.1,
+        "review_count": 1800,
+        "trust_score": 9.2,
+        "years_in_business": 25,
+        "categories": [
+            "Lehengas",
+            "Suitings",
+            "Ethnic Wear"
+        ],
+        "banner_image": "https://example.com/banners/dhantoli-nag.png",
+        "description": "Highly trusted boutique for designer ethnic wears and wedding sherwanis in Nagpur.",
+        "is_verified": true,
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Dhantoli%20Fashion%20House",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Arvind Store",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "latitude": 21.1458,
+        "longitude": 79.088155,
+        "address": "Dharampeth, Nagpur, Maharashtra 440010",
+        "google_rating": 4.3,
+        "review_count": 1050,
+        "trust_score": 9.0,
+        "years_in_business": 10,
+        "categories": [
+            "Mens Suitings",
+            "Linen Shirts",
+            "Custom Tailored"
+        ],
+        "banner_image": "https://example.com/banners/arvind-nag.png",
+        "description": "Premium unstitched linen shirts matching custom suitings for corporate circles.",
+        "is_verified": true,
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Arvind%20Store",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Cotton County",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "latitude": 21.1512,
+        "longitude": 79.0912,
+        "address": "Sitabuldi, Nagpur, Maharashtra 440012",
+        "google_rating": 3.9,
+        "review_count": 720,
+        "trust_score": 8.5,
+        "years_in_business": 12,
+        "categories": [
+            "Casual Cottons",
+            "Jeans",
+            "T-Shirts"
+        ],
+        "banner_image": "https://example.com/banners/cotton-nag.png",
+        "description": "Clean, affordable cotton apparel sets tailored for Nagpur's seasonal warm climate.",
+        "is_verified": true,
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Cotton%20County",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Vastram",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "latitude": 21.1312,
+        "longitude": 79.0689,
+        "address": "Dharampeth Main Road, Nagpur, Maharashtra 440010",
+        "google_rating": 4.0,
+        "review_count": 510,
+        "trust_score": 8.7,
+        "years_in_business": 8,
+        "categories": [
+            "Kurtas",
+            "Pattu Sarees",
+            "Ethnic Wear"
+        ],
+        "banner_image": "https://example.com/banners/vastram-nag.png",
+        "description": "Vastram is a family favorite for festive kurtas and silk sarees in Nagpur.",
+        "is_verified": true,
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Vastram",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Rajasthali",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "latitude": 26.912434,
+        "longitude": 75.787271,
+        "address": "MI Road, Jaipur, Rajasthan 302001",
+        "google_rating": 4.4,
+        "review_count": 3900,
+        "trust_score": 9.5,
+        "years_in_business": 65,
+        "categories": [
+            "Bandhani",
+            "Jaipur Quilts",
+            "Ethnics"
+        ],
+        "banner_image": "https://example.com/banners/rajasthali-jai.png",
+        "description": "Official Rajasthali craft center showcasing authentic handlooms, block prints, and quilts.",
+        "is_verified": true,
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Rajasthali",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Jaipur Textile House",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "latitude": 26.9205,
+        "longitude": 75.799,
+        "address": "Chaura Rasta, Jaipur, Rajasthan 302003",
+        "google_rating": 4.2,
+        "review_count": 2100,
+        "trust_score": 9.1,
+        "years_in_business": 38,
+        "categories": [
+            "Lehengas",
+            "Jaipur Prints",
+            "Bedlinens"
+        ],
+        "banner_image": "https://example.com/banners/jth-jai.png",
+        "description": "Widely trusted boutique for wedding block prints and unstitched fabrics in Jaipur.",
+        "is_verified": true,
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Jaipur%20Textile%20House",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Gulab Chand Prints",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "latitude": 26.9189,
+        "longitude": 75.7912,
+        "address": "Bapu Bazaar, Jaipur, Rajasthan 302003",
+        "google_rating": 4.3,
+        "review_count": 9200,
+        "trust_score": 9.6,
+        "years_in_business": 70,
+        "categories": [
+            "Sanganeri Prints",
+            "Kurtas",
+            "Cotton fabrics"
+        ],
+        "banner_image": "https://example.com/banners/gulab-jai.png",
+        "description": "Legendary store at Bapu Bazaar carrying authentic Sanganeri handblock prints and summer cottons.",
+        "is_verified": true,
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Gulab%20Chand%20Prints",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Jaipur Kurti Store",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "latitude": 26.9254,
+        "longitude": 75.8054,
+        "address": "Hawa Mahal Road, Jaipur, Rajasthan 302002",
+        "google_rating": 4.0,
+        "review_count": 1800,
+        "trust_score": 8.8,
+        "years_in_business": 10,
+        "categories": [
+            "Kurtis",
+            "Ethnic Sets",
+            "Kurtas"
+        ],
+        "banner_image": "https://example.com/banners/kurti-jai.png",
+        "description": "Providing trendy modern iterations of Rajasthani prints at highly competitive prices.",
+        "is_verified": true,
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Jaipur%20Kurti%20Store",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "V2 Retail",
+        "city": "Patna",
+        "state": "Bihar",
+        "latitude": 25.594095,
+        "longitude": 85.137566,
+        "address": "Fraser Road, Patna, Bihar 800001",
+        "google_rating": 3.9,
+        "review_count": 3100,
+        "trust_score": 8.7,
+        "years_in_business": 22,
+        "categories": [
+            "Family Clothing",
+            "Daily Wear Cottons",
+            "Casuals"
+        ],
+        "banner_image": "https://example.com/banners/v2-patna.png",
+        "description": "Budget family shopping registry carrying everyday clothing packages.",
+        "is_verified": true,
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=V2%20Retail",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Pantaloons Patna",
+        "city": "Patna",
+        "state": "Bihar",
+        "latitude": 25.6121,
+        "longitude": 85.1502,
+        "address": "Boring Road Crossing, Patna, Bihar 800001",
+        "google_rating": 4.2,
+        "review_count": 5200,
+        "trust_score": 9.2,
+        "years_in_business": 15,
+        "categories": [
+            "Contemporary Wear",
+            "Anarkalis",
+            "Menswear"
+        ],
+        "banner_image": "https://example.com/banners/panta-patna.png",
+        "description": "Highly popular department store, serving contemporary designs and western apparel.",
+        "is_verified": true,
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Pantaloons%20Patna",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Patna Fashion Hub",
+        "city": "Patna",
+        "state": "Bihar",
+        "latitude": 25.6023,
+        "longitude": 85.1412,
+        "address": "Maurya Lok, Fraser Road, Patna, Bihar 800001",
+        "google_rating": 3.8,
+        "review_count": 920,
+        "trust_score": 8.5,
+        "years_in_business": 10,
+        "categories": [
+            "Kids Wear",
+            "Sarees",
+            "Kurtas"
+        ],
+        "banner_image": "https://example.com/banners/pfh-patna.png",
+        "description": "Highly visited local dealer for kids multiwear and wedding kurtas inside Maurya Lok.",
+        "is_verified": true,
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Patna%20Fashion%20Hub",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    },
+    {
+        "name": "Bihar Ethnic Collections",
+        "city": "Patna",
+        "state": "Bihar",
+        "latitude": 25.5898,
+        "longitude": 85.1298,
+        "address": "Kankarbagh, Patna, Bihar 800020",
+        "google_rating": 4.1,
+        "review_count": 810,
+        "trust_score": 9.0,
+        "years_in_business": 18,
+        "categories": [
+            "Madhubani Handlooms",
+            "Bhagalpuri Silk",
+            "Tussar Silks"
+        ],
+        "banner_image": "https://example.com/banners/bihar-ethnic.png",
+        "description": "Dedicated collections representing Bhagalpuri Tussar silks and hand-printed Madhubani sarees.",
+        "is_verified": true,
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Bihar%20Ethnic%20Collections",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
+    }
+]
