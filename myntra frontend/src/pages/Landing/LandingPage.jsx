@@ -28,24 +28,9 @@ export const LandingPage = () => {
 
       {/* Main Viewport Centered Content Card */}
       <div className="relative z-10 w-full max-w-[700px] mx-auto text-center flex flex-col items-center justify-center min-h-[calc(100vh-14rem)]">
-        
+
         {/* 1. Small Minimal Myntra Brand Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="mb-8"
-        >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface/80 border border-border/80 shadow-subtle backdrop-blur-md">
-            {/* Minimal Myntra M Logo representation */}
-            <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2.2L18 8v8l-6 3.8L6 16V8l6-3.8z" />
-            </svg>
-            <span className="text-[11px] font-semibold tracking-wider uppercase text-text-muted">
-              Myntra Hackathon · Regional Fashion Icons
-            </span>
-          </div>
-        </motion.div>
+
 
         {/* 2. Large Editorial Heading */}
         <motion.h1

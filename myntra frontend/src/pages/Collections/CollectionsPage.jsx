@@ -123,7 +123,7 @@ export const CollectionsPage = () => {
   return (
     <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-24 md:pb-28">
       <div className="space-y-12 sm:space-y-16">
-        
+
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-1.5 text-xs text-text-muted font-medium overflow-x-auto py-1" aria-label="Breadcrumb">
           <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -198,11 +198,10 @@ export const CollectionsPage = () => {
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     whileHover={{ y: -6 }}
                     onClick={() => handleCollectionSelect(col.collection_name)}
-                    className={`group cursor-pointer bg-surface border rounded-3xl overflow-hidden shadow-card transition-all duration-300 flex flex-col justify-between ${
-                      isSelected
+                    className={`group cursor-pointer bg-surface border rounded-3xl overflow-hidden shadow-card transition-all duration-300 flex flex-col justify-between ${isSelected
                         ? 'border-primary ring-2 ring-primary/20 shadow-elevated'
                         : 'border-border/80 hover:border-primary/50'
-                    }`}
+                      }`}
                   >
                     {/* Cover Image */}
                     <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
@@ -243,11 +242,10 @@ export const CollectionsPage = () => {
                       <div className="pt-2 border-t border-border/60">
                         <button
                           type="button"
-                          className={`w-full py-2.5 px-3 rounded-xl text-xs font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 ${
-                            isSelected
+                          className={`w-full py-2.5 px-3 rounded-xl text-xs font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 ${isSelected
                               ? 'bg-primary text-white shadow-subtle'
                               : 'bg-background border border-border/80 text-text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary'
-                          }`}
+                            }`}
                         >
                           <span>{isSelected ? 'Viewing Products' : 'View Products'}</span>
                           <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
@@ -329,7 +327,7 @@ export const CollectionsPage = () => {
                         {p.rating && (
                           <div className="absolute top-3 right-3 bg-slate-950/80 backdrop-blur-md px-2 py-0.5 rounded-md text-[11px] font-semibold text-amber-400 border border-amber-500/30 flex items-center gap-1">
                             <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                            <span>{p.rating}</span>
+                            <span>{p.rating} | {p.review_count ?? 0}</span>
                           </div>
                         )}
                       </div>

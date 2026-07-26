@@ -1,0 +1,13 @@
+Seed Process Started...
+Connecting to MongoDB at: mongodb://localhost:27017...
+Loaded 11 shopping hubs.
+Deleted 0 stale shopping hub documents.
+Loaded 44 stores to seed.
+Deleted 0 stale store documents.
+Cleared existing products collection.
+Loaded 132 products to seed.
+=================== Seeding Summary ===================
+Shopping Hubs - Handled: 11 | Inserted: 0 | Updated: 11
+Stores        - Handled: 44 | Inserted: 0 | Updated: 44
+Products      - Handled: 132 | Inserted: 132 | Skipped: 0
+=======================================================

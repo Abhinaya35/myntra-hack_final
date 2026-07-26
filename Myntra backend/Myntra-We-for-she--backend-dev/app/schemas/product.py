@@ -20,6 +20,7 @@ class ProductCardResponse(ProductBase):
     id: str = Field(validation_alias="_id", description="Unique string representation of the product ObjectId")
     thumbnail: str = Field(description="Main display image thumbnail URL")
     rating: float = Field(default=4.0, description="Average review rating")
+    review_count: int = Field(default=0, description="Total reviews count")
 
     model_config = {
         "populate_by_name": True,

@@ -57,7 +57,7 @@ export const storeService = {
    * Fetch nearby stores within radius
    * GET /stores/nearby?latitude=...&longitude=...&radius=...
    */
-  getNearbyStores: async (latitude, longitude, radius = 15) => {
+  getNearbyStores: async (latitude, longitude, radius = 150) => {
     const url = `${API_ENDPOINTS.NEARBY_STORES}?latitude=${latitude}&longitude=${longitude}&radius=${radius}`;
     return await apiClient.get(url);
   },

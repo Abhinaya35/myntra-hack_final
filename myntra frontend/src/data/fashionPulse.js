@@ -18,7 +18,7 @@ export const MOCK_FASHION_PULSE_TRENDS = [
     growth_percentage: 35,
     reason: 'Bonalu shopping has increased demand this week.',
     icon: 'Sparkles',
-    image: 'https://images.unsplash.com/photo-1611591475281-6d987ad8a6a2?auto=format&fit=crop&w=600&q=80',
+    image: 'https://i.postimg.cc/j5Yf0rMH/Screenshot-2026-07-26-113930.png',
   },
   {
     id: 'pulse_002',
@@ -28,7 +28,7 @@ export const MOCK_FASHION_PULSE_TRENDS = [
     growth_percentage: 28,
     reason: 'Trending because of seasonal festival shopping.',
     icon: 'TrendingUp',
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80',
+    image: 'https://i.postimg.cc/90651Jmf/Screenshot-2026-07-26-114943.png',
   },
   {
     id: 'pulse_003',
@@ -38,7 +38,7 @@ export const MOCK_FASHION_PULSE_TRENDS = [
     growth_percentage: 18,
     reason: 'Popular among festive shoppers and cultural events.',
     icon: 'ShoppingBag',
-    image: 'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=600&q=80',
+    image: 'https://i.postimg.cc/N0p3Zgsx/Screenshot-2026-07-26-115100.png',
   },
   {
     id: 'pulse_004',
@@ -48,7 +48,7 @@ export const MOCK_FASHION_PULSE_TRENDS = [
     growth_percentage: 32,
     reason: 'High surge driven by wedding season preparations.',
     icon: 'Flame',
-    image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80',
+    image: 'https://i.postimg.cc/fT1Tgf2x/Screenshot-2026-07-26-114608.png',
   },
   {
     id: 'pulse_005',
@@ -58,7 +58,7 @@ export const MOCK_FASHION_PULSE_TRENDS = [
     growth_percentage: 22,
     reason: 'Summer weaving showcases boosting lightweight silk demand.',
     icon: 'Award',
-    image: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=600&q=80',
+    image: 'https://i.postimg.cc/1zhX4rDt/Screenshot-2026-07-26-114307.png',
   },
   {
     id: 'pulse_006',
@@ -68,7 +68,7 @@ export const MOCK_FASHION_PULSE_TRENDS = [
     growth_percentage: 26,
     reason: 'Artisan pop-ups highlighting handcrafted cotton drapes.',
     icon: 'Compass',
-    image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80',
+    image: 'https://i.postimg.cc/Y9XtN6Lg/Screenshot-2026-07-26-114735.png',
   },
 ];
 
@@ -89,7 +89,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 12499,
         storeId: 'dest-1',
         storeName: 'Rajkamal Jewellers & Heritage Crafts',
-        image: 'https://images.unsplash.com/photo-1611591475281-6d987ad8a6a2?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/j5Yf0rMH/Screenshot-2026-07-26-113930.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -101,7 +101,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 18999,
         storeId: 'dest-1',
         storeName: 'Sri Venkateshwara Heritage Jewels',
-        image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/Y9VCKN22/Screenshot-2026-07-26-120945.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -113,7 +113,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 6499,
         storeId: 'dest-1',
         storeName: 'Deccan Heritage Crafts',
-        image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/13Z43Kp2/Screenshot-2026-07-26-121022.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -125,7 +125,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 24500,
         storeId: 'dest-1',
         storeName: 'Rajkamal Jewellers & Heritage Crafts',
-        image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/vmYBWH2W/Screenshot-2026-07-26-121007.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -148,7 +148,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 8999,
         storeId: 'dest-2',
         storeName: 'Jaipur Bandhej Emporium',
-        image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/0yJGLZ9T/Screenshot-2026-07-26-120337.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -160,7 +160,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 14500,
         storeId: 'dest-2',
         storeName: 'Marwar Heritage Textiles',
-        image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/90651Jmf/Screenshot-2026-07-26-114943.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -183,7 +183,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 4999,
         storeId: 'dest-1',
         storeName: 'Charminar Ethnic Wear',
-        image: 'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/3rsX5Vwx/Screenshot-2026-07-26-121345.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -195,7 +195,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 3299,
         storeId: 'dest-1',
         storeName: 'Deccan Weavers Guild',
-        image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/hvdVQb2F/Screenshot-2026-07-26-121414.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -218,7 +218,7 @@ export const MOCK_FASHION_PULSE_CATEGORY_DETAILS = {
         price: 34999,
         storeId: 'dest-3',
         storeName: 'Temple Weavers Guild',
-        image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+        image: 'https://i.postimg.cc/fT1Tgf2x/Screenshot-2026-07-26-114608.png',
         availableOffline: true,
         availableOnline: true,
       },
@@ -236,7 +236,7 @@ export const getCategoryDetailsMock = (categoryId) => {
 
   // Generic fallback if categoryId is not explicitly matched
   const matchedTrend = MOCK_FASHION_PULSE_TRENDS.find((t) => t.categoryId === categoryId);
-  
+
   return {
     categoryId: categoryId || 'general-trend',
     category: matchedTrend ? matchedTrend.category : 'Regional Fashion Trend',

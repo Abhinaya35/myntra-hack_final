@@ -25,11 +25,11 @@ export const NearbyPage = () => {
     if (location?.latitude && location?.longitude) {
       setLoading(true);
       setApiError(null);
-      // radius=30 as the default value whenever the frontend calls the Nearby Stores API
-      console.log('Nearby API URL will be built with radius=30');
+      // radius=150 as the default value whenever the frontend calls the Nearby Stores API
+      console.log('Nearby API URL will be built with radius=150');
       console.log('Latitude being sent:', location.latitude);
       console.log('Longitude being sent:', location.longitude);
-      storeService.getNearbyStores(location.latitude, location.longitude, 30)
+      storeService.getNearbyStores(location.latitude, location.longitude, 150)
         .then((data) => {
           // Map to structure expected by NearbyMap and StoreDiscoveryPanel
           const mappedStores = data.map((apiStore) => {

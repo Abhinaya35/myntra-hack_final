@@ -90,9 +90,9 @@ export const FashionPulseCard = ({ trend = {}, index = 0 }) => {
       <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
         {/* User-requested "Why?" / "Reason:" block */}
         <div className="space-y-1.5 bg-background/60 p-3 rounded-2xl border border-border/50">
-          <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-primary">
+          <div className="flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-primary">
             <Flame className="w-3.5 h-3.5 text-primary" />
-            <span>Reason:</span>
+            <span>Why It's Trending</span>
           </div>
           <p className="text-xs text-text-primary leading-relaxed font-medium line-clamp-2">
             {reason}
@@ -109,7 +109,7 @@ export const FashionPulseCard = ({ trend = {}, index = 0 }) => {
             whileHover={{ x: 3 }}
             className="inline-flex items-center gap-1 text-xs font-bold text-primary group-hover:text-primary-hover transition-colors"
           >
-            <span>Explore</span>
+            <span>View Collection</span>
             <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
           </motion.div>
         </div>

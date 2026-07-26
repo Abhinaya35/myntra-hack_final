@@ -1,0 +1,54 @@
+{
+    "_id": "p_0001",
+    "name": "South Kanchipuram Silk Saree (Vermilion Red - v1)",
+    "sub_category": "Silk Sarees",
+    "description": "Exquisite hand-woven gold zari border Kanchipuram silk saree, perfect for weddings.",
+    "price": 8500.0,
+    "discount_price": 5999.0,
+    "brand": "South India Shopping Mall",
+    "gender": "Women",
+    "occasion": "Wedding, Festival, Traditional",
+    "material": "Silk",
+    "sizes": [
+        {
+            "size": "FS",
+            "in_stock": true
+        }
+    ],
+    "colors": [
+        {
+            "name": "Vermilion Red",
+            "hex": "#E34234",
+            "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
+        },
+        {
+            "name": "Peacock Blue",
+            "hex": "#7F7F7F",
+            "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
+        }
+    ],
+    "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png",
+    "images": [
+        "https://example.com/images/sarees-kanchipuram-1.png",
+        "https://example.com/images/sarees-kanchipuram-2.png",
+        "https://example.com/images/sarees-kanchipuram-3.png"
+    ],
+    "category": "Sarees",
+    "discount_percentage": 29.42,
+    "stock_quantity": 18,
+    "rating": 4.6,
+    "review_count": 435,
+    "is_available": true,
+    "is_featured": true,
+    "created_at": "2026-07-18T12:00:00",
+    "specifications": {
+        "Material": "Silk",
+        "Pattern": "Elegant Woven motifs",
+        "Fabric": "Pure Silk",
+        "Care Instructions": "Dry wash recommended",
+        "Length": "5.5 meters",
+        "Occasion": "Wedding, Festival, Traditional"
+    },
+    "store_id": "6a650e53dd3a42911dc7463b",
+    "updated_at": "2026-07-26T06:30:47.466000"
+}
