@@ -17,6 +17,7 @@ import ErrorState from '../../components/common/ErrorState';
 
 // Service Imports
 import exploreService from '../../services/exploreService';
+import storeService from '../../services/storeService';
 import { getStateData } from '../../data/mockStates';
 
 /**
@@ -44,14 +45,40 @@ export const StateDetailsPage = () => {
   const staticFallback = getStateData(stateId) || {};
 
   const [hubs, setHubs] = useState([]);
+  const [featuredStores, setFeaturedStores] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [storesLoading, setStoresLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Scroll to top and fetch shopping hubs when stateId changes
+  // Scroll to top and fetch shopping hubs and stores when stateId changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     fetchStateShoppingHubs();
+    fetchStateStores();
   }, [stateId]);
+
+  const fetchStateStores = async () => {
+    try {
+      setStoresLoading(true);
+      const allStores = await storeService.getAllStores();
+      const filtered = (allStores || [])
+        .filter((store) => store.state?.toLowerCase() === stateName.toLowerCase())
+        .map((store) => ({
+          id: store._id || store.id,
+          name: store.name,
+          image: store.banner_image || store.logo_image || 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80',
+          hubName: store.city,
+          trustedSince: store.years_in_business ? `${2026 - store.years_in_business}` : '1968',
+          isVerified: store.is_verified ?? false,
+          description: store.description || `${store.name} is a trusted regional fashion boutique in ${store.city}, ${store.state}.`,
+        }));
+      setFeaturedStores(filtered);
+    } catch (err) {
+      console.warn('[StateDetailsPage] Failed to fetch featured stores:', err);
+    } finally {
+      setStoresLoading(false);
+    }
+  };
 
   const fetchStateShoppingHubs = async () => {
     try {
@@ -165,14 +192,14 @@ export const StateDetailsPage = () => {
         </motion.section>
 
         {/* 6. Featured Regional Fashion Icons */}
-        {staticFallback.featuredStores && (
+        {!storesLoading && featuredStores.length > 0 && (
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            <FeaturedStoresSection stores={staticFallback.featuredStores} stateName={stateName} />
+            <FeaturedStoresSection stores={featuredStores} stateName={stateName} />
           </motion.section>
         )}
 

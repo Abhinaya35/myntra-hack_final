@@ -30,6 +30,9 @@ export const CollectionsPage = () => {
   const [loadingStore, setLoadingStore] = useState(true);
   const [loadingProducts, setLoadingProducts] = useState(false);
   const [error, setError] = useState(null);
+  const [resolvedStoreId, setResolvedStoreId] = useState(null);
+
+  const isMongoId = (id) => /^[a-f\d]{24}$/i.test(id);
 
   // Scroll to top on mount / storeId change
   useEffect(() => {
@@ -45,13 +48,33 @@ export const CollectionsPage = () => {
       setLoadingStore(true);
       setError(null);
 
-      // Execute GET /stores/{storeId} and GET /stores/{storeId}/collections in parallel
-      const [storeRes, collectionsRes] = await Promise.all([
-        storeService.getStoreById(storeId),
-        storeService.getStoreCollections(storeId),
-      ]);
+      // 1. Resolve store profile from backend supporting slug fallback
+      let apiStore;
+      if (isMongoId(storeId)) {
+        apiStore = await storeService.getStoreById(storeId);
+      } else {
+        const nameFromSlug = storeId
+          .split('-')
+          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(' ');
+        try {
+          apiStore = await storeService.getStoreById(storeId);
+        } catch {
+          apiStore = await storeService.getStoreByName(nameFromSlug);
+        }
+      }
 
-      setStore(storeRes);
+      if (!apiStore) {
+        throw new Error(`Store profile not found for '${storeId}'`);
+      }
+
+      const realStoreId = apiStore._id || apiStore.id;
+      setResolvedStoreId(realStoreId);
+
+      // 2. Fetch collections using resolved ID
+      const collectionsRes = await storeService.getStoreCollections(realStoreId);
+
+      setStore(apiStore);
 
       const collectionsList = collectionsRes || [];
       setCollections(collectionsList);
@@ -60,7 +83,7 @@ export const CollectionsPage = () => {
       if (collectionsList.length > 0) {
         const firstColName = collectionsList[0].collection_name;
         setSelectedCollection(firstColName);
-        await fetchProductsForCollection(firstColName);
+        await fetchProductsForCollection(firstColName, realStoreId);
       }
     } catch (err) {
       console.error(`[CollectionsPage] Failed to fetch data for store '${storeId}':`, err);
@@ -74,10 +97,11 @@ export const CollectionsPage = () => {
    * Fetch products for a specific collection / occasion
    * GET /stores/{storeId}/products?occasion={collection_name}
    */
-  const fetchProductsForCollection = async (collectionName) => {
+  const fetchProductsForCollection = async (collectionName, currentStoreId = resolvedStoreId) => {
     try {
       setLoadingProducts(true);
-      const productsRes = await storeService.getStoreProducts(storeId, {
+      const targetStoreId = currentStoreId || storeId;
+      const productsRes = await storeService.getStoreProducts(targetStoreId, {
         occasion: collectionName,
       });
       setProducts(productsRes || []);
@@ -199,8 +223,8 @@ export const CollectionsPage = () => {
                     whileHover={{ y: -6 }}
                     onClick={() => handleCollectionSelect(col.collection_name)}
                     className={`group cursor-pointer bg-surface border rounded-3xl overflow-hidden shadow-card transition-all duration-300 flex flex-col justify-between ${isSelected
-                        ? 'border-primary ring-2 ring-primary/20 shadow-elevated'
-                        : 'border-border/80 hover:border-primary/50'
+                      ? 'border-primary ring-2 ring-primary/20 shadow-elevated'
+                      : 'border-border/80 hover:border-primary/50'
                       }`}
                   >
                     {/* Cover Image */}
@@ -243,8 +267,8 @@ export const CollectionsPage = () => {
                         <button
                           type="button"
                           className={`w-full py-2.5 px-3 rounded-xl text-xs font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 ${isSelected
-                              ? 'bg-primary text-white shadow-subtle'
-                              : 'bg-background border border-border/80 text-text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary'
+                            ? 'bg-primary text-white shadow-subtle'
+                            : 'bg-background border border-border/80 text-text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary'
                             }`}
                         >
                           <span>{isSelected ? 'Viewing Products' : 'View Products'}</span>

@@ -1,0 +1,13 @@
+Total stores in stores.json: 43
+Total products in products.json: 132
+Products missing exact store name/city match: 3
+First 10 missing exact matches:
+  Product: 'Padmavathi Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)' -> Store: 'Padmavathi Shopping Mall', City: 'Warangal'
+  Product: 'Padmavathi Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)' -> Store: 'Padmavathi Shopping Mall', City: 'Warangal'
+  Product: 'Padmavathi Royal Zardozi Wedding Sherwani (Cream Ivory - v3)' -> Store: 'Padmavathi Shopping Mall', City: 'Warangal'
+Products missing case-insensitive store name/city match: 3
+First 10 missing case-insensitive matches:
+  Product: 'Padmavathi Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)' -> Store: 'Padmavathi Shopping Mall', City: 'Warangal'
+  Product: 'Padmavathi Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)' -> Store: 'Padmavathi Shopping Mall', City: 'Warangal'
+  Product: 'Padmavathi Royal Zardozi Wedding Sherwani (Cream Ivory - v3)' -> Store: 'Padmavathi Shopping Mall', City: 'Warangal'
+Duplicate product keys (same name + store + city) in products.json: 0

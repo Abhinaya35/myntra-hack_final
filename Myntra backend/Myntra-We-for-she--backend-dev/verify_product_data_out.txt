@@ -1,0 +1,21 @@
+=== JSON Seed (products.json) ===
+  Name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+  Thumbnail: https://ibb.co/PvBGN0Rd
+  Images: ['https://ibb.co/PvBGN0Rd', 'https://ibb.co/xqC8wXLW', 'https://ibb.co/67sdVd4y']
+  Price: 8500.0
+  Rating: 4.6
+
+=== MongoDB database ===
+  Name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+  Thumbnail: https://ibb.co/PvBGN0Rd
+  Images: ['https://ibb.co/PvBGN0Rd', 'https://ibb.co/xqC8wXLW', 'https://ibb.co/67sdVd4y']
+  Price: 8500.0
+  Rating: 4.6
+
+=== Backend API (GET /products/p_0001) ===
+  Name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+  Thumbnail: https://ibb.co/PvBGN0Rd
+  Images: ['https://ibb.co/PvBGN0Rd', 'https://ibb.co/xqC8wXLW', 'https://ibb.co/67sdVd4y']
+  Price: None
+  Rating: None
+  Ratings Block: {'average_rating': 4.6, 'review_count': 435, 'rating_distribution': {'5': 295, '4': 71, '3': 34, '2': 17, '1': 18}}

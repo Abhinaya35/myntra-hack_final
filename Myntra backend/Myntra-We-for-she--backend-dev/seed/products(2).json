@@ -19,19 +19,19 @@
             {
                 "name": "Vermilion Red",
                 "hex": "#E34234",
-                "thumbnail": "https://ibb.co/9HV2Qv38"
+                "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
             },
             {
                 "name": "Peacock Blue",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/7JCFZckt"
+                "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/sdL92zhZ/Bridal-Kanchipuram-Sarees-1024x1024.jpg",
+        "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png",
         "images": [
-            "https://i.ibb.co/sdL92zhZ/Bridal-Kanchipuram-Sarees-1024x1024.jpg",
-            "https://i.ibb.co/v4wvfVqp/gold-zardosi-embroidered-kanchipuram-tissue-designer-saree-with-unstitched-contrast-blouse-sr27842.webp",
-            "https://i.ibb.co/gLgnHnDr/gold-zardosi-embroidered-kanchipuram-tissue-designer-saree-with-unstitched-contrast-blouse-sr27842-c.webp"
+            "https://example.com/images/sarees-kanchipuram-1.png",
+            "https://example.com/images/sarees-kanchipuram-2.png",
+            "https://example.com/images/sarees-kanchipuram-3.png"
         ],
         "_id": "p_0001",
         "category": "Sarees",
@@ -81,19 +81,19 @@
             {
                 "name": "Peach Cream",
                 "hex": "#FFE5B4",
-                "thumbnail": "https://ibb.co/F4Xs4xy9"
+                "thumbnail": "https://example.com/images/lehengas-floral-thumb.png"
             },
             {
                 "name": "Lavender Frost",
                 "hex": "#E6E6FA",
-                "thumbnail": "https://ibb.co/r2PCgd9D"
+                "thumbnail": "https://example.com/images/lehengas-floral-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/Xkvfd675/pexels-kalistro666-28080456.jpg",
+        "thumbnail": "https://example.com/images/lehengas-floral-thumb.png",
         "images": [
-            "https://i.ibb.co/Xkvfd675/pexels-kalistro666-28080456.jpg",
-            "https://i.ibb.co/Swxw3qLw/pexels-kalistro666-28080452.jpg",
-            "https://i.ibb.co/qYbN2N0W/pexels-kalistro666-28080455.jpg"
+            "https://example.com/images/lehengas-floral-1.png",
+            "https://example.com/images/lehengas-floral-2.png",
+            "https://example.com/images/lehengas-floral-3.png"
         ],
         "_id": "p_0002",
         "category": "Lehengas",
@@ -149,19 +149,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/PvbzyrcQ/Indigobluefloral-Hand-blockprinted-Kurta-Set-1.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/nNSzPWQP"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/PvbzyrcQ/Indigobluefloral-Hand-blockprinted-Kurta-Set-1.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/PvbzyrcQ/Indigobluefloral-Hand-blockprinted-Kurta-Set-1.webp",
-            "https://i.ibb.co/wmYWnqB/Indigobluefloral-Hand-blockprinted-Kurta-Set-8.webp",
-            "https://i.ibb.co/j9q6vVkD/Indigobluefloral-Hand-blockprinted-Kurta-Set-7.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0003",
         "category": "Ethnic Wear",
@@ -415,19 +415,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/4ZxhnVb9/61-AT2-Le6ef-L.jpg"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/gH1B3ZG"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/4ZxhnVb9/61-AT2-Le6ef-L.jpg",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/4ZxhnVb9/61-AT2-Le6ef-L.jpg",
-            "https://i.ibb.co/VYNGM1sc/619u-Wg-N-3-EL.jpg",
-            "https://i.ibb.co/d4Nm5V7Y/61-SWs-BEza-L.jpg"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0007",
         "category": "Traditional Sarees",
@@ -477,19 +477,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/BV3XnST5"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/spZhmYgQ/A95581-1-zoom.jpg"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/spZhmYgQ/A95581-1-zoom.jpg",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/spZhmYgQ/A95581-1-zoom.jpg",
-            "https://i.ibb.co/k6kzJ7C2/A411161-3-zoom.jpg",
-            "https://i.ibb.co/CKVWpghY/A95581-5-zoom.jpg"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0008",
         "category": "Dhotis",
@@ -541,19 +541,19 @@
             {
                 "name": "Mustard Yellow",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/XfTJTK0w/gulb-002-2.avif"
+                "thumbnail": "https://example.com/images/salwars-silk-thumb.png"
             },
             {
                 "name": "Emerald Green",
                 "hex": "#50C878",
-                "thumbnail": "https://ibb.co/QvvwQZth"
+                "thumbnail": "https://example.com/images/salwars-silk-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/XfTJTK0w/gulb-002-2.avif",
+        "thumbnail": "https://example.com/images/salwars-silk-thumb.png",
         "images": [
-            "https://i.ibb.co/XfTJTK0w/gulb-002-2.avif",
-            "https://i.ibb.co/YTyhFg2V/gulb-002-6.avif",
-            "https://i.ibb.co/4R0WhG6V/gulb-002-5.avif"
+            "https://example.com/images/salwars-silk-1.png",
+            "https://example.com/images/salwars-silk-2.png",
+            "https://example.com/images/salwars-silk-3.png"
         ],
         "_id": "p_0009",
         "category": "Salwars",
@@ -609,19 +609,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/jv0b7GTB/PHT0089-1-zoom.jpg"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/QjFKHSmm"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/jv0b7GTB/PHT0089-1-zoom.jpg",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/jv0b7GTB/PHT0089-1-zoom.jpg",
-            "https://i.ibb.co/Xr1vRgMP/PHT0089-2-zoom.jpg",
-            "https://i.ibb.co/XZcqmKc7/PHT0089-3-zoom.jpg"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0010",
         "category": "Contemporary Wear",
@@ -673,19 +673,19 @@
             {
                 "name": "Peach Cream",
                 "hex": "#FFE5B4",
-                "thumbnail": "https://ibb.co/YBNcVhzN"
+                "thumbnail": "https://example.com/images/lehengas-floral-thumb.png"
             },
             {
                 "name": "Lavender Frost",
                 "hex": "#E6E6FA",
-                "thumbnail": "https://i.ibb.co/35KGbhh3/161025mmf13-2.avif"
+                "thumbnail": "https://example.com/images/lehengas-floral-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/35KGbhh3/161025mmf13-2.avif",
+        "thumbnail": "https://example.com/images/lehengas-floral-thumb.png",
         "images": [
-            "https://i.ibb.co/35KGbhh3/161025mmf13-2.avif",
-            "https://i.ibb.co/S7D56BYq/161025mmf13-4.avif",
-            "https://i.ibb.co/jvm47FNc/161025mmf13-3.avif"
+            "https://example.com/images/lehengas-floral-1.png",
+            "https://example.com/images/lehengas-floral-2.png",
+            "https://example.com/images/lehengas-floral-3.png"
         ],
         "_id": "p_0011",
         "category": "Lehengas",
@@ -741,19 +741,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/YTPFXyQF/Whats-App-Image-2025-03-25-at-13-58-42.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/nsjWg5yK"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/YTPFXyQF/Whats-App-Image-2025-03-25-at-13-58-42.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/YTPFXyQF/Whats-App-Image-2025-03-25-at-13-58-42.webp",
-            "https://i.ibb.co/spPW8H8G/Whats-App-Image-2025-03-25-at-13-58-44.webp",
-            "https://i.ibb.co/VcmD48SB/Whats-App-Image-2025-03-25-at-13-58-44-1.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0012",
         "category": "Mens Suitings",
@@ -809,19 +809,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/fVWVVsrX/18-800x.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/3KT47vT"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/fVWVVsrX/18-800x.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/fVWVVsrX/18-800x.webp",
-            "https://i.ibb.co/RJvn455/DSC-9233copy-b6808411-616c-4c61-83a9-6f6c2421b867-800x.webp",
-            "https://i.ibb.co/2rKxFmc/DSC-9215-copy-f4915b76-3460-4c07-91f3-70d8dad6b3da-800x.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0013",
         "category": "Kanchipuram Silk",
@@ -873,19 +873,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/jZs6TfJ3"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/C3kCKqF0/image-zoom.jpg"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/C3kCKqF0/image-zoom.jpg",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/C3kCKqF0/image-zoom.jpg",
-            "https://i.ibb.co/SXnrx7hP/image-zoom-1.jpg",
-            "https://i.ibb.co/BVY456wn/image-zoom-2.jpg"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0014",
         "category": "Dharmavaram",
@@ -941,19 +941,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/7x6MB7zp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif",
-            "https://i.ibb.co/zVzvS942/ajk-25-akrtplz-ind-emb04lc41aug-4.avif",
-            "https://i.ibb.co/JRSJjNv1/ajk-25-akrtplz-ind-emb04lc41aug-3.avif"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0015",
         "category": "Handicrafts",
@@ -997,19 +997,19 @@
             {
                 "name": "Vermilion Red",
                 "hex": "#E34234",
-                "thumbnail": "https://i.ibb.co/d0DfYhx3/50.webp"
+                "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
             },
             {
                 "name": "Peacock Blue",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/zH7HSBpk"
+                "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/d0DfYhx3/50.webp",
+        "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png",
         "images": [
-            "https://i.ibb.co/d0DfYhx3/50.webp",
-            "https://i.ibb.co/yFY1GCpy/53.webp",
-            "https://i.ibb.co/fVFdS9S3/52.webp"
+            "https://example.com/images/sarees-kanchipuram-1.png",
+            "https://example.com/images/sarees-kanchipuram-2.png",
+            "https://example.com/images/sarees-kanchipuram-3.png"
         ],
         "_id": "p_0016",
         "category": "Sarees",
@@ -1059,19 +1059,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/3yQt5PYc"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/fwp268g/A130755-zoom.jpg"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/fwp268g/A130755-zoom.jpg",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/fwp268g/A130755-zoom.jpg",
-            "https://i.ibb.co/MxZFLBj0/A130755-1-ada-hand-embroidered-dark-pink-georgette-lucknowi-chikankari-kurti-with-slip-a130755-zoom.jpg",
-            "https://i.ibb.co/MxZFLBj0/A130755-1-ada-hand-embroidered-dark-pink-georgette-lucknowi-chikankari-kurti-with-slip-a130755-zoom.jpg"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0017",
         "category": "Ethnic Wear",
@@ -1127,19 +1127,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/7x6MB7zp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif",
-            "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif",
-            "https://i.ibb.co/chNrf9bW/ajk-25-akrtplz-ind-emb04lc41aug-5.avif"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0018",
         "category": "Grooms Wear",
@@ -1195,19 +1195,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/jPrrcPNz/img-6182.jpg"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/BKykZYK4/0G6A0413.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/jPrrcPNz/img-6182.jpg",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/jPrrcPNz/img-6182.jpg",
-            "https://i.ibb.co/jPrrcPNz/img-6182.jpg",
-            "https://i.ibb.co/jPrrcPNz/img-6182.jpg"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0019",
         "category": "Gadwal Sarees",
@@ -1257,19 +1257,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/jPPjxbPP"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/BKykZYK4/0G6A0413.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/BKykZYK4/0G6A0413.webp",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/BKykZYK4/0G6A0413.webp",
-            "https://i.ibb.co/BKykZYK4/0G6A0413.webp",
-            "https://i.ibb.co/BKykZYK4/0G6A0413.webp"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0020",
         "category": "Pattu Sarees",
@@ -1323,19 +1323,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/fGYZ3N32/SRJ7011-1-1800x.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/Hp9bF5bj"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/fGYZ3N32/SRJ7011-1-1800x.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/fGYZ3N32/SRJ7011-1-1800x.webp",
-            "https://i.ibb.co/fGYZ3N32/SRJ7011-1-1800x.webp",
-            "https://i.ibb.co/fGYZ3N32/SRJ7011-1-1800x.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0021",
         "category": "Ready-made Salwars",
@@ -1391,19 +1391,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/3mGLj53T/VSKD32542-VARDUP2097-1-4cf621c2-0542-40ec-b3e6-2f4b88f25b8f.jpg"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/hxRzZwn5"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/3mGLj53T/VSKD32542-VARDUP2097-1-4cf621c2-0542-40ec-b3e6-2f4b88f25b8f.jpg",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/3mGLj53T/VSKD32542-VARDUP2097-1-4cf621c2-0542-40ec-b3e6-2f4b88f25b8f.jpg",
-            "https://i.ibb.co/3mGLj53T/VSKD32542-VARDUP2097-1-4cf621c2-0542-40ec-b3e6-2f4b88f25b8f.jpg",
-            "https://i.ibb.co/3mGLj53T/VSKD32542-VARDUP2097-1-4cf621c2-0542-40ec-b3e6-2f4b88f25b8f.jpg"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0022",
         "category": "Dharmavaram Silks",
@@ -1455,19 +1455,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/d1QXwN8"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/KcdHRj2m/rabric-women-pink-cotton-kurta-set-sitting-pose.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/KcdHRj2m/rabric-women-pink-cotton-kurta-set-sitting-pose.webp",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/KcdHRj2m/rabric-women-pink-cotton-kurta-set-sitting-pose.webp",
-            "https://i.ibb.co/KcdHRj2m/rabric-women-pink-cotton-kurta-set-sitting-pose.webp",
-            "https://i.ibb.co/KcdHRj2m/rabric-women-pink-cotton-kurta-set-sitting-pose.webp"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0023",
         "category": "Wedding Sarees",
@@ -1521,19 +1521,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/KxcGVN20/TP4450-T-2-3pc-Top-1-b5098458-f2ee-42ee-ab68-01a7598f3b38.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/Vc1mf90K"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/KxcGVN20/TP4450-T-2-3pc-Top-1-b5098458-f2ee-42ee-ab68-01a7598f3b38.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/KxcGVN20/TP4450-T-2-3pc-Top-1-b5098458-f2ee-42ee-ab68-01a7598f3b38.webp",
-            "https://i.ibb.co/KxcGVN20/TP4450-T-2-3pc-Top-1-b5098458-f2ee-42ee-ab68-01a7598f3b38.webp",
-            "https://i.ibb.co/KxcGVN20/TP4450-T-2-3pc-Top-1-b5098458-f2ee-42ee-ab68-01a7598f3b38.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0024",
         "category": "Kids Ethnic",
@@ -1554,6 +1554,202 @@
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
             "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
+        }
+    },
+    {
+        "name": "Padmavathi Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)",
+        "sub_category": "Kurta Sets",
+        "description": "Pure cotton straight fit traditional style kurta matched with striped straight pants, elegant ethnic wear.",
+        "price": 3200.0,
+        "discount_price": 2399.0,
+        "brand": "Padmavathi Shopping Mall",
+        "gender": "Women",
+        "occasion": "Casual",
+        "material": "Cotton",
+        "sizes": [
+            {
+                "size": "S",
+                "in_stock": true
+            },
+            {
+                "size": "M",
+                "in_stock": true
+            },
+            {
+                "size": "L",
+                "in_stock": true
+            },
+            {
+                "size": "XL",
+                "in_stock": false
+            }
+        ],
+        "colors": [
+            {
+                "name": "Indigo Blue Print",
+                "hex": "#7F7F7F",
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
+            },
+            {
+                "name": "Fierce Pink Print",
+                "hex": "#7F7F7F",
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
+            }
+        ],
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
+        "images": [
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
+        ],
+        "_id": "p_0025",
+        "category": "Family Clothing",
+        "store_name": "Padmavathi Shopping Mall",
+        "store_city": "Warangal",
+        "discount_percentage": 25.03,
+        "stock_quantity": 19,
+        "rating": 4.5,
+        "review_count": 303,
+        "is_available": true,
+        "is_featured": true,
+        "created_at": "2026-07-18T12:00:00Z",
+        "specifications": {
+            "Material": "Cotton",
+            "Pattern": "Hand Block Printed",
+            "Sleeve Length": "Three-Quarter",
+            "Neck": "Collar Neck",
+            "Fit": "Regular / Straight Fit",
+            "Fabric": "Cotton",
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
+        }
+    },
+    {
+        "name": "Padmavathi Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)",
+        "sub_category": "Chikankari Kurtas",
+        "description": "Beautiful hand-embroidered Lucknowi chikankari georgette kurta, comes with soft inner lining.",
+        "price": 2800.0,
+        "discount_price": 2199.0,
+        "brand": "Padmavathi Shopping Mall",
+        "gender": "Women",
+        "occasion": "Casual",
+        "material": "Georgette",
+        "sizes": [
+            {
+                "size": "M",
+                "in_stock": true
+            },
+            {
+                "size": "L",
+                "in_stock": true
+            },
+            {
+                "size": "XL",
+                "in_stock": false
+            }
+        ],
+        "colors": [
+            {
+                "name": "Mint Aqua",
+                "hex": "#7F7F7F",
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
+            },
+            {
+                "name": "Baby Pink",
+                "hex": "#7F7F7F",
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
+            }
+        ],
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
+        "images": [
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
+        ],
+        "_id": "p_0026",
+        "category": "Daily Wear Cottons",
+        "store_name": "Padmavathi Shopping Mall",
+        "store_city": "Warangal",
+        "discount_percentage": 21.46,
+        "stock_quantity": 12,
+        "rating": 4.4,
+        "review_count": 26,
+        "is_available": true,
+        "is_featured": false,
+        "created_at": "2026-07-18T12:00:00Z",
+        "specifications": {
+            "Material": "Georgette",
+            "Pattern": "Lucknowi Embroidery",
+            "Sleeve Length": "Three-Quarter",
+            "Neck": "Collar Neck",
+            "Fit": "Regular / Straight Fit",
+            "Fabric": "Georgette",
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
+        }
+    },
+    {
+        "name": "Padmavathi Royal Zardozi Wedding Sherwani (Cream Ivory - v3)",
+        "sub_category": "Groom Sherwanis",
+        "description": "Premium brocade silk sherwani adorned with manual golden zardozi work and beaded collar.",
+        "price": 22000.0,
+        "discount_price": 17999.0,
+        "brand": "Padmavathi Shopping Mall",
+        "gender": "Men",
+        "occasion": "Casual",
+        "material": "Brocade Silk",
+        "sizes": [
+            {
+                "size": "M",
+                "in_stock": true
+            },
+            {
+                "size": "L",
+                "in_stock": true
+            },
+            {
+                "size": "XL",
+                "in_stock": false
+            }
+        ],
+        "colors": [
+            {
+                "name": "Cream Ivory",
+                "hex": "#7F7F7F",
+                "thumbnail": "https://example.com/images/sherwanis-royal-thumb.png"
+            },
+            {
+                "name": "Royal Beige",
+                "hex": "#7F7F7F",
+                "thumbnail": "https://example.com/images/sherwanis-royal-thumb.png"
+            }
+        ],
+        "thumbnail": "https://example.com/images/sherwanis-royal-thumb.png",
+        "images": [
+            "https://example.com/images/sherwanis-royal-1.png",
+            "https://example.com/images/sherwanis-royal-2.png",
+            "https://example.com/images/sherwanis-royal-3.png"
+        ],
+        "_id": "p_0027",
+        "category": "Sherwanis",
+        "store_name": "Padmavathi Shopping Mall",
+        "store_city": "Warangal",
+        "discount_percentage": 18.19,
+        "stock_quantity": 27,
+        "rating": 4.8,
+        "review_count": 104,
+        "is_available": true,
+        "is_featured": false,
+        "created_at": "2026-07-18T12:00:00Z",
+        "specifications": {
+            "Material": "Brocade Silk",
+            "Pattern": "Solid Design",
+            "Sleeve Length": "Regular Sleeves",
+            "Neck": "Round Neck",
+            "Fit": "Regular Fit",
+            "Fabric": "Brocade Silk",
+            "Care Instructions": "Machine wash",
             "Occasion": "Casual"
         }
     },
@@ -1589,19 +1785,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/XZnQ8T3f/DK0920-9.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/S49P8Bhv/New-Project-25.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/XZnQ8T3f/DK0920-9.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/XZnQ8T3f/DK0920-9.webp",
-            "https://i.ibb.co/XZnQ8T3f/DK0920-9.webp",
-            "https://i.ibb.co/XZnQ8T3f/DK0920-9.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0028",
         "category": "Traditional Pattu",
@@ -1653,19 +1849,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/7xRp1RT4"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/S49P8Bhv/New-Project-25.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/S49P8Bhv/New-Project-25.webp",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/S49P8Bhv/New-Project-25.webp",
-            "https://i.ibb.co/S49P8Bhv/New-Project-25.webp",
-            "https://i.ibb.co/S49P8Bhv/New-Project-25.webp"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0029",
         "category": "Handlooms",
@@ -1721,19 +1917,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/C536JPqB/printed-cotton-aline-kurta-set-in-teal-blue-v1-tmr91.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/WN329rmv"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/C536JPqB/printed-cotton-aline-kurta-set-in-teal-blue-v1-tmr91.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/C536JPqB/printed-cotton-aline-kurta-set-in-teal-blue-v1-tmr91.webp",
-            "https://i.ibb.co/C536JPqB/printed-cotton-aline-kurta-set-in-teal-blue-v1-tmr91.webp",
-            "https://i.ibb.co/C536JPqB/printed-cotton-aline-kurta-set-in-teal-blue-v1-tmr91.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0030",
         "category": "Salwar Suits",
@@ -1789,19 +1985,19 @@
             {
                 "name": "Teal Blue",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/kggd8bP7/6321316249480580013.jpg"
+                "thumbnail": "https://example.com/images/kurtis-anarkali-thumb.png"
             },
             {
                 "name": "Rust Orange",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/209Yv378"
+                "thumbnail": "https://example.com/images/kurtis-anarkali-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/kggd8bP7/6321316249480580013.jpg",
+        "thumbnail": "https://example.com/images/kurtis-anarkali-thumb.png",
         "images": [
-            "https://i.ibb.co/kggd8bP7/6321316249480580013.jpg",
-            "https://i.ibb.co/kggd8bP7/6321316249480580013.jpg",
-            "https://i.ibb.co/kggd8bP7/6321316249480580013.jpg"
+            "https://example.com/images/kurtis-anarkali-1.png",
+            "https://example.com/images/kurtis-anarkali-2.png",
+            "https://example.com/images/kurtis-anarkali-3.png"
         ],
         "_id": "p_0031",
         "category": "Kurtis",
@@ -1853,19 +2049,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://ibb.co/0jpPkcHJ"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/ymFqzmfC/image-original-zoom.jpg"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/ymFqzmfC/image-original-zoom.jpg",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/ymFqzmfC/image-original-zoom.jpg",
-            "https://i.ibb.co/ymFqzmfC/image-original-zoom.jpg",
-            "https://i.ibb.co/ymFqzmfC/image-original-zoom.jpg"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0032",
         "category": "Western Outfits",
@@ -1921,19 +2117,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/sdwwzLS1/DSC6199-7ad2a904-343e-4ee1-9c3b-b357fe0c00c9.jpg"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/sdwwzLS1/DSC6199-7ad2a904-343e-4ee1-9c3b-b357fe0c00c9.jpg"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/sdwwzLS1/DSC6199-7ad2a904-343e-4ee1-9c3b-b357fe0c00c9.jpg",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/sdwwzLS1/DSC6199-7ad2a904-343e-4ee1-9c3b-b357fe0c00c9.jpg",
-            "https://i.ibb.co/sdwwzLS1/DSC6199-7ad2a904-343e-4ee1-9c3b-b357fe0c00c9.jpg",
-            "https://i.ibb.co/sdwwzLS1/DSC6199-7ad2a904-343e-4ee1-9c3b-b357fe0c00c9.jpg"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0033",
         "category": "Designer Sarees",
@@ -1987,19 +2183,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/0RZQSxXw/SHYKBD0056-NAVY-1.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/0RZQSxXw/SHYKBD0056-NAVY-1.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/0RZQSxXw/SHYKBD0056-NAVY-1.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/0RZQSxXw/SHYKBD0056-NAVY-1.webp",
-            "https://i.ibb.co/0RZQSxXw/SHYKBD0056-NAVY-1.webp",
-            "https://i.ibb.co/0RZQSxXw/SHYKBD0056-NAVY-1.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0034",
         "category": "Dhotis",
@@ -2051,19 +2247,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/8n8bMcfr/3-58b94325-fb70-4eb3-925d-6e7f4669b585.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/8n8bMcfr/3-58b94325-fb70-4eb3-925d-6e7f4669b585.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/8n8bMcfr/3-58b94325-fb70-4eb3-925d-6e7f4669b585.webp",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/8n8bMcfr/3-58b94325-fb70-4eb3-925d-6e7f4669b585.webp",
-            "https://i.ibb.co/8n8bMcfr/3-58b94325-fb70-4eb3-925d-6e7f4669b585.webp",
-            "https://i.ibb.co/8n8bMcfr/3-58b94325-fb70-4eb3-925d-6e7f4669b585.webp"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0035",
         "category": "Unstitched Fabric",
@@ -2119,19 +2315,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/7tK6BtRR/kriti-sanon-59-1024x1024.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/7tK6BtRR/kriti-sanon-59-1024x1024.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/7tK6BtRR/kriti-sanon-59-1024x1024.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/7tK6BtRR/kriti-sanon-59-1024x1024.webp",
-            "https://i.ibb.co/7tK6BtRR/kriti-sanon-59-1024x1024.webp",
-            "https://i.ibb.co/7tK6BtRR/kriti-sanon-59-1024x1024.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0036",
         "category": "Daily Cottons",
@@ -2187,19 +2383,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/RT4m7SCP/photo-2023-10-04-00-36-31-1024x1024.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/RT4m7SCP/photo-2023-10-04-00-36-31-1024x1024.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/RT4m7SCP/photo-2023-10-04-00-36-31-1024x1024.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/RT4m7SCP/photo-2023-10-04-00-36-31-1024x1024.webp",
-            "https://i.ibb.co/RT4m7SCP/photo-2023-10-04-00-36-31-1024x1024.webp",
-            "https://i.ibb.co/RT4m7SCP/photo-2023-10-04-00-36-31-1024x1024.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0037",
         "category": "Silk Sarees",
@@ -2249,19 +2445,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/S4jJm0vD/IMG-20260214-233951-5-11zon.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/S4jJm0vD/IMG-20260214-233951-5-11zon.webp"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/S4jJm0vD/IMG-20260214-233951-5-11zon.webp",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://i.ibb.co/S4jJm0vD/IMG-20260214-233951-5-11zon.webp",
-            "https://i.ibb.co/S4jJm0vD/IMG-20260214-233951-5-11zon.webp",
-            "https://i.ibb.co/S4jJm0vD/IMG-20260214-233951-5-11zon.webp"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0038",
         "category": "Menswear",
@@ -2317,19 +2513,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/2YScgDcs/HK-VKS4-Blue-6.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://i.ibb.co/2YScgDcs/HK-VKS4-Blue-6.webp"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://i.ibb.co/2YScgDcs/HK-VKS4-Blue-6.webp",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://i.ibb.co/2YScgDcs/HK-VKS4-Blue-6.webp",
-            "https://i.ibb.co/2YScgDcs/HK-VKS4-Blue-6.webp",
-            "https://i.ibb.co/2YScgDcs/HK-VKS4-Blue-6.webp"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0039",
         "category": "Wedding Special",
@@ -2385,19 +2581,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0040",
         "category": "Mens Suitings",
@@ -2441,19 +2637,19 @@
             {
                 "name": "Fuschia Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png"
             },
             {
                 "name": "Royal Violet",
                 "hex": "#8F00FF",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/sarees-banarasi-1.png",
+            "https://example.com/images/sarees-banarasi-2.png",
+            "https://example.com/images/sarees-banarasi-3.png"
         ],
         "_id": "p_0041",
         "category": "Sarees",
@@ -2507,19 +2703,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0042",
         "category": "Kids Ethnic",
@@ -2575,19 +2771,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0043",
         "category": "Traditional Sarees",
@@ -2637,19 +2833,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0044",
         "category": "Family Clothes",
@@ -2693,19 +2889,19 @@
             {
                 "name": "Bright Maroon",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/accessories-dupatta-thumb.png"
             },
             {
                 "name": "Peacock Green",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/accessories-dupatta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/accessories-dupatta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/accessories-dupatta-1.png",
+            "https://example.com/images/accessories-dupatta-2.png",
+            "https://example.com/images/accessories-dupatta-3.png"
         ],
         "_id": "p_0045",
         "category": "Accessories",
@@ -2761,19 +2957,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0046",
         "category": "Mysore Silk",
@@ -2825,19 +3021,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0047",
         "category": "Pure Silk Sarees",
@@ -2891,19 +3087,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0048",
         "category": "Crepe Silks",
@@ -2955,19 +3151,19 @@
             {
                 "name": "Crimson Maroon",
                 "hex": "#800000",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png"
             },
             {
                 "name": "Wine Plum",
                 "hex": "#5C246E",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/lehengas-velvet-1.png",
+            "https://example.com/images/lehengas-velvet-2.png",
+            "https://example.com/images/lehengas-velvet-3.png"
         ],
         "_id": "p_0049",
         "category": "Lehengas",
@@ -3011,19 +3207,19 @@
             {
                 "name": "Fuschia Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png"
             },
             {
                 "name": "Royal Violet",
                 "hex": "#8F00FF",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/sarees-banarasi-1.png",
+            "https://example.com/images/sarees-banarasi-2.png",
+            "https://example.com/images/sarees-banarasi-3.png"
         ],
         "_id": "p_0050",
         "category": "Sarees",
@@ -3077,19 +3273,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0051",
         "category": "Western Wear",
@@ -3145,19 +3341,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0052",
         "category": "Silk Sarees",
@@ -3207,19 +3403,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0053",
         "category": "Anarkalis",
@@ -3271,19 +3467,19 @@
             {
                 "name": "Marigold Yellow",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kids-frock-thumb.png"
             },
             {
                 "name": "Coral Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kids-frock-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/kids-frock-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/kids-frock-1.png",
+            "https://example.com/images/kids-frock-2.png",
+            "https://example.com/images/kids-frock-3.png"
         ],
         "_id": "p_0054",
         "category": "Kids Wear",
@@ -3339,19 +3535,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0055",
         "category": "Daily Cottons",
@@ -3403,19 +3599,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0056",
         "category": "Linen Shirts",
@@ -3459,19 +3655,19 @@
             {
                 "name": "Mint Green",
                 "hex": "#98FF98",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-linen-thumb.png"
             },
             {
                 "name": "Sun Yellow",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-linen-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/sarees-linen-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/sarees-linen-1.png",
+            "https://example.com/images/sarees-linen-2.png",
+            "https://example.com/images/sarees-linen-3.png"
         ],
         "_id": "p_0057",
         "category": "Sarees",
@@ -3525,19 +3721,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0058",
         "category": "Pattu Sarees",
@@ -3587,19 +3783,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0059",
         "category": "Dhotis",
@@ -3655,19 +3851,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0060",
         "category": "Grooms Wear",
@@ -3723,19 +3919,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0061",
         "category": "Wedding Silks",
@@ -3787,19 +3983,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0062",
         "category": "Organic Cotton",
@@ -3855,19 +4051,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0063",
         "category": "Mens Wear",
@@ -3923,19 +4119,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0064",
         "category": "Samudrika Pattu",
@@ -3987,19 +4183,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0065",
         "category": "Parampara Silks",
@@ -4055,19 +4251,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0066",
         "category": "Designer Sarees",
@@ -4121,19 +4317,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0067",
         "category": "Liril Sarees",
@@ -4183,19 +4379,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0068",
         "category": "Themes Collection",
@@ -4251,19 +4447,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0069",
         "category": "Kids Cottons",
@@ -4319,19 +4515,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0070",
         "category": "Casual Cottons",
@@ -4387,19 +4583,19 @@
             {
                 "name": "Indigo Blue",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kurtis-regular-thumb.png"
             },
             {
                 "name": "Charcoal Black",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kurtis-regular-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/kurtis-regular-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/kurtis-regular-1.png",
+            "https://example.com/images/kurtis-regular-2.png",
+            "https://example.com/images/kurtis-regular-3.png"
         ],
         "_id": "p_0071",
         "category": "Kurtis",
@@ -4451,19 +4647,19 @@
             {
                 "name": "Mustard Yellow",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/salwars-silk-thumb.png"
             },
             {
                 "name": "Emerald Green",
                 "hex": "#50C878",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/salwars-silk-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/salwars-silk-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/salwars-silk-1.png",
+            "https://example.com/images/salwars-silk-2.png",
+            "https://example.com/images/salwars-silk-3.png"
         ],
         "_id": "p_0072",
         "category": "Salwars",
@@ -4519,19 +4715,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0073",
         "category": "Bridal Sarees",
@@ -4581,19 +4777,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0074",
         "category": "Silk Brocades",
@@ -4649,19 +4845,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0075",
         "category": "Kerala Kasavu",
@@ -4717,19 +4913,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0076",
         "category": "Designer Lehengas",
@@ -4781,19 +4977,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0077",
         "category": "Kerala Mundu",
@@ -4849,19 +5045,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0078",
         "category": "Wedding Gowns",
@@ -4917,19 +5113,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0079",
         "category": "Traditional Silk",
@@ -4981,19 +5177,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0080",
         "category": "Kids Frocks",
@@ -5049,19 +5245,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0081",
         "category": "Ready-made Garments",
@@ -5117,19 +5313,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0082",
         "category": "Bridal Couture",
@@ -5181,19 +5377,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0083",
         "category": "Anarkalis",
@@ -5249,19 +5445,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0084",
         "category": "Custom Gowns",
@@ -5317,19 +5513,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0085",
         "category": "Mysore Silk",
@@ -5381,19 +5577,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0086",
         "category": "Pure Zari Crepe",
@@ -5449,19 +5645,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0087",
         "category": "Printed Silk",
@@ -5517,19 +5713,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0088",
         "category": "Mysore Silk",
@@ -5581,19 +5777,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0089",
         "category": "Government stamped silks",
@@ -5649,19 +5845,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0090",
         "category": "Mysore Silk",
@@ -5705,19 +5901,19 @@
             {
                 "name": "Vermilion Red",
                 "hex": "#E34234",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
             },
             {
                 "name": "Peacock Blue",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/sarees-kanchipuram-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/sarees-kanchipuram-1.png",
+            "https://example.com/images/sarees-kanchipuram-2.png",
+            "https://example.com/images/sarees-kanchipuram-3.png"
         ],
         "_id": "p_0091",
         "category": "Sarees",
@@ -5767,19 +5963,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0092",
         "category": "Kurtas",
@@ -5835,19 +6031,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0093",
         "category": "Dhotis",
@@ -5903,19 +6099,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0094",
         "category": "Casuals",
@@ -5971,14 +6167,14 @@
             {
                 "name": "Raw Indigo Black",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/jeans-classic-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/jeans-classic-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/jeans-classic-1.png",
+            "https://example.com/images/jeans-classic-2.png",
+            "https://example.com/images/jeans-classic-3.png"
         ],
         "_id": "p_0095",
         "category": "Jeans",
@@ -6034,19 +6230,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0096",
         "category": "Westerns",
@@ -6071,12 +6267,12 @@
         }
     },
     {
-        "name": "Embroidered Velvet Lehenga Choli (Crimson Maroon - v1)",
+        "name": "Dhantoli Embroidered Velvet Lehenga Choli (Crimson Maroon - v1)",
         "sub_category": "Bridal Lehengas",
         "description": "Luxurious velvet bridal lehenga heavily embellished with zardozi and stone embroidery.",
         "price": 18500.0,
         "discount_price": 14999.0,
-        "brand": "Ashiesh Nx",
+        "brand": "Dhantoli Fashion House",
         "gender": "Women",
         "occasion": "Wedding, Festival, Party Wear",
         "material": "Velvet",
@@ -6098,23 +6294,23 @@
             {
                 "name": "Crimson Maroon",
                 "hex": "#800000",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png"
             },
             {
                 "name": "Wine Plum",
                 "hex": "#5C246E",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/lehengas-velvet-1.png",
+            "https://example.com/images/lehengas-velvet-2.png",
+            "https://example.com/images/lehengas-velvet-3.png"
         ],
         "_id": "p_0097",
         "category": "Lehengas",
-        "store_name": "Ashiesh Nx",
+        "store_name": "Dhantoli Fashion House",
         "store_city": "Nagpur",
         "discount_percentage": 18.92,
         "stock_quantity": 35,
@@ -6135,12 +6331,12 @@
         }
     },
     {
-        "name": "Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)",
+        "name": "Dhantoli Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)",
         "sub_category": "Chikankari Kurtas",
         "description": "Beautiful hand-embroidered Lucknowi chikankari georgette kurta, comes with soft inner lining.",
         "price": 2800.0,
         "discount_price": 2199.0,
-        "brand": "Ashiesh Nx",
+        "brand": "Dhantoli Fashion House",
         "gender": "Women",
         "occasion": "Festival, Family Function, Ethnic",
         "material": "Georgette",
@@ -6162,23 +6358,23 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0098",
         "category": "Suitings",
-        "store_name": "Ashiesh Nx",
+        "store_name": "Dhantoli Fashion House",
         "store_city": "Nagpur",
         "discount_percentage": 21.46,
         "stock_quantity": 14,
@@ -6199,12 +6395,12 @@
         }
     },
     {
-        "name": "Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v3)",
+        "name": "Dhantoli Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v3)",
         "sub_category": "Kurta Sets",
         "description": "Pure cotton straight fit traditional style kurta matched with striped straight pants, elegant ethnic wear.",
         "price": 3200.0,
         "discount_price": 2399.0,
-        "brand": "Ashiesh Nx",
+        "brand": "Dhantoli Fashion House",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Cotton",
@@ -6230,23 +6426,23 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0099",
         "category": "Ethnic Wear",
-        "store_name": "Ashiesh Nx",
+        "store_name": "Dhantoli Fashion House",
         "store_city": "Nagpur",
         "discount_percentage": 25.03,
         "stock_quantity": 32,
@@ -6298,19 +6494,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0100",
         "category": "Mens Suitings",
@@ -6362,19 +6558,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0101",
         "category": "Linen Shirts",
@@ -6430,19 +6626,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0102",
         "category": "Custom Tailored",
@@ -6498,19 +6694,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0103",
         "category": "Casual Cottons",
@@ -6566,14 +6762,14 @@
             {
                 "name": "Raw Indigo Black",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/jeans-classic-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/jeans-classic-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/jeans-classic-1.png",
+            "https://example.com/images/jeans-classic-2.png",
+            "https://example.com/images/jeans-classic-3.png"
         ],
         "_id": "p_0104",
         "category": "Jeans",
@@ -6633,24 +6829,24 @@
             {
                 "name": "Navy Blue",
                 "hex": "#000080",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/tshirts-polo-thumb.png"
             },
             {
                 "name": "Crimson Red",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/tshirts-polo-thumb.png"
             },
             {
                 "name": "Jet Black",
                 "hex": "#0A0A0A",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/tshirts-polo-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/tshirts-polo-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/tshirts-polo-1.png",
+            "https://example.com/images/tshirts-polo-2.png",
+            "https://example.com/images/tshirts-polo-3.png"
         ],
         "_id": "p_0105",
         "category": "T-Shirts",
@@ -6706,19 +6902,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0106",
         "category": "Kurtas",
@@ -6770,19 +6966,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0107",
         "category": "Pattu Sarees",
@@ -6836,19 +7032,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0108",
         "category": "Ethnic Wear",
@@ -6873,12 +7069,12 @@
         }
     },
     {
-        "name": "Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)",
+        "name": "Rajasthali Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)",
         "sub_category": "Kurta Sets",
         "description": "Pure cotton straight fit traditional style kurta matched with striped straight pants, elegant ethnic wear.",
         "price": 3200.0,
         "discount_price": 2399.0,
-        "brand": "Faabiiola",
+        "brand": "Rajasthali",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Cotton",
@@ -6904,23 +7100,23 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0109",
         "category": "Bandhani",
-        "store_name": "Faabiiola",
+        "store_name": "Rajasthali",
         "store_city": "Jaipur",
         "discount_percentage": 25.03,
         "stock_quantity": 34,
@@ -6941,12 +7137,12 @@
         }
     },
     {
-        "name": "Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)",
+        "name": "Rajasthali Lucknowi Chikankari Georgette Kurta (Baby Pink - v2)",
         "sub_category": "Chikankari Kurtas",
         "description": "Beautiful hand-embroidered Lucknowi chikankari georgette kurta, comes with soft inner lining.",
         "price": 2800.0,
         "discount_price": 2199.0,
-        "brand": "Faabiiola",
+        "brand": "Rajasthali",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Georgette",
@@ -6968,23 +7164,23 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0110",
         "category": "Jaipur Quilts",
-        "store_name": "Faabiiola",
+        "store_name": "Rajasthali",
         "store_city": "Jaipur",
         "discount_percentage": 21.46,
         "stock_quantity": 30,
@@ -7005,12 +7201,12 @@
         }
     },
     {
-        "name": "Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v3)",
+        "name": "Rajasthali Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v3)",
         "sub_category": "Kurta Sets",
         "description": "Pure cotton straight fit traditional style kurta matched with striped straight pants, elegant ethnic wear.",
         "price": 3200.0,
         "discount_price": 2399.0,
-        "brand": "Faabiiola",
+        "brand": "Rajasthali",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Cotton",
@@ -7036,23 +7232,23 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0111",
         "category": "Ethnics",
-        "store_name": "Faabiiola",
+        "store_name": "Rajasthali",
         "store_city": "Jaipur",
         "discount_percentage": 25.03,
         "stock_quantity": 44,
@@ -7100,19 +7296,19 @@
             {
                 "name": "Crimson Maroon",
                 "hex": "#800000",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png"
             },
             {
                 "name": "Wine Plum",
                 "hex": "#5C246E",
-                "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/lehengas-velvet-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/lehengas-velvet-1.png",
+            "https://example.com/images/lehengas-velvet-2.png",
+            "https://example.com/images/lehengas-velvet-3.png"
         ],
         "_id": "p_0112",
         "category": "Lehengas",
@@ -7164,19 +7360,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0113",
         "category": "Jaipur Prints",
@@ -7232,19 +7428,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0114",
         "category": "Bedlinens",
@@ -7300,19 +7496,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0115",
         "category": "Sanganeri Prints",
@@ -7364,19 +7560,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0116",
         "category": "Kurtas",
@@ -7432,19 +7628,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0117",
         "category": "Cotton fabrics",
@@ -7500,19 +7696,19 @@
             {
                 "name": "Teal Blue",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kurtis-anarkali-thumb.png"
             },
             {
                 "name": "Rust Orange",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kurtis-anarkali-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/kurtis-anarkali-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/kurtis-anarkali-1.png",
+            "https://example.com/images/kurtis-anarkali-2.png",
+            "https://example.com/images/kurtis-anarkali-3.png"
         ],
         "_id": "p_0118",
         "category": "Kurtis",
@@ -7564,19 +7760,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0119",
         "category": "Ethnic Sets",
@@ -7632,19 +7828,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0120",
         "category": "Kurtas",
@@ -7700,19 +7896,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0121",
         "category": "Family Clothing",
@@ -7764,19 +7960,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0122",
         "category": "Daily Wear Cottons",
@@ -7832,19 +8028,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0123",
         "category": "Casuals",
@@ -7900,19 +8096,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0124",
         "category": "Contemporary Wear",
@@ -7964,19 +8160,19 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0125",
         "category": "Anarkalis",
@@ -8032,19 +8228,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0126",
         "category": "Menswear",
@@ -8096,19 +8292,19 @@
             {
                 "name": "Marigold Yellow",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kids-frock-thumb.png"
             },
             {
                 "name": "Coral Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/kids-frock-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/kids-frock-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/kids-frock-1.png",
+            "https://example.com/images/kids-frock-2.png",
+            "https://example.com/images/kids-frock-3.png"
         ],
         "_id": "p_0127",
         "category": "Kids Wear",
@@ -8152,19 +8348,19 @@
             {
                 "name": "Fuschia Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png"
             },
             {
                 "name": "Royal Violet",
                 "hex": "#8F00FF",
-                "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/sarees-banarasi-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/sarees-banarasi-1.png",
+            "https://example.com/images/sarees-banarasi-2.png",
+            "https://example.com/images/sarees-banarasi-3.png"
         ],
         "_id": "p_0128",
         "category": "Sarees",
@@ -8218,19 +8414,19 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0129",
         "category": "Kurtas",
@@ -8260,7 +8456,7 @@
         "description": "Pure cotton straight fit traditional style kurta matched with striped straight pants, elegant ethnic wear.",
         "price": 3200.0,
         "discount_price": 2399.0,
-        "brand": "Girija Fashion Store",
+        "brand": "Bihar Ethnic Collections",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Cotton",
@@ -8286,23 +8482,23 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0130",
         "category": "Madhubani Handlooms",
-        "store_name": "Girija Fashion Store",
+        "store_name": "Bihar Ethnic Collections",
         "store_city": "Patna",
         "discount_percentage": 25.03,
         "stock_quantity": 22,
@@ -8328,7 +8524,7 @@
         "description": "Beautiful hand-embroidered Lucknowi chikankari georgette kurta, comes with soft inner lining.",
         "price": 2800.0,
         "discount_price": 2199.0,
-        "brand": "Girija Fashion Store",
+        "brand": "Bihar Ethnic Collections",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Georgette",
@@ -8350,23 +8546,23 @@
             {
                 "name": "Mint Aqua",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             },
             {
                 "name": "Baby Pink",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-chikan-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-chikan-1.png",
+            "https://example.com/images/ethnic-chikan-2.png",
+            "https://example.com/images/ethnic-chikan-3.png"
         ],
         "_id": "p_0131",
         "category": "Bhagalpuri Silk",
-        "store_name": "Girija Fashion Store",
+        "store_name": "Bihar Ethnic Collections",
         "store_city": "Patna",
         "discount_percentage": 21.46,
         "stock_quantity": 40,
@@ -8392,7 +8588,7 @@
         "description": "Pure cotton straight fit traditional style kurta matched with striped straight pants, elegant ethnic wear.",
         "price": 3200.0,
         "discount_price": 2399.0,
-        "brand": "Girija Fashion Store",
+        "brand": "Bihar Ethnic Collections",
         "gender": "Women",
         "occasion": "Casual",
         "material": "Cotton",
@@ -8418,23 +8614,23 @@
             {
                 "name": "Indigo Blue Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             },
             {
                 "name": "Fierce Pink Print",
                 "hex": "#7F7F7F",
-                "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png"
             }
         ],
-        "thumbnail": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+        "thumbnail": "https://example.com/images/ethnic-kurta-thumb.png",
         "images": [
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+            "https://example.com/images/ethnic-kurta-1.png",
+            "https://example.com/images/ethnic-kurta-2.png",
+            "https://example.com/images/ethnic-kurta-3.png"
         ],
         "_id": "p_0132",
         "category": "Tussar Silks",
-        "store_name": "Girija Fashion Store",
+        "store_name": "Bihar Ethnic Collections",
         "store_city": "Patna",
         "discount_percentage": 25.03,
         "stock_quantity": 18,

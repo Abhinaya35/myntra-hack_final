@@ -1,0 +1,23 @@
+=== Seed Directory Files ===
+products(1).json: size=243500 bytes, modified=2026-07-25 23:18:34.372501
+products(2).json: size=300361 bytes, modified=2026-07-26 11:54:47.990522
+products.json: size=294802 bytes, modified=2026-07-30 16:17:05.395816
+shopping_hubs.json: size=7736 bytes, modified=2026-07-26 00:53:17.527858
+stores (1).json: size=47074 bytes, modified=2026-07-26 00:56:24.714610
+stores.json: size=42278 bytes, modified=2026-07-30 16:19:37.658842
+products(1).json: parsed successfully, type=<class 'list'>, length=132
+  First item _id: p_0001
+  First item name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+products(2).json: parsed successfully, type=<class 'list'>, length=132
+  First item _id: p_0001
+  First item name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+products.json: parsed successfully, type=<class 'list'>, length=132
+  First item _id: p_0001
+  First item name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+shopping_hubs.json: parsed successfully, type=<class 'list'>, length=11
+  First item _id: hyd
+  First item name: Hyderabad
+stores (1).json: parsed successfully, type=<class 'list'>, length=44
+  First item name: South India Shopping Mall
+stores.json: parsed successfully, type=<class 'list'>, length=43
+  First item name: South India Shopping Mall

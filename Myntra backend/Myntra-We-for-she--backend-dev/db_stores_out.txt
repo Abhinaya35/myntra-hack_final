@@ -1,0 +1,14 @@
+Loaded 43 stores from seed/stores.json
+First store in stores.json:
+  Name: South India Shopping Mall
+  City: Hyderabad
+  Logo Image: https://i.postimg.cc/DZtkCh1g/IMG-20260726-WA0010.jpg
+  Banner Image: https://i.postimg.cc/tR2FVgtp/IMG-20260726-WA0011.jpg
+
+Database store found:
+  _id: 6a650e53dd3a42911dc7463b
+  Name: South India Shopping Mall
+  City: Hyderabad
+  Logo Image: https://i.postimg.cc/DZtkCh1g/IMG-20260726-WA0010.jpg
+  Banner Image: https://i.postimg.cc/tR2FVgtp/IMG-20260726-WA0011.jpg
+  Other fields in DB: ['_id', 'name', 'city', 'state', 'latitude', 'longitude', 'address', 'google_rating', 'review_count', 'trust_score', 'years_in_business', 'categories', 'banner_image', 'description', 'is_verified', 'shopping_hub_id', 'logo_image', 'specialties', 'created_at', 'updated_at', 'delivery_available', 'delivery_radius_km', 'supported_states', 'supported_cities']

@@ -1,0 +1,50 @@
+Product ID: p_0001
+ - Old Name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+ - New Name: South Kanchipuram Silk Saree (Vermilion Red - v1)
+ - Old Thumbnail: https://example.com/images/sarees-kanchipuram-thumb.png
+ - New Thumbnail: https://ibb.co/PvBGN0Rd
+ - Old Images: ['https://example.com/images/sarees-kanchipuram-1.png', 'https://example.com/images/sarees-kanchipuram-2.png', 'https://example.com/images/sarees-kanchipuram-3.png']
+ - New Images: ['https://ibb.co/PvBGN0Rd', 'https://ibb.co/xqC8wXLW', 'https://ibb.co/67sdVd4y']
+ - Old Brand/Store: South India Shopping Mall / South India Shopping Mall
+ - New Brand/Store: South India Shopping Mall / South India Shopping Mall
+---------------------------------
+Product ID: p_0002
+ - Old Name: South Floral Organza Lehenga Set (Lavender Frost - v2)
+ - New Name: South Floral Organza Lehenga Set (Lavender Frost - v2)
+ - Old Thumbnail: https://example.com/images/lehengas-floral-thumb.png
+ - New Thumbnail: https://ibb.co/Z1kRwvBg
+ - Old Images: ['https://example.com/images/lehengas-floral-1.png', 'https://example.com/images/lehengas-floral-2.png', 'https://example.com/images/lehengas-floral-3.png']
+ - New Images: ['https://ibb.co/Z1kRwvBg', 'https://ibb.co/DfbfR3qf', 'https://ibb.co/N2w9G91m']
+ - Old Brand/Store: South India Shopping Mall / South India Shopping Mall
+ - New Brand/Store: South India Shopping Mall / South India Shopping Mall
+---------------------------------
+Product ID: p_0003
+ - Old Name: South Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v3)
+ - New Name: South Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v3)
+ - Old Thumbnail: https://example.com/images/ethnic-kurta-thumb.png
+ - New Thumbnail: https://ibb.co/VchpGLgm
+ - Old Images: ['https://example.com/images/ethnic-kurta-1.png', 'https://example.com/images/ethnic-kurta-2.png', 'https://example.com/images/ethnic-kurta-3.png']
+ - New Images: ['https://ibb.co/VchpGLgm', 'https://ibb.co/mWSqnKb', 'https://ibb.co/bjYWgH5X']
+ - Old Brand/Store: South India Shopping Mall / South India Shopping Mall
+ - New Brand/Store: South India Shopping Mall / South India Shopping Mall
+---------------------------------
+Product ID: p_0004
+ - Old Name: RS Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)
+ - New Name: RS Jaipuri Block Printed Cotton Kurta Set (Indigo Blue Print - v1)
+ - Old Thumbnail: https://i.postimg.cc/NMnK4qZC/image.png
+ - New Thumbnail: https://i.postimg.cc/NMnK4qZC/image.png
+ - Old Images: ['https://i.postimg.cc/j5DHKXT0/image.png', 'https://i.postimg.cc/CxwbdY0q/image.png', 'https://i.postimg.cc/gkH6C5hy/image.png']
+ - New Images: ['https://i.postimg.cc/j5DHKXT0/image.png', 'https://i.postimg.cc/CxwbdY0q/image.png', 'https://i.postimg.cc/gkH6C5hy/image.png']
+ - Old Brand/Store: RS Brothers / RS Brothers
+ - New Brand/Store: RS Brothers / RS Brothers
+---------------------------------
+Product ID: p_0005
+ - Old Name: RS Boys Silk Kurta Pyjama Set (Turquoise Aqua - v2)
+ - New Name: RS Boys Silk Kurta Pyjama Set (Turquoise Aqua - v2)
+ - Old Thumbnail: https://i.postimg.cc/6Qv6X2St/image.png
+ - New Thumbnail: https://i.postimg.cc/6Qv6X2St/image.png
+ - Old Images: ['https://i.postimg.cc/SQrSkpZ8/image.png', 'https://i.postimg.cc/CLrwnsTW/image.png', 'https://i.postimg.cc/BvH3yWL0/image.png']
+ - New Images: ['https://i.postimg.cc/SQrSkpZ8/image.png', 'https://i.postimg.cc/CLrwnsTW/image.png', 'https://i.postimg.cc/BvH3yWL0/image.png']
+ - Old Brand/Store: RS Brothers / RS Brothers
+ - New Brand/Store: RS Brothers / RS Brothers
+---------------------------------

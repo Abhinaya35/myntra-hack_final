@@ -1,0 +1,83 @@
+Categories Counter:
+  - Sarees: 7
+  - Lehengas: 5
+  - Kurtas: 5
+  - Ethnic Wear: 4
+  - Dhotis: 4
+  - Mysore Silk: 4
+  - Kids Wear: 3
+  - Menswear: 3
+  - Mens Suitings: 3
+  - Pattu Sarees: 3
+  - Kurtis: 3
+  - Anarkalis: 3
+  - Traditional Sarees: 2
+  - Salwars: 2
+  - Contemporary Wear: 2
+  - Grooms Wear: 2
+  - Kids Ethnic: 2
+  - Designer Sarees: 2
+  - Daily Cottons: 2
+  - Silk Sarees: 2
+  - Linen Shirts: 2
+  - Casual Cottons: 2
+  - Casuals: 2
+  - Jeans: 2
+  - Cotton Sarees: 1
+  - Kanchipuram Silk: 1
+  - Dharmavaram: 1
+  - Handicrafts: 1
+  - Gadwal Sarees: 1
+  - Ready-made Salwars: 1
+  - Dharmavaram Silks: 1
+  - Wedding Sarees: 1
+  - Traditional Pattu: 1
+  - Handlooms: 1
+  - Salwar Suits: 1
+  - Western Outfits: 1
+  - Unstitched Fabric: 1
+  - Wedding Special: 1
+  - Family Clothes: 1
+  - Accessories: 1
+  - Pure Silk Sarees: 1
+  - Crepe Silks: 1
+  - Western Wear: 1
+  - Wedding Silks: 1
+  - Organic Cotton: 1
+  - Mens Wear: 1
+  - Samudrika Pattu: 1
+  - Parampara Silks: 1
+  - Liril Sarees: 1
+  - Themes Collection: 1
+  - Kids Cottons: 1
+  - Bridal Sarees: 1
+  - Silk Brocades: 1
+  - Kerala Kasavu: 1
+  - Designer Lehengas: 1
+  - Kerala Mundu: 1
+  - Wedding Gowns: 1
+  - Traditional Silk: 1
+  - Kids Frocks: 1
+  - Ready-made Garments: 1
+  - Bridal Couture: 1
+  - Custom Gowns: 1
+  - Pure Zari Crepe: 1
+  - Printed Silk: 1
+  - Government stamped silks: 1
+  - Westerns: 1
+  - Suitings: 1
+  - Custom Tailored: 1
+  - T-Shirts: 1
+  - Bandhani: 1
+  - Jaipur Quilts: 1
+  - Ethnics: 1
+  - Jaipur Prints: 1
+  - Bedlinens: 1
+  - Sanganeri Prints: 1
+  - Cotton fabrics: 1
+  - Ethnic Sets: 1
+  - Family Clothing: 1
+  - Daily Wear Cottons: 1
+  - Madhubani Handlooms: 1
+  - Bhagalpuri Silk: 1
+  - Tussar Silks: 1

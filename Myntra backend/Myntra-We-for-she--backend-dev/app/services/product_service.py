@@ -374,6 +374,7 @@ class ProductService:
                 "is_available": cand.get("is_available", True),
                 "thumbnail": cand.get("thumbnail"),
                 "rating": cand.get("rating", 4.0),
+                "review_count": cand.get("review_count", 0),
                 "recommendation_reason": item["reason"]
             })
         return results
@@ -493,6 +494,7 @@ class ProductService:
                 "is_available": cand.get("is_available", True),
                 "thumbnail": cand.get("thumbnail"),
                 "rating": cand.get("rating", 4.0),
+                "review_count": cand.get("review_count", 0),
                 "recommendation_reason": item["reason"]
             })
 
